@@ -1,0 +1,11 @@
+{
+  "name": "berlin-apartment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Independent Berlin apartment rental and home sale website",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
