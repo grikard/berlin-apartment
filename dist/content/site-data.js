@@ -2,7 +2,7 @@
    Paths are relative to dist/index.html. See README.md for examples. */
 window.BERLIN_LISTING = {
   apartment: {
-    status: "Available to rent",
+    status: "Available now",
     description: "An eighth-floor, top-floor home at Potsdamer Platz with a large wrap-around terrace. The supplied floor plan shows one bedroom, a living room, a separate kitchen, a bathroom, a guest WC and a utility room. A private door off the lift landing opens into a long private hallway serving just two apartments.",
     floor: "8th / top floor",
     terrace: "Approx. 53.80 m² · wrap-around",
@@ -18,7 +18,7 @@ window.BERLIN_LISTING = {
       current: { baseCents: 172303, heatingCents: 8785, operatingCents: 30121, totalCents: 211209 },
       estimate: { baseCents: 180000, heatingCents: 21000, operatingCents: 39000, totalCents: 240000, lowCents: 220000, highCents: 265000 }
     },
-    availableFrom: "",
+    availableFrom: "Now",
     size: "Approx. 83.67 m² Wohnfläche (per plan)",
     rooms: "2 rooms · 1 bedroom",
     deposit: "",
