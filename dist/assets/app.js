@@ -119,50 +119,101 @@
   $('sale-controls').hidden = false;
   $('item-count').hidden = false;
   $('sale-note').hidden = false;
+  if ($('inventory-notice')) $('inventory-notice').hidden = false;
+  if ($('item-language')) $('item-language').value = data.sale?.defaultLanguage || 'en';
   for (const category of [...new Set(items.map(item => item.category || 'Other'))].sort()) {
     const option = el('option', '', category); option.value = category; $('item-category').append(option);
   }
-  const statusLabels = { available: 'Available', reserved: 'Reserved', sold: 'Sold' };
-  const renderItems = () => {
-    const query = $('item-search').value.trim().toLocaleLowerCase();
-    const category = $('item-category').value;
-    const matches = items.filter(item => {
-      const status = item.status || 'available';
-      return `${item.title} ${item.description || ''} ${item.category || 'Other'}`.toLocaleLowerCase().includes(query)
-        && (category === 'all' || (item.category || 'Other') === category)
-        && (!$('available-only').checked || status === 'available');
-    });
-    $('items-grid').replaceChildren();
-    $('item-count').textContent = `${matches.length} ${matches.length === 1 ? 'item' : 'items'} shown`;
-    $('no-results').hidden = matches.length !== 0;
-    for (const item of matches) {
-      const status = Object.hasOwn(statusLabels, item.status) ? item.status : 'available';
-      const card = el('article', 'item-card'); card.dataset.status = status;
-      const imageBox = el('div', 'item-image');
-      if (localPhoto(item.photo)) {
-        const img = el('img'); img.src = item.photo; img.alt = item.photoAlt || item.title; img.loading = 'lazy'; img.width = 800; img.height = 600;
+  const statusLabels = {
+    en: { available: 'Available', enquire: 'Enquire', reserved: 'Reserved', sold: 'Sold' },
+    de: { available: 'Verfügbar', enquire: 'Anfragen', reserved: 'Reserviert', sold: 'Verkauft' }
+  };
+  const isOpen = item => ['available', 'enquire'].includes(item.status || 'enquire');
+  const textFor = (item, key, language) => language === 'de' ? (item[key + 'De'] || item[key] || '') : (item[key] || '');
+  const searchText = item => [item.id, item.title, item.titleDe, item.description, item.descriptionDe, item.condition, item.conditionDe, item.category, ...(item.inventoryIds || [])].filter(Boolean).join(' ').normalize('NFKD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase();
+  const makeCard = (item, language, optional = false) => {
+    const title = textFor(item, 'title', language);
+    const labels = statusLabels[language] || statusLabels.en;
+    const status = Object.hasOwn(labels, item.status) ? item.status : 'enquire';
+    const card = el('article', optional ? 'item-card optional-bundle-card' : 'item-card');
+    card.dataset.status = status;
+    card.dataset.category = item.category || 'Other';
+    card.lang = language;
+    card.id = `item-${item.id}`;
+    if (!optional) {
+      const hasPhoto = localPhoto(item.photo);
+      const imageBox = el(hasPhoto ? 'a' : 'div', hasPhoto ? 'item-image' : 'item-image item-image-pending');
+      if (hasPhoto) {
+        imageBox.href = item.photo; imageBox.target = '_blank'; imageBox.rel = 'noopener noreferrer';
+        imageBox.setAttribute('aria-label', `${language === 'de' ? 'Foto vergrößern' : 'Enlarge photo'}: ${title}`);
+        const img = el('img'); img.src = item.photo; img.alt = item.photoAlt || title; img.loading = 'lazy'; img.width = 800; img.height = 600;
         imageBox.append(img);
-      } else imageBox.append(el('span', '', 'PHOTO COMING SOON'));
-      const meta = el('div', 'item-meta');
-      meta.append(el('span', '', item.category || 'Other'), el('span', 'item-status', statusLabels[status]));
-      if (item.id) card.id = item.id;
-      card.append(imageBox, meta, el('h3', '', item.title));
-      if (item.description) card.append(el('p', '', item.description));
-      if (item.condition) card.append(el('p', '', `Condition: ${item.condition}`));
-      if (item.room) card.append(el('p', '', `From: ${item.room}`));
-      if (item.dimensions) card.append(el('p', '', `Dimensions: ${item.dimensions}`));
-      const bottom = el('div', 'item-bottom');
-      bottom.append(el('span', 'item-price', item.price || 'Price on request'));
-      if (status === 'available') {
-        const link = el('a', 'item-ask', 'Ask about this ↗');
-        link.href = enquiryUrl(`Enquiry: ${item.title}${item.id ? ` (${item.id})` : ''}`);
-        bottom.append(link);
+      } else {
+        imageBox.append(el('span', 'pending-photo-id', item.id), el('span', 'pending-photo-note', language === 'de' ? 'Originalfotos folgen' : 'Actual photos coming soon'));
       }
-      card.append(bottom); $('items-grid').append(card);
+      card.append(imageBox);
+    }
+    const meta = el('div', 'item-meta');
+    meta.append(el('span', '', item.category || 'Other'), el('span', 'item-status', labels[status]));
+    card.append(meta, el('h3', '', title));
+    if (item.dimensions) card.append(el('p', 'item-dimensions', `${language === 'de' ? 'Maße / Inhalt' : 'Dimensions / capacity'}: ${item.dimensions}`));
+    const condition = textFor(item, 'condition', language);
+    if (condition) card.append(el('p', 'item-disclosure', condition));
+    const description = textFor(item, 'description', language);
+    if (description) {
+      const details = el('details', 'item-description');
+      details.append(el('summary', '', language === 'de' ? 'Beschreibung lesen' : 'Read description'), el('p', '', description));
+      card.append(details);
+    }
+    if (optional) {
+      const components = el('ul', 'bundle-components');
+      for (const id of item.inventoryIds || []) {
+        const owner = items.find(candidate => (candidate.inventoryIds || [candidate.id]).includes(id));
+        components.append(el('li', '', `${id} · ${owner ? textFor(owner, 'title', language) : id}`));
+      }
+      card.append(components);
+    }
+    const bottom = el('div', 'item-bottom');
+    const price = el('div', 'item-price-group');
+    price.append(el('span', 'item-price-label', language === 'de' ? 'Preisvorschlag · verhandelbar' : 'Proposed price · negotiable'), el('span', 'item-price', item.price || (language === 'de' ? 'Preis auf Anfrage' : 'Price on request')));
+    bottom.append(price);
+    if (isOpen(item)) {
+      const link = el('a', 'item-ask', language === 'de' ? 'Anfragen ↗' : 'Ask about this ↗');
+      link.href = enquiryUrl(`Berlin: ${item.id} — ${title}`);
+      link.setAttribute('aria-label', `${language === 'de' ? 'Anfragen' : 'Enquire'}: ${title} (${item.id})`);
+      bottom.append(link);
+    }
+    card.append(bottom);
+    return card;
+  };
+  const renderItems = () => {
+    const query = $('item-search').value.trim().normalize('NFKD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase();
+    const category = $('item-category').value;
+    const language = $('item-language')?.value || 'en';
+    const matchesFilters = item => searchText(item).includes(query)
+        && (category === 'all' || (item.category || 'Other') === category)
+        && (!$('available-only').checked || isOpen(item));
+    const matches = items.filter(matchesFilters);
+    const optional = (data.optionalBundles || []).map(bundle => {
+      const open = (bundle.inventoryIds || []).every(id => {
+        const owner = items.find(item => (item.inventoryIds || [item.id]).includes(id));
+        return owner && isOpen(owner);
+      });
+      return { ...bundle, status: open ? (bundle.status || 'enquire') : 'reserved' };
+    }).filter(matchesFilters);
+    $('items-grid').replaceChildren();
+    $('item-count').textContent = `${matches.length} ${matches.length === 1 ? 'listing' : 'listings'} shown${optional.length ? ' · 1 alternative bundle option' : ''}`;
+    $('no-results').hidden = matches.length !== 0 || optional.length !== 0;
+    for (const item of matches) $('items-grid').append(makeCard(item, language));
+    if ($('optional-bundle-list')) {
+      $('optional-bundles').hidden = optional.length === 0;
+      $('optional-bundle-list').replaceChildren();
+      for (const bundle of optional) $('optional-bundle-list').append(makeCard(bundle, language, true));
     }
   };
   $('item-search').addEventListener('input', renderItems);
   $('item-category').addEventListener('change', renderItems);
+  $('item-language')?.addEventListener('change', renderItems);
   $('available-only').addEventListener('change', renderItems);
   renderItems();
 })();

@@ -6,3 +6,6 @@ Thumbs.db
 .env.*
 !.env.example
 .local/
+# Local source documents include private pricing notes and are not website assets.
+/docs/
+/photos/

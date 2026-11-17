@@ -15,7 +15,8 @@ Open http://127.0.0.1:4173. Stop the server with Ctrl+C.
 
 ## Where everything lives
 
-- `dist/content/site-data.js`: rental details, contact method and sale items. This is the main file to edit.
+- `dist/content/site-data.js`: rental details and public contact method.
+- `dist/content/inventory.js`: the public sale catalogue, proposed prices, English/German descriptions, condition notes and inventory IDs. Both pages share this file.
 - `dist/photos/apartment/`: selected apartment and balcony photographs.
 - `dist/photos/items/`: sale item photographs.
 - `dist/index.html`: page structure and introductory copy.
@@ -50,7 +51,7 @@ The first photo becomes the hero image. All apartment photos appear in a gallery
 
 ## Add an item for sale
 
-Copy its photograph into `dist/photos/items/`, then add an actual item to the `items` array. The following is a format example; replace every value with the real item details:
+Copy its photograph into `dist/photos/items/`, then edit the catalogue in `dist/content/inventory.js`. Each listing has an ID, English/German titles and descriptions, a proposed price, condition disclosures and the inventory records it covers. Use an existing entry as the format reference. The simplified example below illustrates the core fields; match the full existing schema when adding a real listing:
 
 ```javascript
 items: [
@@ -68,9 +69,13 @@ items: [
 ]
 ```
 
-Use `available`, `reserved`, or `sold`. Search, category filtering and an available-only filter appear automatically when there are items. Enquiry links include the item title and ID. An empty items array shows an honest coming-soon message, with no example merchandise advertised.
+Use `enquire`, `available`, `reserved`, or `sold`. Imported drafts use `enquire`, since condition, availability and the final price must be confirmed directly. Search covers IDs and both languages, with category, listing-language and reserved/sold filters. Enquiry links include the item title and ID. An empty items array shows a coming-soon message.
 
-The dedicated sale link is https://grikard.github.io/berlin-apartment/for-sale.html. Both pages load the same `items` array. Optional `condition` and `room` fields appear on each item card when supplied. The actual belongings inventory has not yet been provided or found in the accessible project or saved Pages; the standalone page therefore contains no invented items or prices.
+The dedicated sale link is https://grikard.github.io/berlin-apartment/for-sale.html. The catalogue was populated from the user's 17 November 2026 Word posting pack and 16 November 2026 Excel inventory. It has 23 primary listings covering 28 distinct inventory records: four primary bundles and 19 standalone offers. Nine component/alternate ad drafts are not separately advertised. The white-furniture bundle is presented as one alternative offer using five already-listed inventory records; it is not additional stock. Its enquiry link becomes unavailable if a component is marked reserved or sold.
+
+All imported prices remain explicitly proposed and negotiable. Known flaws and uncertainties are visible on the cards, including water marks on both bedside tables and the cutting board's possible crack. Manufacturer images, old retail references, expected sale prices, negotiation floors, internal checks and scope-watchlist items are not published. Neither source file contains embedded product photos; actual-photo placeholders remain until the user's photos are supplied. The source documents stay in ignored `docs/`, and extraction/audit work stays in ignored `.local/`.
+
+Collection is by appointment in Berlin-Mitte. The supplied posting copy specifies The Playce / Potsdamer Platz shopping level −4F as a parking option, buyer-paid parking, and buyer responsibility for carrying, transport and any disassembly unless otherwise agreed. Public contact details are still needed in `site-data.js`.
 
 ## Rental and contact details
 

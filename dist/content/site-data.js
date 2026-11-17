@@ -34,6 +34,6 @@ window.BERLIN_LISTING = {
     whatsapp: "", // International number with country code, e.g. +49...
     note: ""
   },
-  // No example items are shown as real listings. Add actual items using the README example.
+  // The public catalogue is loaded next from content/inventory.js.
   items: []
 };
