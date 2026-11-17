@@ -24,7 +24,7 @@ window.BERLIN_LISTING = {
     size: "Approx. 83.67 m² Wohnfläche (per plan)",
     rooms: "2 rooms · 1 bedroom",
     deposit: "",
-    furnished: "",
+    furnished: "Potential furnished takeover, by separate agreement",
     rentalTerm: "",
     note: "The expected total warm rent with MVMG is between the current €2,112.09 and approximately €2,400 per month, as reported by the current tenants. Operating / maintenance and heating charges may change. Electricity, internet and parking are excluded. Final rent, charges and takeover arrangements remain to be confirmed with MVMG. Offers are welcome.",
     photos: [
