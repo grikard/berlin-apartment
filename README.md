@@ -75,7 +75,7 @@ The dedicated sale link is https://grikard.github.io/berlin-apartment/for-sale.h
 
 All imported prices remain explicitly proposed and negotiable. Known flaws and uncertainties are visible on the cards, including water marks on both bedside tables and the cutting board's possible crack. Manufacturer images, old retail references, expected sale prices, negotiation floors, internal checks and scope-watchlist items are not published. Neither source file contains embedded product photos; actual-photo placeholders remain until the user's photos are supplied. The source documents stay in ignored `docs/`, and extraction/audit work stays in ignored `.local/`.
 
-Collection is by appointment in Berlin-Mitte. The supplied posting copy specifies The Playce / Potsdamer Platz shopping level −4F as a parking option, buyer-paid parking, and buyer responsibility for carrying, transport and any disassembly unless otherwise agreed. Public contact details are still needed in `site-data.js`.
+Collection is by appointment in Berlin-Mitte. The supplied posting copy specifies The Playce / Potsdamer Platz shopping level −4F as a parking option, buyer-paid parking, and buyer responsibility for carrying, transport and any disassembly unless otherwise agreed. The seller's public enquiry email is configured in `site-data.js`.
 
 ## Rental and contact details
 

@@ -29,8 +29,8 @@ window.BERLIN_LISTING = {
     photos: []
   },
   contact: {
-    // Leave blank until you choose the contact details to publish.
-    email: "",
+    // Public enquiry address supplied by the seller.
+    email: "ports_dashers.4n@icloud.com",
     whatsapp: "", // International number with country code, e.g. +49...
     note: ""
   },
