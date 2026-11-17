@@ -21,7 +21,39 @@ window.BERLIN_LISTING.items = [
       "APP-02",
       "APP-03"
     ],
-    "photo": ""
+    "photo": "photos/items/BND-02-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/BND-02-01.jpg",
+        "thumbnail": "photos/items/thumbs/BND-02-01.jpg",
+        "alt": "Washer and dryer stacked in the utility cupboard",
+        "caption": "Washer and dryer stacked in the utility cupboard",
+        "captionDe": "Waschmaschine und Trockner im Hauswirtschaftsschrank"
+      },
+      {
+        "src": "photos/items/BND-02-02.jpg",
+        "thumbnail": "photos/items/thumbs/BND-02-02.jpg",
+        "alt": "Dryer model label",
+        "caption": "Dryer model label",
+        "captionDe": "Modellaufkleber des Trockners"
+      },
+      {
+        "src": "photos/items/BND-02-03.jpg",
+        "thumbnail": "photos/items/thumbs/BND-02-03.jpg",
+        "alt": "Washing machine door label",
+        "caption": "Washing machine door label",
+        "captionDe": "Modellaufkleber an der Waschmaschinentür"
+      },
+      {
+        "src": "photos/items/BND-02-04.jpg",
+        "thumbnail": "photos/items/thumbs/BND-02-04.jpg",
+        "alt": "Washing machine rating label",
+        "caption": "Washing machine rating label",
+        "captionDe": "Typenschild der Waschmaschine"
+      }
+    ],
+    "photoAlt": "Washer and dryer stacked in the utility cupboard",
+    "photoEvidence": "actual"
   },
   {
     "id": "BND-03",
@@ -42,7 +74,46 @@ window.BERLIN_LISTING.items = [
       "OUT-01",
       "OUT-02"
     ],
-    "photo": ""
+    "photo": "photos/items/BND-03-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/BND-03-01.jpg",
+        "thumbnail": "photos/items/thumbs/BND-03-01.jpg",
+        "alt": "Dining table and cushioned wooden chair on the terrace",
+        "caption": "Dining table and cushioned wooden chair on the terrace",
+        "captionDe": "Esstisch und Holzstuhl mit Polster auf der Terrasse"
+      },
+      {
+        "src": "photos/items/BND-03-02.jpg",
+        "thumbnail": "photos/items/thumbs/BND-03-02.jpg",
+        "alt": "Wooden chair with cushion",
+        "caption": "Wooden chair with cushion",
+        "captionDe": "Holzstuhl mit Polster"
+      },
+      {
+        "src": "photos/items/BND-03-03.jpg",
+        "thumbnail": "photos/items/thumbs/BND-03-03.jpg",
+        "alt": "Chair from another angle",
+        "caption": "Chair from another angle",
+        "captionDe": "Stuhl aus einem anderen Blickwinkel"
+      },
+      {
+        "src": "photos/items/BND-03-04.jpg",
+        "thumbnail": "photos/items/thumbs/BND-03-04.jpg",
+        "alt": "Chair and cushion detail",
+        "caption": "Chair and cushion detail",
+        "captionDe": "Stuhl und Polster im Detail"
+      },
+      {
+        "src": "photos/items/BND-03-05.jpg",
+        "thumbnail": "photos/items/thumbs/BND-03-05.jpg",
+        "alt": "Folded matching chairs",
+        "caption": "Folded matching chairs",
+        "captionDe": "Zusammengeklappte passende Stühle"
+      }
+    ],
+    "photoAlt": "Dining table and cushioned wooden chair on the terrace",
+    "photoEvidence": "actual"
   },
   {
     "id": "BND-04",
@@ -104,7 +175,39 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "BED-01"
     ],
-    "photo": ""
+    "photo": "photos/items/BED-01-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/BED-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/BED-01-01.jpg",
+        "alt": "Upholstered headboard and side of the bed",
+        "caption": "Upholstered headboard and side of the bed",
+        "captionDe": "Gepolstertes Kopfteil und Bettseite"
+      },
+      {
+        "src": "photos/items/BED-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/BED-01-02.jpg",
+        "alt": "Headboard corner and upholstery",
+        "caption": "Headboard corner and upholstery",
+        "captionDe": "Ecke des Kopfteils und Polsterstoff"
+      },
+      {
+        "src": "photos/items/BED-01-03.jpg",
+        "thumbnail": "photos/items/thumbs/BED-01-03.jpg",
+        "alt": "Rear of the upholstered headboard",
+        "caption": "Rear of the upholstered headboard",
+        "captionDe": "Rückseite des gepolsterten Kopfteils"
+      },
+      {
+        "src": "photos/items/BED-01-04.jpg",
+        "thumbnail": "photos/items/thumbs/BED-01-04.jpg",
+        "alt": "Bed slats and frame detail; inclusions to be agreed",
+        "caption": "Bed slats and frame detail; inclusions to be agreed",
+        "captionDe": "Latten und Bettgestell im Detail; Lieferumfang nach Absprache"
+      }
+    ],
+    "photoAlt": "Upholstered headboard and side of the bed",
+    "photoEvidence": "actual"
   },
   {
     "id": "WRD-01",
@@ -124,7 +227,32 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "WRD-01"
     ],
-    "photo": ""
+    "photo": "photos/items/WRD-01-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/WRD-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/WRD-01-01.jpg",
+        "alt": "Walnut-effect wardrobe with sliding doors closed",
+        "caption": "Walnut-effect wardrobe with sliding doors closed",
+        "captionDe": "Kleiderschrank in Walnussoptik mit geschlossenen Schiebetüren"
+      },
+      {
+        "src": "photos/items/WRD-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/WRD-01-02.jpg",
+        "alt": "Open blue drawers and wardrobe interior",
+        "caption": "Open blue drawers and wardrobe interior",
+        "captionDe": "Geöffnete blaue Schubladen und Schrankinneres"
+      },
+      {
+        "src": "photos/items/WRD-01-03.jpg",
+        "thumbnail": "photos/items/thumbs/WRD-01-03.jpg",
+        "alt": "Open hanging compartment",
+        "caption": "Open hanging compartment",
+        "captionDe": "Geöffnetes Fach mit Kleiderstange"
+      }
+    ],
+    "photoAlt": "Walnut-effect wardrobe with sliding doors closed",
+    "photoEvidence": "actual"
   },
   {
     "id": "WRD-02",
@@ -144,7 +272,32 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "WRD-02"
     ],
-    "photo": ""
+    "photo": "photos/items/WRD-02-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/WRD-02-01.jpg",
+        "thumbnail": "photos/items/thumbs/WRD-02-01.jpg",
+        "alt": "White three-door wardrobe with mirrored centre door",
+        "caption": "White three-door wardrobe with mirrored centre door",
+        "captionDe": "Weißer dreitüriger Kleiderschrank mit mittlerer Spiegeltür"
+      },
+      {
+        "src": "photos/items/WRD-02-02.jpg",
+        "thumbnail": "photos/items/thumbs/WRD-02-02.jpg",
+        "alt": "Open hanging compartment",
+        "caption": "Open hanging compartment",
+        "captionDe": "Geöffnetes Fach mit Kleiderstange"
+      },
+      {
+        "src": "photos/items/WRD-02-03.jpg",
+        "thumbnail": "photos/items/thumbs/WRD-02-03.jpg",
+        "alt": "Open shelving compartment",
+        "caption": "Open shelving compartment",
+        "captionDe": "Geöffnetes Regalfach"
+      }
+    ],
+    "photoAlt": "White three-door wardrobe with mirrored centre door",
+    "photoEvidence": "actual"
   },
   {
     "id": "DRW-01",
@@ -164,7 +317,18 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "DRW-01"
     ],
-    "photo": ""
+    "photo": "photos/items/DRW-01-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/DRW-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/DRW-01-01.jpg",
+        "alt": "Tall white chest of drawers",
+        "caption": "Tall white chest of drawers",
+        "captionDe": "Hohe weiße Kommode"
+      }
+    ],
+    "photoAlt": "Tall white chest of drawers",
+    "photoEvidence": "actual"
   },
   {
     "id": "DRW-02",
@@ -184,7 +348,18 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "DRW-02"
     ],
-    "photo": ""
+    "photo": "photos/items/DRW-02-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/DRW-02-01.jpg",
+        "thumbnail": "photos/items/thumbs/DRW-02-01.jpg",
+        "alt": "Wide white chest of drawers beside the window",
+        "caption": "Wide white chest of drawers beside the window",
+        "captionDe": "Breite weiße Kommode am Fenster"
+      }
+    ],
+    "photoAlt": "Wide white chest of drawers beside the window",
+    "photoEvidence": "actual"
   },
   {
     "id": "SHO-01",
@@ -204,7 +379,18 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "SHO-01"
     ],
-    "photo": ""
+    "photo": "photos/items/SHO-01-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/SHO-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/SHO-01-01.jpg",
+        "alt": "White three-compartment shoe cabinet",
+        "caption": "White three-compartment shoe cabinet",
+        "captionDe": "Weißer Schuhschrank mit drei Fächern"
+      }
+    ],
+    "photoAlt": "White three-compartment shoe cabinet",
+    "photoEvidence": "actual"
   },
   {
     "id": "BST-01",
@@ -224,7 +410,27 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "BST-01"
     ],
-    "photo": ""
+    "photo": "photos/items/BST-01-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/BST-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/BST-01-01.jpg",
+        "alt": "Bedside table with shelf and drawer",
+        "caption": "Bedside table with shelf and drawer",
+        "captionDe": "Nachttisch mit Ablage und Schublade"
+      },
+      {
+        "src": "photos/items/BST-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/BST-01-02.jpg",
+        "alt": "Bedside table top with visible marks",
+        "caption": "Bedside table top with visible marks",
+        "captionDe": "Nachttischplatte mit sichtbaren Spuren"
+      }
+    ],
+    "photoAlt": "Bedside table with shelf and drawer",
+    "photoEvidence": "actual",
+    "photoNote": "Photos show one bedside table and its top. This listing is for the pair; water marks are reported on both tops.",
+    "photoNoteDe": "Die Fotos zeigen einen Nachttisch und seine Oberseite. Angeboten wird das Paar; auf beiden Oberseiten sind Wasserspuren angegeben."
   },
   {
     "id": "DES-01",
@@ -244,7 +450,25 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "DES-01"
     ],
-    "photo": ""
+    "photo": "photos/items/DES-01-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/DES-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/DES-01-01.jpg",
+        "alt": "White desk top and black BEKANT base",
+        "caption": "White desk top and black BEKANT base",
+        "captionDe": "Weiße Tischplatte und schwarzes BEKANT Gestell"
+      },
+      {
+        "src": "photos/items/DES-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/DES-01-02.jpg",
+        "alt": "BEKANT electric desk model label",
+        "caption": "BEKANT electric desk model label",
+        "captionDe": "Modellaufkleber des elektrischen BEKANT Schreibtischs"
+      }
+    ],
+    "photoAlt": "White desk top and black BEKANT base",
+    "photoEvidence": "actual"
   },
   {
     "id": "DES-02",
@@ -304,7 +528,32 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "MIR-01"
     ],
-    "photo": ""
+    "photo": "photos/items/MIR-01-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/MIR-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/MIR-01-01.jpg",
+        "alt": "Full-length mirror with black frame",
+        "caption": "Full-length mirror with black frame",
+        "captionDe": "Ganzkörperspiegel mit schwarzem Rahmen"
+      },
+      {
+        "src": "photos/items/MIR-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/MIR-01-02.jpg",
+        "alt": "Rear frame and hanging fittings",
+        "caption": "Rear frame and hanging fittings",
+        "captionDe": "Rückseitiger Rahmen und Aufhängungen"
+      },
+      {
+        "src": "photos/items/MIR-01-03.jpg",
+        "thumbnail": "photos/items/thumbs/MIR-01-03.jpg",
+        "alt": "HOVET product label",
+        "caption": "HOVET product label",
+        "captionDe": "HOVET Produktetikett"
+      }
+    ],
+    "photoAlt": "Full-length mirror with black frame",
+    "photoEvidence": "actual"
   },
   {
     "id": "KIT-01",
@@ -324,7 +573,27 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "KIT-01"
     ],
-    "photo": ""
+    "photo": "photos/items/KIT-01-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/KIT-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-01-01.jpg",
+        "alt": "Original juicer box front; actual juicer not shown",
+        "caption": "Original juicer box front; actual juicer not shown",
+        "captionDe": "Originalkarton des Entsafters; Gerät selbst nicht abgebildet"
+      },
+      {
+        "src": "photos/items/KIT-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-01-02.jpg",
+        "alt": "Side and product label of the juicer box",
+        "caption": "Side and product label of the juicer box",
+        "captionDe": "Seitenansicht und Produktetikett des Entsafterkartons"
+      }
+    ],
+    "photoAlt": "Original juicer box front; actual juicer not shown",
+    "photoEvidence": "packaging",
+    "photoNote": "Photos show the seller’s original packaging only. The actual contents and their condition are not shown; please confirm before purchase.",
+    "photoNoteDe": "Die Fotos zeigen nur die Originalverpackung des Verkäufers. Inhalt und Zustand der Artikel selbst sind nicht abgebildet; bitte vor dem Kauf bestätigen lassen."
   },
   {
     "id": "KIT-04",
@@ -344,7 +613,25 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "KIT-04"
     ],
-    "photo": ""
+    "photo": "photos/items/KIT-04-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/KIT-04-01.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-04-01.jpg",
+        "alt": "WMF two-egg cooker with lid",
+        "caption": "WMF two-egg cooker with lid",
+        "captionDe": "WMF Eierkocher für zwei Eier mit Deckel"
+      },
+      {
+        "src": "photos/items/KIT-04-02.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-04-02.jpg",
+        "alt": "Underside and model label of the egg cooker",
+        "caption": "Underside and model label of the egg cooker",
+        "captionDe": "Unterseite und Modellaufkleber des Eierkochers"
+      }
+    ],
+    "photoAlt": "WMF two-egg cooker with lid",
+    "photoEvidence": "actual"
   },
   {
     "id": "KIT-05",
@@ -364,7 +651,34 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "KIT-05"
     ],
-    "photo": ""
+    "photo": "photos/items/KIT-05-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/KIT-05-01.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-05-01.jpg",
+        "alt": "Original WMF Basic decanter box front",
+        "caption": "Original WMF Basic decanter box front",
+        "captionDe": "Vorderseite des Originalkartons der WMF Basic Wasserkaraffe"
+      },
+      {
+        "src": "photos/items/KIT-05-02.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-05-02.jpg",
+        "alt": "Decanter box product label",
+        "caption": "Decanter box product label",
+        "captionDe": "Produktetikett auf dem Karaffenkarton"
+      },
+      {
+        "src": "photos/items/KIT-05-03.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-05-03.jpg",
+        "alt": "Care information on the decanter box",
+        "caption": "Care information on the decanter box",
+        "captionDe": "Pflegehinweise auf dem Karaffenkarton"
+      }
+    ],
+    "photoAlt": "Original WMF Basic decanter box front",
+    "photoEvidence": "packaging",
+    "photoNote": "Photos show the seller’s original packaging only. The actual contents and their condition are not shown; please confirm before purchase.",
+    "photoNoteDe": "Die Fotos zeigen nur die Originalverpackung des Verkäufers. Inhalt und Zustand der Artikel selbst sind nicht abgebildet; bitte vor dem Kauf bestätigen lassen."
   },
   {
     "id": "KIT-06",
@@ -384,7 +698,27 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "KIT-06"
     ],
-    "photo": ""
+    "photo": "photos/items/KIT-06-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/KIT-06-01.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-06-01.jpg",
+        "alt": "Original four-bowl set box front",
+        "caption": "Original four-bowl set box front",
+        "captionDe": "Vorderseite des Originalkartons des vierteiligen Schüsselsets"
+      },
+      {
+        "src": "photos/items/KIT-06-02.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-06-02.jpg",
+        "alt": "Bowl set box product label",
+        "caption": "Bowl set box product label",
+        "captionDe": "Produktetikett auf dem Karton des Schüsselsets"
+      }
+    ],
+    "photoAlt": "Original four-bowl set box front",
+    "photoEvidence": "packaging",
+    "photoNote": "Photos show the seller’s original packaging only. The actual contents and their condition are not shown; please confirm before purchase.",
+    "photoNoteDe": "Die Fotos zeigen nur die Originalverpackung des Verkäufers. Inhalt und Zustand der Artikel selbst sind nicht abgebildet; bitte vor dem Kauf bestätigen lassen."
   },
   {
     "id": "KIT-07",
@@ -404,7 +738,41 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "KIT-07"
     ],
-    "photo": ""
+    "photo": "photos/items/KIT-07-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/KIT-07-01.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-07-01.jpg",
+        "alt": "Original knife block set box front",
+        "caption": "Original knife block set box front",
+        "captionDe": "Vorderseite des Originalkartons des Messerblocksets"
+      },
+      {
+        "src": "photos/items/KIT-07-02.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-07-02.jpg",
+        "alt": "Grand Class product label on the box",
+        "caption": "Grand Class product label on the box",
+        "captionDe": "Grand Class Produktetikett auf dem Karton"
+      },
+      {
+        "src": "photos/items/KIT-07-03.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-07-03.jpg",
+        "alt": "Another view of the original knife block box",
+        "caption": "Another view of the original knife block box",
+        "captionDe": "Weitere Ansicht des Originalkartons des Messerblocks"
+      },
+      {
+        "src": "photos/items/KIT-07-04.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-07-04.jpg",
+        "alt": "Knife block box side panel",
+        "caption": "Knife block box side panel",
+        "captionDe": "Seitenansicht des Messerblockkartons"
+      }
+    ],
+    "photoAlt": "Original knife block set box front",
+    "photoEvidence": "packaging",
+    "photoNote": "Photos show the seller’s original packaging only. The actual contents and their condition are not shown; please confirm before purchase.",
+    "photoNoteDe": "Die Fotos zeigen nur die Originalverpackung des Verkäufers. Inhalt und Zustand der Artikel selbst sind nicht abgebildet; bitte vor dem Kauf bestätigen lassen."
   },
   {
     "id": "KIT-08",
@@ -424,7 +792,27 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "KIT-08"
     ],
-    "photo": ""
+    "photo": "photos/items/KIT-08-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/KIT-08-01.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-08-01.jpg",
+        "alt": "Original WMF Quality One pot set box",
+        "caption": "Original WMF Quality One pot set box",
+        "captionDe": "Originalkarton des WMF Quality One Topfsets"
+      },
+      {
+        "src": "photos/items/KIT-08-02.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-08-02.jpg",
+        "alt": "Quality One product label on the box",
+        "caption": "Quality One product label on the box",
+        "captionDe": "Quality One Produktetikett auf dem Karton"
+      }
+    ],
+    "photoAlt": "Original WMF Quality One pot set box",
+    "photoEvidence": "packaging",
+    "photoNote": "Photos show the seller’s original packaging only. The actual contents and their condition are not shown; please confirm before purchase.",
+    "photoNoteDe": "Die Fotos zeigen nur die Originalverpackung des Verkäufers. Inhalt und Zustand der Artikel selbst sind nicht abgebildet; bitte vor dem Kauf bestätigen lassen."
   },
   {
     "id": "KIT-09",
@@ -444,7 +832,34 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "KIT-09"
     ],
-    "photo": ""
+    "photo": "photos/items/KIT-09-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/KIT-09-01.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-09-01.jpg",
+        "alt": "End-grain cutting board surface",
+        "caption": "End-grain cutting board surface",
+        "captionDe": "Hirnholz-Schneidefläche"
+      },
+      {
+        "src": "photos/items/KIT-09-02.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-09-02.jpg",
+        "alt": "Close-up of board corner and surface wear",
+        "caption": "Close-up of board corner and surface wear",
+        "captionDe": "Nahaufnahme der Brettecke und Gebrauchsspuren"
+      },
+      {
+        "src": "photos/items/KIT-09-03.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-09-03.jpg",
+        "alt": "Original box showing the three-drawer design",
+        "caption": "Original box showing the three-drawer design",
+        "captionDe": "Originalkarton mit Darstellung der drei Schubladen"
+      }
+    ],
+    "photoAlt": "End-grain cutting board surface",
+    "photoEvidence": "mixed",
+    "photoNote": "Board and surface detail are shown; the final photo shows the original packaging. The drawers are not visible in these photos. The possible crack remains to be checked.",
+    "photoNoteDe": "Zu sehen sind das Brett und die Oberfläche; das letzte Foto zeigt den Originalkarton. Die Schubladen sind auf diesen Fotos nicht sichtbar. Der mögliche Riss muss noch geprüft werden."
   },
   {
     "id": "LGT-01",

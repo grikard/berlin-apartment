@@ -189,7 +189,7 @@
         groupPhotos.forEach((photo, index) => {
           const button = el('button', 'item-photo-thumb'); button.type = 'button';
           button.setAttribute('aria-label', `${language === 'de' ? 'Foto' : 'Photo'} ${index + 1}: ${textFor(photo, 'caption', language) || title}`);
-          const img = el('img'); img.src = photo.src; img.alt = ''; img.loading = 'lazy'; img.width = 80; img.height = 80;
+          const img = el('img'); img.src = localPhoto(photo.thumbnail) ? photo.thumbnail : photo.src; img.alt = ''; img.loading = 'lazy'; img.width = 80; img.height = 80;
           button.append(img); button.addEventListener('click', () => showPhoto(index));
           buttons.push(button); thumbnails.append(button);
         });
