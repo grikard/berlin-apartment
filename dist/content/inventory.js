@@ -1137,8 +1137,8 @@ window.BERLIN_LISTING.items = [
     "priceEur": 120,
     "priceKind": "proposed",
     "status": "enquire",
-    "description": "Non-OLED Nintendo Switch with two carrying cases, including a larger case. Confirmed for sale. Exact model variant, Joy-Cons, dock, charger, games and operation remain to be checked. Asking price: €120, negotiable; photos to follow.",
-    "descriptionDe": "Nintendo Switch ohne OLED-Display, mit zwei Tragetaschen, darunter eine größere Tasche. Verkauf bestätigt. Genaue Modellvariante, Joy-Cons, Dock, Ladegerät, Spiele und Funktion noch zu prüfen. Preis: 120 € VB; Bilder folgen.",
+    "description": "Non-OLED Nintendo Switch with two carrying cases, including a larger case. Confirmed for sale. Exact model variant, Joy-Cons, dock, charger, games and operation remain to be checked. Asking price: €120, negotiable.",
+    "descriptionDe": "Nintendo Switch ohne OLED-Display, mit zwei Tragetaschen, darunter eine größere Tasche. Verkauf bestätigt. Genaue Modellvariante, Joy-Cons, Dock, Ladegerät, Spiele und Funktion noch zu prüfen. Preis: 120 € VB.",
     "condition": "Variant, functionality and additional accessories remain unverified.",
     "conditionDe": "Modellvariante, Funktion und weiteres Zubehör noch ungeprüft.",
     "dimensions": "",
@@ -1146,7 +1146,32 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "GAM-01"
     ],
-    "photo": ""
+    "photo": "photos/items/GAM-01-01.jpg",
+    "photoAlt": "Grey non-OLED Nintendo Switch pictured in a dock; full accessory inclusion to be confirmed",
+    "photoEvidence": "actual",
+    "photos": [
+      {
+        "src": "photos/items/GAM-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/GAM-01-01.jpg",
+        "alt": "Grey non-OLED Nintendo Switch pictured in a dock; full accessory inclusion to be confirmed",
+        "caption": "Grey non-OLED Nintendo Switch pictured in a dock; full accessory inclusion to be confirmed",
+        "captionDe": "Graue Nintendo Switch ohne OLED, im Dock abgebildet; genauer Lieferumfang noch zu bestätigen"
+      },
+      {
+        "src": "photos/items/GAM-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/GAM-01-02.jpg",
+        "alt": "Smaller Nintendo Switch carrying case",
+        "caption": "Smaller Nintendo Switch carrying case",
+        "captionDe": "Kleinere Nintendo-Switch-Tragetasche"
+      },
+      {
+        "src": "photos/items/GAM-01-03.jpg",
+        "thumbnail": "photos/items/thumbs/GAM-01-03.jpg",
+        "alt": "Larger Nintendo Switch carrying case",
+        "caption": "Larger Nintendo Switch carrying case",
+        "captionDe": "Größere Nintendo-Switch-Tragetasche"
+      }
+    ]
   },
   {
     "id": "GAM-03",
@@ -1166,7 +1191,32 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "GAM-03"
     ],
-    "photo": ""
+    "photo": "photos/items/GAM-03-01.jpg",
+    "photoAlt": "Nintendo Switch OLED with white Joy-Cons in its carrying case",
+    "photoEvidence": "actual",
+    "photos": [
+      {
+        "src": "photos/items/GAM-03-01.jpg",
+        "thumbnail": "photos/items/thumbs/GAM-03-01.jpg",
+        "alt": "Nintendo Switch OLED with white Joy-Cons in its carrying case",
+        "caption": "Nintendo Switch OLED with white Joy-Cons in its carrying case",
+        "captionDe": "Nintendo Switch OLED mit weißen Joy-Cons in der Tragetasche"
+      },
+      {
+        "src": "photos/items/GAM-03-02.jpg",
+        "thumbnail": "photos/items/thumbs/GAM-03-02.jpg",
+        "alt": "Rear view of the OLED console and wide kickstand",
+        "caption": "Rear view of the OLED console and wide kickstand",
+        "captionDe": "Rückseite der OLED-Konsole mit breitem Aufsteller"
+      },
+      {
+        "src": "photos/items/GAM-03-03.jpg",
+        "thumbnail": "photos/items/thumbs/GAM-03-03.jpg",
+        "alt": "Zelda-themed carrying case; a game cartridge is not confirmed included",
+        "caption": "Zelda-themed carrying case; a game cartridge is not confirmed included",
+        "captionDe": "Zelda-Tragetasche; ein Spielmodul ist nicht als enthalten bestätigt"
+      }
+    ]
   }
 ];
 window.BERLIN_LISTING.optionalBundles = [

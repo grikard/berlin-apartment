@@ -1,0 +1,7 @@
+.collection-arrival{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start;margin-top:32px}
+.collection-arrival .collection-copy{grid-template-columns:1fr;gap:22px;margin-top:0}
+.collection-parking-photo{margin:0}
+.collection-parking-photo a{display:block;cursor:zoom-in}
+.collection-parking-photo img{width:100%;height:auto}
+.collection-parking-photo figcaption{font-size:11px;color:var(--muted);margin-top:10px;line-height:1.7}
+@media(max-width:760px){.collection-arrival{grid-template-columns:1fr;gap:24px}}
