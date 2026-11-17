@@ -19,82 +19,85 @@
     return '#contact';
   };
   const localPhoto = value => typeof value === 'string' && /^photos\/[\w./ -]+\.(jpe?g|png|webp|avif)$/i.test(value) && !value.split('/').includes('..');
-  const apartment = data.apartment || {};
-  if (apartment.status) $('availability-label').textContent = apartment.status;
-  if (apartment.description) $('apartment-description').textContent = apartment.description;
-  const facts = [
-    ['Location', 'Potsdamer Platz'], ['Floor', apartment.floor || 'Top floor'],
-    ['Living area', apartment.size], ['Rooms', apartment.rooms],
-    ['Terrace', apartment.terrace || 'Large wrap-around balcony'],
-    ['Lift access', apartment.liftAccess], ['Hallway', apartment.hallway],
-    ['Estimated warm rent', apartment.monthlyRent, 'Details to follow'],
-    ['Estimated charges', apartment.serviceCharges, 'To be confirmed'],
-    ['Current warm rent', apartment.currentWarmRent],
-    ['Available from', apartment.availableFrom, 'Date to be confirmed'], ['Deposit', apartment.deposit],
-    ['Furnishing', apartment.furnished], ['Rental term', apartment.rentalTerm]
-  ];
-  $('rental-facts').replaceChildren();
-  for (const [label, value, fallback] of facts) {
-    if (!value && !fallback) continue;
-    const row = el('div');
-    row.append(el('dt', '', label), el('dd', value ? '' : 'pending', value || fallback));
-    $('rental-facts').append(row);
-  }
-  $('rental-note').textContent = apartment.note || '';
-  $('rental-note').hidden = !apartment.note;
-  document.querySelector('.rental-enquiry').href = enquiryUrl('Enquiry about the Potsdamer Platz apartment');
-
-  const guide = apartment.rentGuide;
-  if (guide) {
-    const money = (cents, decimals = 0) => new Intl.NumberFormat('en-IE', {
-      style: 'currency', currency: 'EUR', minimumFractionDigits: decimals, maximumFractionDigits: decimals
-    }).format(cents / 100);
-    $('rent-guide-period').textContent = `INDICATIVE WARM RENT · ${guide.period.toUpperCase()}`;
-    $('rent-guide-range').textContent = `${money(guide.estimate.lowCents)}–${money(guide.estimate.highCents)}`;
-    $('rent-guide-central').textContent = `Central estimate: approximately ${money(guide.estimate.totalCents)} per month.`;
-    const components = [
-      ['Base rent (Kaltmiete)', 'baseCents'],
-      ['Heating & hot water (Heizkosten)', 'heatingCents'],
-      ['Other operating costs (Nebenkosten)', 'operatingCents'],
-      ['Total warm rent (Warmmiete)', 'totalCents']
+  // Apartment-only sections are absent from the dedicated belongings page.
+  if ($('rental-facts')) {
+    const apartment = data.apartment || {};
+    if (apartment.status) $('availability-label').textContent = apartment.status;
+    if (apartment.description) $('apartment-description').textContent = apartment.description;
+    const facts = [
+      ['Location', 'Potsdamer Platz'], ['Floor', apartment.floor || 'Top floor'],
+      ['Living area', apartment.size], ['Rooms', apartment.rooms],
+      ['Terrace', apartment.terrace || 'Large wrap-around balcony'],
+      ['Lift access', apartment.liftAccess], ['Hallway', apartment.hallway],
+      ['Estimated warm rent', apartment.monthlyRent, 'Details to follow'],
+      ['Estimated charges', apartment.serviceCharges, 'To be confirmed'],
+      ['Current warm rent', apartment.currentWarmRent],
+      ['Available from', apartment.availableFrom, 'Date to be confirmed'], ['Deposit', apartment.deposit],
+      ['Furnishing', apartment.furnished], ['Rental term', apartment.rentalTerm]
     ];
-    $('rent-breakdown').replaceChildren();
-    for (const [label, key] of components) {
-      const row = el('tr', key === 'totalCents' ? 'cost-total' : '');
-      const heading = el('th', '', label); heading.scope = 'row';
-      row.append(heading, el('td', '', money(guide.current[key], 2)), el('td', '', money(guide.estimate[key])));
-      $('rent-breakdown').append(row);
+    $('rental-facts').replaceChildren();
+    for (const [label, value, fallback] of facts) {
+      if (!value && !fallback) continue;
+      const row = el('div');
+      row.append(el('dt', '', label), el('dd', value ? '' : 'pending', value || fallback));
+      $('rental-facts').append(row);
     }
-  }
+    $('rental-note').textContent = apartment.note || '';
+    $('rental-note').hidden = !apartment.note;
+    document.querySelector('.rental-enquiry').href = enquiryUrl('Enquiry about the Potsdamer Platz apartment');
 
-  const photos = (apartment.photos || []).filter(photo => localPhoto(photo.src) && photo.alt);
-  if (photos.length) {
-    const first = photos[0];
-    $('hero-image').src = first.src;
-    $('hero-image').alt = first.alt;
-    $('hero-caption').textContent = first.caption || 'A home above the city.';
-    $('hero-art').classList.add('has-photo');
-    $('illustration-note').hidden = true;
-    $('photo-pending').hidden = true;
-    $('photo-gallery').hidden = false;
-    for (const photo of photos) {
-      const button = el('button', 'gallery-photo');
-      button.type = 'button';
-      button.setAttribute('aria-label', `Enlarge: ${photo.caption || photo.alt}`);
-      const img = el('img');
-      img.src = photo.src; img.alt = photo.alt; img.loading = 'lazy'; img.width = 800; img.height = 600;
-      button.append(img, el('span', '', photo.caption || photo.alt));
-      button.addEventListener('click', () => {
-        $('dialog-image').src = photo.src;
-        $('dialog-image').alt = photo.alt;
-        $('dialog-caption').textContent = photo.caption || photo.alt;
-        $('photo-dialog').showModal();
-      });
-      $('photo-gallery').append(button);
+    const guide = apartment.rentGuide;
+    if (guide) {
+      const money = (cents, decimals = 0) => new Intl.NumberFormat('en-IE', {
+        style: 'currency', currency: 'EUR', minimumFractionDigits: decimals, maximumFractionDigits: decimals
+      }).format(cents / 100);
+      $('rent-guide-period').textContent = `INDICATIVE WARM RENT · ${guide.period.toUpperCase()}`;
+      $('rent-guide-range').textContent = `${money(guide.estimate.lowCents)}–${money(guide.estimate.highCents)}`;
+      $('rent-guide-central').textContent = `Central estimate: approximately ${money(guide.estimate.totalCents)} per month.`;
+      const components = [
+        ['Base rent (Kaltmiete)', 'baseCents'],
+        ['Heating & hot water (Heizkosten)', 'heatingCents'],
+        ['Other operating costs (Nebenkosten)', 'operatingCents'],
+        ['Total warm rent (Warmmiete)', 'totalCents']
+      ];
+      $('rent-breakdown').replaceChildren();
+      for (const [label, key] of components) {
+        const row = el('tr', key === 'totalCents' ? 'cost-total' : '');
+        const heading = el('th', '', label); heading.scope = 'row';
+        row.append(heading, el('td', '', money(guide.current[key], 2)), el('td', '', money(guide.estimate[key])));
+        $('rent-breakdown').append(row);
+      }
     }
+
+    const photos = (apartment.photos || []).filter(photo => localPhoto(photo.src) && photo.alt);
+    if (photos.length) {
+      const first = photos[0];
+      $('hero-image').src = first.src;
+      $('hero-image').alt = first.alt;
+      $('hero-caption').textContent = first.caption || 'A home above the city.';
+      $('hero-art').classList.add('has-photo');
+      $('illustration-note').hidden = true;
+      $('photo-pending').hidden = true;
+      $('photo-gallery').hidden = false;
+      for (const photo of photos) {
+        const button = el('button', 'gallery-photo');
+        button.type = 'button';
+        button.setAttribute('aria-label', `Enlarge: ${photo.caption || photo.alt}`);
+        const img = el('img');
+        img.src = photo.src; img.alt = photo.alt; img.loading = 'lazy'; img.width = 800; img.height = 600;
+        button.append(img, el('span', '', photo.caption || photo.alt));
+        button.addEventListener('click', () => {
+          $('dialog-image').src = photo.src;
+          $('dialog-image').alt = photo.alt;
+          $('dialog-caption').textContent = photo.caption || photo.alt;
+          $('photo-dialog').showModal();
+        });
+        $('photo-gallery').append(button);
+      }
+    }
+    $('close-photo').addEventListener('click', () => $('photo-dialog').close());
+    $('photo-dialog').addEventListener('click', event => { if (event.target === $('photo-dialog')) $('photo-dialog').close(); });
   }
-  $('close-photo').addEventListener('click', () => $('photo-dialog').close());
-  $('photo-dialog').addEventListener('click', event => { if (event.target === $('photo-dialog')) $('photo-dialog').close(); });
 
   if (email) {
     const link = el('a', 'button button-dark', 'Send an email ↗');
@@ -142,8 +145,11 @@
       } else imageBox.append(el('span', '', 'PHOTO COMING SOON'));
       const meta = el('div', 'item-meta');
       meta.append(el('span', '', item.category || 'Other'), el('span', 'item-status', statusLabels[status]));
+      if (item.id) card.id = item.id;
       card.append(imageBox, meta, el('h3', '', item.title));
       if (item.description) card.append(el('p', '', item.description));
+      if (item.condition) card.append(el('p', '', `Condition: ${item.condition}`));
+      if (item.room) card.append(el('p', '', `From: ${item.room}`));
       if (item.dimensions) card.append(el('p', '', `Dimensions: ${item.dimensions}`));
       const bottom = el('div', 'item-bottom');
       bottom.append(el('span', 'item-price', item.price || 'Price on request'));

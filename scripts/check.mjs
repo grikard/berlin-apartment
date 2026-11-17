@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFile, stat } from 'node:fs/promises';
+import { readFile, stat, readdir } from 'node:fs/promises';
 import { resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
@@ -21,16 +21,18 @@ if (data.apartment.rentGuide) {
   assert(estimate.lowCents <= estimate.totalCents && estimate.totalCents <= estimate.highCents, 'Central estimate must fall inside the range');
 }
 new vm.Script(await read('assets/app.js'));
-const html = await read('index.html');
-const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
-assert.equal(ids.length, new Set(ids).size, 'HTML IDs must be unique');
-for (const match of html.matchAll(/(?:href|src)="([^"#?]+)"/g)) {
-  const path = match[1];
-  if (/^(https?:|mailto:|data:)/.test(path)) continue;
-  assert(!path.startsWith('/'), `Use project-relative URLs: ${path}`);
-  assert((await stat(resolve(root, path))).isFile(), `Missing asset: ${path}`);
+for (const page of (await readdir(root)).filter(name => name.endsWith('.html'))) {
+  const html = await read(page);
+  const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
+  assert.equal(ids.length, new Set(ids).size, `${page}: HTML IDs must be unique`);
+  for (const match of html.matchAll(/(?:href|src)="([^"#?]+)"/g)) {
+    const path = match[1];
+    if (/^(https?:|mailto:|data:)/.test(path)) continue;
+    assert(!path.startsWith('/'), `${page}: use project-relative URLs: ${path}`);
+    assert((await stat(resolve(root, path))).isFile(), `${page}: missing asset: ${path}`);
+  }
+  for (const match of html.matchAll(/href="#([^"]+)"/g)) assert(ids.includes(match[1]), `${page}: broken section link: ${match[1]}`);
 }
-for (const match of html.matchAll(/href="#([^"]+)"/g)) assert(ids.includes(match[1]), `Broken section link: ${match[1]}`);
 const checkPhoto = async path => {
   assert(/^photos\/[\w./ -]+\.(jpe?g|png|webp|avif)$/i.test(path) && !path.split('/').includes('..'), `Invalid photo path: ${path}`);
   const absolute = resolve(root, path);

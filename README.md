@@ -19,6 +19,7 @@ Open http://127.0.0.1:4173. Stop the server with Ctrl+C.
 - `dist/photos/apartment/`: selected apartment and balcony photographs.
 - `dist/photos/items/`: sale item photographs.
 - `dist/index.html`: page structure and introductory copy.
+- `dist/for-sale.html`: the dedicated, shareable belongings-for-sale page, using the same item inventory and contact details as the homepage.
 - `dist/assets/`: styles, behaviour and the labelled decorative illustration used until real apartment photographs are added.
 - `dist/assets/floor-plan.svg`: a simplified, unscaled layout guide redrawn from the supplied floor-plan screenshots. It is not the original floor-plan scan.
 - `.github/workflows/pages.yml`: checks and publishes only `dist/` on pushes to `main`.
@@ -68,6 +69,8 @@ items: [
 ```
 
 Use `available`, `reserved`, or `sold`. Search, category filtering and an available-only filter appear automatically when there are items. Enquiry links include the item title and ID. An empty items array shows an honest coming-soon message, with no example merchandise advertised.
+
+The dedicated sale link is https://grikard.github.io/berlin-apartment/for-sale.html. Both pages load the same `items` array. Optional `condition` and `room` fields appear on each item card when supplied. The actual belongings inventory has not yet been provided or found in the accessible project or saved Pages; the standalone page therefore contains no invented items or prices.
 
 ## Rental and contact details
 
