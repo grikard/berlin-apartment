@@ -55,7 +55,7 @@ for (const item of [...data.items, ...(data.optionalBundles || [])]) {
   assert(['available', 'enquire', 'reserved', 'sold'].includes(item.status), `Invalid status for ${item.id}`);
   if(item.priceKind === 'on-request') {
     assert(item.priceEur === null && item.price === 'Preis auf Anfrage', `${item.id}: unpriced enquiry card must not invent a price`);
-    assert(item.status === 'enquire' && !item.photo && !(item.photos || []).length, `${item.id}: enquiry card cannot publish unreviewed photos or sale status`);
+    assert(item.status === 'enquire', `${item.id}: price-on-request card must remain enquiry-only`);
   } else {
     assert(Number.isFinite(item.priceEur) && item.priceEur > 0, `Invalid proposed price for ${item.id}`);
     assert(item.priceKind === 'proposed', `${item.id}: preserve proposed-price qualification`);

@@ -959,7 +959,32 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "TV-01"
     ],
-    "photo": ""
+    "photo": "photos/items/TV-01-01.jpg",
+    "photoAlt": "LG OLED TV with the included mobile stand",
+    "photoEvidence": "actual",
+    "photos": [
+      {
+        "src": "photos/items/TV-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/TV-01-01.jpg",
+        "alt": "LG OLED TV with the included mobile stand",
+        "caption": "LG OLED TV with the included mobile stand",
+        "captionDe": "LG OLED Fernseher mit enthaltenem mobilem TV-Ständer"
+      },
+      {
+        "src": "photos/items/TV-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/TV-01-02.jpg",
+        "alt": "Side connection panel on the LG OLED TV",
+        "caption": "Side connection panel on the LG OLED TV",
+        "captionDe": "Seitliche Anschlüsse des LG OLED Fernsehers"
+      },
+      {
+        "src": "photos/items/TV-01-03.jpg",
+        "thumbnail": "photos/items/thumbs/TV-01-03.jpg",
+        "alt": "Original LG OLED TV box",
+        "caption": "Original LG OLED TV box",
+        "captionDe": "Originalkarton des LG OLED Fernsehers"
+      }
+    ]
   },
   {
     "id": "TV-02",
@@ -979,7 +1004,32 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "TV-02"
     ],
-    "photo": ""
+    "photo": "photos/items/TV-02-01.jpg",
+    "photoAlt": "Panasonic TV showing its Android TV home screen",
+    "photoEvidence": "actual",
+    "photos": [
+      {
+        "src": "photos/items/TV-02-01.jpg",
+        "thumbnail": "photos/items/thumbs/TV-02-01.jpg",
+        "alt": "Panasonic TV showing its Android TV home screen",
+        "caption": "Panasonic TV showing its Android TV home screen",
+        "captionDe": "Panasonic Fernseher mit Android-TV-Startbildschirm"
+      },
+      {
+        "src": "photos/items/TV-02-02.jpg",
+        "thumbnail": "photos/items/thumbs/TV-02-02.jpg",
+        "alt": "Panasonic TV displaying a game; console and games are not part of this TV offer",
+        "caption": "Panasonic TV displaying a game; console and games are not part of this TV offer",
+        "captionDe": "Panasonic Fernseher mit Spielanzeige; Konsole und Spiele gehören nicht zu diesem TV-Angebot"
+      },
+      {
+        "src": "photos/items/TV-02-03.jpg",
+        "thumbnail": "photos/items/thumbs/TV-02-03.jpg",
+        "alt": "TV and pictured stand; stand and accessory inclusion to be confirmed",
+        "caption": "TV and pictured stand; stand and accessory inclusion to be confirmed",
+        "captionDe": "Fernseher und abgebildeter Ständer; Umfang von Ständer und Zubehör noch zu bestätigen"
+      }
+    ]
   },
   {
     "id": "MON-01",
@@ -999,7 +1049,32 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "MON-01"
     ],
-    "photo": ""
+    "photo": "photos/items/MON-01-01.jpg",
+    "photoAlt": "LG UltraGear monitor, front view with original stand",
+    "photoEvidence": "actual",
+    "photos": [
+      {
+        "src": "photos/items/MON-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/MON-01-01.jpg",
+        "alt": "LG UltraGear monitor, front view with original stand",
+        "caption": "LG UltraGear monitor, front view with original stand",
+        "captionDe": "LG UltraGear Monitor, Vorderansicht mit ursprünglichem Standfuß"
+      },
+      {
+        "src": "photos/items/MON-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/MON-01-02.jpg",
+        "alt": "LG UltraGear monitor with its on-screen menu visible",
+        "caption": "LG UltraGear monitor with its on-screen menu visible",
+        "captionDe": "LG UltraGear Monitor mit sichtbarem Bildschirmmenü"
+      },
+      {
+        "src": "photos/items/MON-01-03.jpg",
+        "thumbnail": "photos/items/thumbs/MON-01-03.jpg",
+        "alt": "Original UltraGear box showing the model family",
+        "caption": "Original UltraGear box showing the model family",
+        "captionDe": "Originalkarton des UltraGear mit Modellfamilie"
+      }
+    ]
   },
   {
     "id": "MON-02",
@@ -1019,7 +1094,39 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "MON-02"
     ],
-    "photo": ""
+    "photo": "photos/items/MON-02-01.jpg",
+    "photoAlt": "Dell monitor, front view with stand",
+    "photoEvidence": "actual",
+    "photos": [
+      {
+        "src": "photos/items/MON-02-01.jpg",
+        "thumbnail": "photos/items/thumbs/MON-02-01.jpg",
+        "alt": "Dell monitor, front view with stand",
+        "caption": "Dell monitor, front view with stand",
+        "captionDe": "Dell Monitor, Vorderansicht mit Standfuß"
+      },
+      {
+        "src": "photos/items/MON-02-02.jpg",
+        "thumbnail": "photos/items/thumbs/MON-02-02.jpg",
+        "alt": "Rear of the Dell monitor and stand",
+        "caption": "Rear of the Dell monitor and stand",
+        "captionDe": "Rückseite des Dell Monitors und Standfuß"
+      },
+      {
+        "src": "photos/items/MON-02-03.jpg",
+        "thumbnail": "photos/items/thumbs/MON-02-03.jpg",
+        "alt": "Original Dell 32 Plus monitor box",
+        "caption": "Original Dell 32 Plus monitor box",
+        "captionDe": "Originalkarton des Dell 32 Plus Monitors"
+      },
+      {
+        "src": "photos/items/MON-02-04.jpg",
+        "thumbnail": "photos/items/thumbs/MON-02-04.jpg",
+        "alt": "Specification panel on the original Dell box",
+        "caption": "Specification panel on the original Dell box",
+        "captionDe": "Technische Angaben auf dem Originalkarton von Dell"
+      }
+    ]
   },
   {
     "id": "GAM-01",
