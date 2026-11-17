@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueSha256": "8d2704e0402bfd2475a6299b702a1f64b5fd01496d80201f591909281732805a",
+  "catalogueSha256": "ed4eb633133f14269f866eacca1d1ab686469fd2923643ea9cf97bdbd67a99bb",
   "photos": [
     {
       "path": "photos/items/BED-01-01.jpg",
@@ -97,6 +97,30 @@
     {
       "path": "photos/items/DRW-02-01.jpg",
       "sha256": "93e005e38c1c4e9360b343fc8889b0543e765a495517e43e0e6408b7bd047b07"
+    },
+    {
+      "path": "photos/items/GAM-01-01.jpg",
+      "sha256": "9679a453a0c622560ff1d221c78c14eb2edfb42bc7c917d194a42a22132c138b"
+    },
+    {
+      "path": "photos/items/GAM-01-02.jpg",
+      "sha256": "d39ad8811d516ab3b730d055c466a83b47542088e747233fc01c09907d46ef48"
+    },
+    {
+      "path": "photos/items/GAM-01-03.jpg",
+      "sha256": "c2c2845fadf58f170b88e22657b47c9b7c218acfb877b06551b239355746b27c"
+    },
+    {
+      "path": "photos/items/GAM-03-01.jpg",
+      "sha256": "71af00b1119b1189e3363efad0562578da07435b26ab3c8afa3bc2a1b3007ec4"
+    },
+    {
+      "path": "photos/items/GAM-03-02.jpg",
+      "sha256": "78e92dda28cb936d58d730056c25a9367ddf604099a43da8d7a59bf257996fc5"
+    },
+    {
+      "path": "photos/items/GAM-03-03.jpg",
+      "sha256": "f758d7899899c1f6be67c26b604261a868d445cd3951d7facdcd8d669413d1e6"
     },
     {
       "path": "photos/items/KIT-01-01.jpg",
@@ -365,6 +389,30 @@
     {
       "path": "photos/items/thumbs/DRW-02-01.jpg",
       "sha256": "0d0b0405e4825c120748dfdf267e2766c1dfd9aebad74fb219bb37a88741b389"
+    },
+    {
+      "path": "photos/items/thumbs/GAM-01-01.jpg",
+      "sha256": "cc85f12fc2abcb96371cc38ee86f9d4ee64ca17df7709cc617de062dcddd1398"
+    },
+    {
+      "path": "photos/items/thumbs/GAM-01-02.jpg",
+      "sha256": "12ced1af0e5ef34801e56c29bbd2146fcff13a05f7179b2826b978bb56dd12fa"
+    },
+    {
+      "path": "photos/items/thumbs/GAM-01-03.jpg",
+      "sha256": "674005deba727316665c5ad74179c16fc077d3669e0df393b67a3df3cf3567bf"
+    },
+    {
+      "path": "photos/items/thumbs/GAM-03-01.jpg",
+      "sha256": "d732b4148bed41953b9566dba40acef29fdce9a89359b8843d28c3bcc8f1d664"
+    },
+    {
+      "path": "photos/items/thumbs/GAM-03-02.jpg",
+      "sha256": "5ed053c57acda9825d56783bdb837dbd645c5169dc247f500c6217f2a0cec2e4"
+    },
+    {
+      "path": "photos/items/thumbs/GAM-03-03.jpg",
+      "sha256": "b23a82da846eb58380bbab7519f35047262066b43f27013c173f39de3cb8cf56"
     },
     {
       "path": "photos/items/thumbs/KIT-01-01.jpg",
