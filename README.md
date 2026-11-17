@@ -102,6 +102,8 @@ git push
 
 The repository should be named `berlin-apartment` in the `grikard` account. In repository Settings → Pages, select **GitHub Actions** as the source. The included workflow publishes only this project, without changing another repository or your main homepage.
 
+GitHub Pages caches scripts for up to ten minutes. Both HTML pages use matching version queries on the stylesheet and scripts; update that version when changing shared styles, scripts or listing data so returning visitors load a consistent release.
+
 The expected project URL is https://grikard.github.io/berlin-apartment/ unless the account's Pages configuration supplies a custom domain. A GitHub Pages project site is public. The page and source must contain only information you intend to share.
 
 This is a static site. It uses no analytics, visitor accounts or cookies. Fonts load from Google Fonts with local font fallbacks. The neighbourhood map link opens OpenStreetMap; no map or tracking widget is embedded.

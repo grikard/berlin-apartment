@@ -53,7 +53,8 @@
       }).format(cents / 100);
       $('rent-guide-period').textContent = `ESTIMATED TOTAL WARM RENT · ${guide.manager || 'BERLIN'}`;
       $('rent-guide-range').textContent = `${money(guide.estimate.lowCents)}–${money(guide.estimate.highCents)}`;
-      $('rent-guide-basis').textContent = `From the current ${money(guide.current.totalCents, 2)} up to approximately ${money(guide.estimate.highCents)} per month.`;
+      const basis = $('rent-guide-basis') || $('rent-guide-central');
+      if (basis) basis.textContent = `From the current ${money(guide.current.totalCents, 2)} up to approximately ${money(guide.estimate.highCents)} per month.`;
       const components = [
         ['Base rent (Kaltmiete)', 'baseCents'],
         ['Heating & hot water (Heizkosten)', 'heatingCents'],
