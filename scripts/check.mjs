@@ -53,8 +53,13 @@ for (const item of [...data.items, ...(data.optionalBundles || [])]) {
   assert(item.title && item.price && item.description, `Item ${item.id} needs title, price and description`);
   assert(item.titleDe && item.descriptionDe, `German copy is missing for ${item.id}`);
   assert(['available', 'enquire', 'reserved', 'sold'].includes(item.status), `Invalid status for ${item.id}`);
-  assert(Number.isFinite(item.priceEur) && item.priceEur > 0, `Invalid proposed price for ${item.id}`);
-  assert(item.priceKind === 'proposed', `${item.id}: preserve proposed-price qualification`);
+  if(item.priceKind === 'on-request') {
+    assert(item.priceEur === null && item.price === 'Preis auf Anfrage', `${item.id}: unpriced enquiry card must not invent a price`);
+    assert(item.status === 'enquire' && !item.photo && !(item.photos || []).length, `${item.id}: enquiry card cannot publish unreviewed photos or sale status`);
+  } else {
+    assert(Number.isFinite(item.priceEur) && item.priceEur > 0, `Invalid proposed price for ${item.id}`);
+    assert(item.priceKind === 'proposed', `${item.id}: preserve proposed-price qualification`);
+  }
   assert(Array.isArray(item.inventoryIds) && item.inventoryIds.length, `${item.id}: missing inventory coverage`);
   for (const text of [item.description, item.descriptionDe, item.condition, item.conditionDe]) assert(!/INTERNAL CHECK|Quick Floor|Expected Low|before publication|before posting|vor Veröffentlichung/i.test(text || ''), `${item.id}: internal editorial notes must stay out of public copy`);
   if (item.photo) await checkPhoto(item.photo);
