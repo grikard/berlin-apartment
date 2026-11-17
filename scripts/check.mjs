@@ -57,6 +57,8 @@ for (const item of [...data.items, ...(data.optionalBundles || [])]) {
   assert(Array.isArray(item.inventoryIds) && item.inventoryIds.length, `${item.id}: missing inventory coverage`);
   for (const text of [item.description, item.descriptionDe, item.condition, item.conditionDe]) assert(!/INTERNAL CHECK|Quick Floor|Expected Low|before publication|before posting|vor Veröffentlichung/i.test(text || ''), `${item.id}: internal editorial notes must stay out of public copy`);
   if (item.photo) await checkPhoto(item.photo);
+  for (const photo of item.photos || []) { assert(photo.alt, `${item.id}: gallery photos need alternative text`); await checkPhoto(photo.src); }
+  if (item.photoEvidence === 'packaging') assert(item.photoNote && item.photoNoteDe, `${item.id}: packaging photos need a clear disclosure in both languages`);
 }
 for (const item of data.items) for (const id of item.inventoryIds) {
   assert(!primaryInventoryIds.has(id), `Inventory record ${id} is advertised twice`);

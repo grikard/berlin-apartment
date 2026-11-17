@@ -464,7 +464,31 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "LGT-01"
     ],
-    "photo": ""
+    "photo": "photos/items/LGT-01-01.jpg",
+    "photoAlt": "Front of the seller’s original Philips Hue Infuse L ceiling-light box, showing wear to the packaging",
+    "photoEvidence": "packaging",
+    "photoNote": "Photos show the original packaging only. Photos of the actual lamp are still to follow; operation and completeness remain unverified.",
+    "photoNoteDe": "Die Fotos zeigen nur die Originalverpackung. Fotos der Leuchte selbst folgen noch; Funktion und Vollständigkeit sind weiterhin ungeprüft.",
+    "photos": [
+      {
+        "src": "photos/items/LGT-01-01.jpg",
+        "alt": "Front of the seller’s original Philips Hue Infuse L ceiling-light box, showing wear to the packaging",
+        "caption": "Original box front",
+        "captionDe": "Originalkarton – Vorderseite"
+      },
+      {
+        "src": "photos/items/LGT-01-02.jpg",
+        "alt": "Specification panel on the original Philips Hue Infuse L box, with visible scuffs and tears to the packaging",
+        "caption": "Box specifications",
+        "captionDe": "Technische Angaben auf dem Karton"
+      },
+      {
+        "src": "photos/items/LGT-01-03.jpg",
+        "alt": "Product label and barcode on the original Philips Hue Infuse L white ceiling-light box",
+        "caption": "Box product label",
+        "captionDe": "Produktetikett auf dem Karton"
+      }
+    ]
   }
 ];
 window.BERLIN_LISTING.optionalBundles = [

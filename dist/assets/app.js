@@ -146,7 +146,7 @@
     card.id = `item-${item.id}`;
     if (!optional) {
       const hasPhoto = localPhoto(item.photo);
-      const imageBox = el(hasPhoto ? 'a' : 'div', hasPhoto ? 'item-image' : 'item-image item-image-pending');
+      const imageBox = el(hasPhoto ? 'a' : 'div', hasPhoto ? `item-image${item.photoEvidence === 'packaging' ? ' item-photo-packaging' : ''}` : 'item-image item-image-pending');
       if (hasPhoto) {
         imageBox.href = item.photo; imageBox.target = '_blank'; imageBox.rel = 'noopener noreferrer';
         imageBox.setAttribute('aria-label', `${language === 'de' ? 'Foto vergrößern' : 'Enlarge photo'}: ${title}`);
@@ -156,6 +156,20 @@
         imageBox.append(el('span', 'pending-photo-id', item.id), el('span', 'pending-photo-note', language === 'de' ? 'Originalfotos folgen' : 'Actual photos coming soon'));
       }
       card.append(imageBox);
+      const photoNote = textFor(item, 'photoNote', language);
+      if (photoNote) card.append(el('p', 'item-photo-note', photoNote));
+      const additionalPhotos = (item.photos || []).filter(photo => localPhoto(photo.src) && photo.src !== item.photo);
+      if (additionalPhotos.length) {
+        const gallery = el('div', 'item-extra-photos');
+        for (const photo of additionalPhotos) {
+          const link = el('a'); link.href = photo.src; link.target = '_blank'; link.rel = 'noopener noreferrer';
+          const caption = textFor(photo, 'caption', language) || title;
+          link.setAttribute('aria-label', `${language === 'de' ? 'Foto vergrößern' : 'Enlarge photo'}: ${caption}`);
+          const img = el('img'); img.src = photo.src; img.alt = photo.alt || caption; img.loading = 'lazy'; img.width = 4284; img.height = 5712;
+          link.append(img, el('span', '', caption)); gallery.append(link);
+        }
+        card.append(gallery);
+      }
     }
     const meta = el('div', 'item-meta');
     meta.append(el('span', '', item.category || 'Other'), el('span', 'item-status', labels[status]));
