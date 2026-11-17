@@ -74,8 +74,15 @@ window.BERLIN_LISTING.items = [
       "OUT-01",
       "OUT-02"
     ],
-    "photo": "photos/items/BND-03-01.jpg",
+    "photo": "photos/items/BND-03-06.jpg",
     "photos": [
+      {
+        "src": "photos/items/BND-03-06.jpg",
+        "thumbnail": "photos/items/thumbs/BND-03-06.jpg",
+        "alt": "Outdoor dining table top, frame and parasol opening",
+        "caption": "Outdoor dining table top, frame and parasol opening",
+        "captionDe": "Gartentisch mit Tischplatte, Gestell und Sonnenschirmöffnung"
+      },
       {
         "src": "photos/items/BND-03-01.jpg",
         "thumbnail": "photos/items/thumbs/BND-03-01.jpg",
@@ -112,7 +119,7 @@ window.BERLIN_LISTING.items = [
         "captionDe": "Zusammengeklappte passende Stühle"
       }
     ],
-    "photoAlt": "Dining table and cushioned wooden chair on the terrace",
+    "photoAlt": "Outdoor dining table top, frame and parasol opening",
     "photoEvidence": "actual"
   },
   {
@@ -134,7 +141,25 @@ window.BERLIN_LISTING.items = [
       "OUT-03",
       "OUT-04"
     ],
-    "photo": ""
+    "photo": "photos/items/BND-04-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/BND-04-01.jpg",
+        "thumbnail": "photos/items/thumbs/BND-04-01.jpg",
+        "alt": "Two rattan-style chairs and glass-top bistro table",
+        "caption": "Two rattan-style chairs and glass-top bistro table",
+        "captionDe": "Zwei Stühle in Rattanoptik und Bistrotisch mit Glasplatte"
+      },
+      {
+        "src": "photos/items/BND-04-02.jpg",
+        "thumbnail": "photos/items/thumbs/BND-04-02.jpg",
+        "alt": "Balcony set from the opposite direction",
+        "caption": "Balcony set from the opposite direction",
+        "captionDe": "Balkonset aus der Gegenrichtung"
+      }
+    ],
+    "photoAlt": "Two rattan-style chairs and glass-top bistro table",
+    "photoEvidence": "actual"
   },
   {
     "id": "BND-05",
@@ -508,7 +533,53 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "BIK-01"
     ],
-    "photo": ""
+    "photo": "photos/items/BIK-01-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/BIK-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/BIK-01-01.jpg",
+        "alt": "KTM Trekking Geo bicycle with rear rack; accessories by agreement",
+        "caption": "KTM Trekking Geo bicycle with rear rack; accessories by agreement",
+        "captionDe": "KTM Trekking Geo Fahrrad mit Gepäckträger; Zubehör nach Vereinbarung"
+      },
+      {
+        "src": "photos/items/BIK-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/BIK-01-02.jpg",
+        "alt": "Second full view of the bicycle",
+        "caption": "Second full view of the bicycle",
+        "captionDe": "Zweite Gesamtansicht des Fahrrads"
+      },
+      {
+        "src": "photos/items/BIK-01-03.jpg",
+        "thumbnail": "photos/items/thumbs/BIK-01-03.jpg",
+        "alt": "Trekking Geo frame marking and surface wear",
+        "caption": "Trekking Geo frame marking and surface wear",
+        "captionDe": "Trekking Geo Rahmenbeschriftung und Gebrauchsspuren"
+      },
+      {
+        "src": "photos/items/BIK-01-04.jpg",
+        "thumbnail": "photos/items/thumbs/BIK-01-04.jpg",
+        "alt": "Frame detail and original stickers",
+        "caption": "Frame detail and original stickers",
+        "captionDe": "Rahmendetail und ursprüngliche Aufkleber"
+      },
+      {
+        "src": "photos/items/BIK-01-05.jpg",
+        "thumbnail": "photos/items/thumbs/BIK-01-05.jpg",
+        "alt": "Frame, crank and bottle cage detail",
+        "caption": "Frame, crank and bottle cage detail",
+        "captionDe": "Rahmen, Kurbel und Flaschenhalter im Detail"
+      },
+      {
+        "src": "photos/items/BIK-01-06.jpg",
+        "thumbnail": "photos/items/thumbs/BIK-01-06.jpg",
+        "alt": "Rear rack and frame detail",
+        "caption": "Rear rack and frame detail",
+        "captionDe": "Gepäckträger und Rahmen im Detail"
+      }
+    ],
+    "photoAlt": "KTM Trekking Geo bicycle with rear rack; accessories by agreement",
+    "photoEvidence": "actual"
   },
   {
     "id": "MIR-01",
