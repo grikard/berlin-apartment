@@ -145,31 +145,62 @@
     card.lang = language;
     card.id = `item-${item.id}`;
     if (!optional) {
-      const hasPhoto = localPhoto(item.photo);
+      const photoGroup = new Map();
+      if (localPhoto(item.photo)) photoGroup.set(item.photo, { src: item.photo, alt: item.photoAlt || title });
+      for (const photo of item.photos || []) if (localPhoto(photo.src)) photoGroup.set(photo.src, photo);
+      const groupPhotos = [...photoGroup.values()];
+      const hasPhoto = groupPhotos.length > 0;
       const imageBox = el(hasPhoto ? 'a' : 'div', hasPhoto ? `item-image${item.photoEvidence === 'packaging' ? ' item-photo-packaging' : ''}` : 'item-image item-image-pending');
       if (hasPhoto) {
-        imageBox.href = item.photo; imageBox.target = '_blank'; imageBox.rel = 'noopener noreferrer';
+        imageBox.href = groupPhotos[0].src; imageBox.target = '_blank'; imageBox.rel = 'noopener noreferrer';
         imageBox.setAttribute('aria-label', `${language === 'de' ? 'Foto vergrößern' : 'Enlarge photo'}: ${title}`);
-        const img = el('img'); img.src = item.photo; img.alt = item.photoAlt || title; img.loading = 'lazy'; img.width = 800; img.height = 600;
+        const img = el('img'); img.src = groupPhotos[0].src; img.alt = groupPhotos[0].alt || title; img.loading = 'lazy'; img.width = 800; img.height = 600;
         imageBox.append(img);
       } else {
         imageBox.append(el('span', 'pending-photo-id', item.id), el('span', 'pending-photo-note', language === 'de' ? 'Originalfotos folgen' : 'Actual photos coming soon'));
       }
       card.append(imageBox);
+      if (hasPhoto) {
+        let selectedPhoto = 0;
+        const controls = el('div', 'item-photo-controls');
+        const previous = el('button', 'item-photo-step', '←'); previous.type = 'button';
+        previous.setAttribute('aria-label', language === 'de' ? 'Vorheriges Foto' : 'Previous photo');
+        const next = el('button', 'item-photo-step', '→'); next.type = 'button';
+        next.setAttribute('aria-label', language === 'de' ? 'Nächstes Foto' : 'Next photo');
+        const counter = el('span', 'item-photo-counter'); counter.setAttribute('aria-live', 'polite');
+        controls.append(previous, counter, next);
+        const caption = el('p', 'item-photo-caption');
+        const thumbnails = el('div', 'item-photo-thumbs');
+        thumbnails.setAttribute('role', 'group');
+        thumbnails.setAttribute('aria-label', `${language === 'de' ? 'Fotos' : 'Photos'}: ${title}`);
+        const fullSize = el('a', 'item-photo-full', language === 'de' ? 'Foto vergrößern ↗' : 'View full size ↗');
+        fullSize.target = '_blank'; fullSize.rel = 'noopener noreferrer';
+        const buttons = [];
+        const showPhoto = index => {
+          selectedPhoto = (index + groupPhotos.length) % groupPhotos.length;
+          const photo = groupPhotos[selectedPhoto];
+          imageBox.href = photo.src;
+          const mainImage = imageBox.querySelector('img'); mainImage.src = photo.src; mainImage.alt = photo.alt || title;
+          fullSize.href = photo.src;
+          counter.textContent = language === 'de' ? `Foto ${selectedPhoto + 1} von ${groupPhotos.length}` : `Photo ${selectedPhoto + 1} of ${groupPhotos.length}`;
+          caption.textContent = textFor(photo, 'caption', language) || title;
+          buttons.forEach((button, i) => button.setAttribute('aria-pressed', String(i === selectedPhoto)));
+        };
+        groupPhotos.forEach((photo, index) => {
+          const button = el('button', 'item-photo-thumb'); button.type = 'button';
+          button.setAttribute('aria-label', `${language === 'de' ? 'Foto' : 'Photo'} ${index + 1}: ${textFor(photo, 'caption', language) || title}`);
+          const img = el('img'); img.src = photo.src; img.alt = ''; img.loading = 'lazy'; img.width = 80; img.height = 80;
+          button.append(img); button.addEventListener('click', () => showPhoto(index));
+          buttons.push(button); thumbnails.append(button);
+        });
+        previous.addEventListener('click', () => showPhoto(selectedPhoto - 1));
+        next.addEventListener('click', () => showPhoto(selectedPhoto + 1));
+        previous.disabled = next.disabled = groupPhotos.length === 1;
+        card.append(controls, caption, thumbnails, fullSize);
+        showPhoto(0);
+      }
       const photoNote = textFor(item, 'photoNote', language);
       if (photoNote) card.append(el('p', 'item-photo-note', photoNote));
-      const additionalPhotos = (item.photos || []).filter(photo => localPhoto(photo.src) && photo.src !== item.photo);
-      if (additionalPhotos.length) {
-        const gallery = el('div', 'item-extra-photos');
-        for (const photo of additionalPhotos) {
-          const link = el('a'); link.href = photo.src; link.target = '_blank'; link.rel = 'noopener noreferrer';
-          const caption = textFor(photo, 'caption', language) || title;
-          link.setAttribute('aria-label', `${language === 'de' ? 'Foto vergrößern' : 'Enlarge photo'}: ${caption}`);
-          const img = el('img'); img.src = photo.src; img.alt = photo.alt || caption; img.loading = 'lazy'; img.width = 4284; img.height = 5712;
-          link.append(img, el('span', '', caption)); gallery.append(link);
-        }
-        card.append(gallery);
-      }
     }
     const meta = el('div', 'item-meta');
     meta.append(el('span', '', item.category || 'Other'), el('span', 'item-status', labels[status]));
