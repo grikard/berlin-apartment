@@ -224,7 +224,8 @@
     }
     const bottom = el('div', 'item-bottom');
     const price = el('div', 'item-price-group');
-    price.append(el('span', 'item-price-label', language === 'de' ? 'Preisvorschlag · verhandelbar' : 'Proposed price · negotiable'), el('span', 'item-price', item.price || (language === 'de' ? 'Preis auf Anfrage' : 'Price on request')));
+    const pricePending = item.priceKind === 'on-request';
+    price.append(el('span', 'item-price-label', pricePending ? (language === 'de' ? 'Preis nach Absprache' : 'Price by enquiry') : (language === 'de' ? 'Preisvorschlag · verhandelbar' : 'Proposed price · negotiable')), el('span', 'item-price', pricePending ? (language === 'de' ? 'Preis auf Anfrage' : 'Price on request') : (item.price || (language === 'de' ? 'Preis auf Anfrage' : 'Price on request'))));
     bottom.append(price);
     if (isOpen(item)) {
       const link = el('a', 'item-ask', language === 'de' ? 'Anfragen ↗' : 'Ask about this ↗');
