@@ -8,23 +8,25 @@ window.BERLIN_LISTING = {
     terrace: "Approx. 53.80 m² · wrap-around",
     liftAccess: "Private door from lift landing",
     hallway: "Long private hall · 2 apartments",
-    monthlyRent: "€2,200–€2,650 / month (estimated warm rent)",
-    serviceCharges: "Approx. €600 incl. heating, included in warm rent",
+    monthlyRent: "Approx. €2,112–€2,400 / month (warm)",
+    serviceCharges: "Final amounts to be confirmed by MVMG",
     currentWarmRent: "€2,112.09 / month",
-    // Currency amounts below are integer euro cents. Current costs are supplied
-    // by the occupant; the guide is the supplied November 2026 estimate.
+    // Currency amounts below are integer euro cents. The tenant's updated MVMG
+    // total-rent estimate runs from the current warm rent to approximately €2,400.
     rentGuide: {
       period: "November 2026",
+      manager: "MVMG",
       current: { baseCents: 172303, heatingCents: 8785, operatingCents: 30121, totalCents: 211209 },
-      estimate: { baseCents: 180000, heatingCents: 21000, operatingCents: 39000, totalCents: 240000, lowCents: 220000, highCents: 265000 }
+      estimate: { lowCents: 211209, highCents: 240000 }
     },
+    enquirySubject: "Apartment takeover / offer — Alte Potsdamer Str. 11, Berlin",
     availableFrom: "Now",
     size: "Approx. 83.67 m² Wohnfläche (per plan)",
     rooms: "2 rooms · 1 bedroom",
     deposit: "",
     furnished: "",
     rentalTerm: "",
-    note: "The estimated range is an indicative November 2026 guide. Operating / maintenance and heating charges may be higher. Warm rent includes the listed operating costs and heating; electricity, internet and parking are excluded from the guide. Final rent, charges and rental terms will be confirmed.",
+    note: "The expected total warm rent with MVMG is between the current €2,112.09 and approximately €2,400 per month, as reported by the current tenants. Operating / maintenance and heating charges may change. Electricity, internet and parking are excluded. Final rent, charges and takeover arrangements remain to be confirmed with MVMG. Offers are welcome.",
     photos: [
       {
         src: "photos/apartment/balcony-view-01.jpg",

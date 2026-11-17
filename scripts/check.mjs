@@ -14,12 +14,11 @@ const data = context.window.BERLIN_LISTING;
 assert(data && data.apartment && data.contact && Array.isArray(data.items), 'Listing must contain apartment, contact and items');
 if (data.apartment.rentGuide) {
   const { current, estimate } = data.apartment.rentGuide;
-  for (const [label, costs] of Object.entries({ current, estimate })) {
-    for (const key of ['baseCents', 'heatingCents', 'operatingCents', 'totalCents']) assert(Number.isSafeInteger(costs[key]) && costs[key] >= 0, `Invalid ${label} amount: ${key}`);
-    assert.equal(costs.baseCents + costs.heatingCents + costs.operatingCents, costs.totalCents, `${label} components must equal warm rent`);
-  }
+  for (const key of ['baseCents', 'heatingCents', 'operatingCents', 'totalCents']) assert(Number.isSafeInteger(current[key]) && current[key] >= 0, `Invalid current amount: ${key}`);
+  assert.equal(current.baseCents + current.heatingCents + current.operatingCents, current.totalCents, 'Current components must equal warm rent');
   assert(Number.isSafeInteger(estimate.lowCents) && Number.isSafeInteger(estimate.highCents), 'Rent range must use integer cents');
-  assert(estimate.lowCents <= estimate.totalCents && estimate.totalCents <= estimate.highCents, 'Central estimate must fall inside the range');
+  assert.equal(estimate.lowCents, current.totalCents, 'The updated rent guide starts at the current warm rent');
+  assert(estimate.lowCents <= estimate.highCents, 'Rent range endpoints must be in order');
 }
 new vm.Script(await read('assets/app.js'));
 for (const page of (await readdir(root)).filter(name => name.endsWith('.html'))) {

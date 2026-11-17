@@ -44,16 +44,16 @@
     }
     $('rental-note').textContent = apartment.note || '';
     $('rental-note').hidden = !apartment.note;
-    document.querySelector('.rental-enquiry').href = enquiryUrl('Enquiry about the Potsdamer Platz apartment');
+    for (const link of document.querySelectorAll('.rental-enquiry')) link.href = enquiryUrl(apartment.enquirySubject || 'Enquiry about the Potsdamer Platz apartment');
 
     const guide = apartment.rentGuide;
     if (guide) {
       const money = (cents, decimals = 0) => new Intl.NumberFormat('en-IE', {
         style: 'currency', currency: 'EUR', minimumFractionDigits: decimals, maximumFractionDigits: decimals
       }).format(cents / 100);
-      $('rent-guide-period').textContent = `INDICATIVE WARM RENT · ${guide.period.toUpperCase()}`;
+      $('rent-guide-period').textContent = `ESTIMATED TOTAL WARM RENT · ${guide.manager || 'BERLIN'}`;
       $('rent-guide-range').textContent = `${money(guide.estimate.lowCents)}–${money(guide.estimate.highCents)}`;
-      $('rent-guide-central').textContent = `Central estimate: approximately ${money(guide.estimate.totalCents)} per month.`;
+      $('rent-guide-basis').textContent = `From the current ${money(guide.current.totalCents, 2)} up to approximately ${money(guide.estimate.highCents)} per month.`;
       const components = [
         ['Base rent (Kaltmiete)', 'baseCents'],
         ['Heating & hot water (Heizkosten)', 'heatingCents'],
@@ -64,7 +64,7 @@
       for (const [label, key] of components) {
         const row = el('tr', key === 'totalCents' ? 'cost-total' : '');
         const heading = el('th', '', label); heading.scope = 'row';
-        row.append(heading, el('td', '', money(guide.current[key], 2)), el('td', '', money(guide.estimate[key])));
+        row.append(heading, el('td', '', money(guide.current[key], 2)));
         $('rent-breakdown').append(row);
       }
     }
