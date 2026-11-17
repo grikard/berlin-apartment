@@ -940,6 +940,126 @@ window.BERLIN_LISTING.items = [
         "captionDe": "Produktetikett auf dem Karton"
       }
     ]
+  },
+  {
+    "id": "TV-01",
+    "title": "Television 1 — model and price on request",
+    "titleDe": "Fernseher 1 – Modell und Preis auf Anfrage",
+    "category": "Electronics / TV",
+    "price": "Preis auf Anfrage",
+    "priceEur": null,
+    "priceKind": "on-request",
+    "status": "enquire",
+    "description": "Television from our Berlin household. Brand, model, screen size, remote, stand, inputs and operation have not yet been documented. Enquire for details and pricing; photos to follow.",
+    "descriptionDe": "Fernseher aus unserem Berliner Haushalt. Modell, Größe, Fernbedienung, Standfuß, Anschlüsse und Funktion sind noch nicht abschließend dokumentiert. Besichtigung und Preis auf Anfrage. Fotos folgen.",
+    "condition": "Exact model and function not yet verified.",
+    "conditionDe": "Genaue Modellidentität und Funktion noch zu prüfen.",
+    "dimensions": "",
+    "lotType": "item",
+    "inventoryIds": [
+      "TV-01"
+    ],
+    "photo": ""
+  },
+  {
+    "id": "TV-02",
+    "title": "Television 2 — model and price on request",
+    "titleDe": "Fernseher 2 – Modell und Preis auf Anfrage",
+    "category": "Electronics / TV",
+    "price": "Preis auf Anfrage",
+    "priceEur": null,
+    "priceKind": "on-request",
+    "status": "enquire",
+    "description": "Additional television from our Berlin household. Brand, model, screen size and accessories are still being recorded. Enquire for price and viewing; photos to follow.",
+    "descriptionDe": "Weiterer Fernseher aus unserem Berliner Haushalt. Marke, Modell, Bildschirmgröße und Zubehör sind noch nicht vollständig erfasst. Preis und Besichtigung auf Anfrage; Fotos folgen.",
+    "condition": "Model and exact included accessories not yet verified.",
+    "conditionDe": "Modell und tatsächliche Ausstattung noch nicht geprüft.",
+    "dimensions": "",
+    "lotType": "item",
+    "inventoryIds": [
+      "TV-02"
+    ],
+    "photo": ""
+  },
+  {
+    "id": "MON-01",
+    "title": "Computer monitor 1 — details on request",
+    "titleDe": "Computermonitor 1 – Details auf Anfrage",
+    "category": "Electronics / Monitor",
+    "price": "Preis auf Anfrage",
+    "priceEur": null,
+    "priceKind": "on-request",
+    "status": "enquire",
+    "description": "Computer monitor from our Berlin household. Size, brand, resolution, stand, cables and operation still to be documented. Enquire for price; actual photos to follow.",
+    "descriptionDe": "Computermonitor aus unserem Berliner Haushalt. Größe, Hersteller, Auflösung, Ständer, Anschlusskabel und Funktion noch zu dokumentieren. Preis auf Anfrage; Originalfotos folgen.",
+    "condition": "Exact model and display condition not verified.",
+    "conditionDe": "Genaue Modellnummer und Displayzustand nicht geprüft.",
+    "dimensions": "",
+    "lotType": "item",
+    "inventoryIds": [
+      "MON-01"
+    ],
+    "photo": ""
+  },
+  {
+    "id": "MON-02",
+    "title": "Computer monitor 2 — details on request",
+    "titleDe": "Computermonitor 2 – Details auf Anfrage",
+    "category": "Electronics / Monitor",
+    "price": "Preis auf Anfrage",
+    "priceEur": null,
+    "priceKind": "on-request",
+    "status": "enquire",
+    "description": "Additional computer monitor from our Berlin household. Brand, model, size, stand, accessories and condition require confirmation. Price on request; photos to follow.",
+    "descriptionDe": "Weiterer Computermonitor aus unserem Berliner Haushalt. Hersteller, Modell, Größe, Monitorfuß, Zubehör und Zustand sind noch zu bestätigen. Preis auf Anfrage; Fotos folgen.",
+    "condition": "Exact specifications and operation not verified.",
+    "conditionDe": "Genaue Ausstattung und Funktion nicht geprüft.",
+    "dimensions": "",
+    "lotType": "item",
+    "inventoryIds": [
+      "MON-02"
+    ],
+    "photo": ""
+  },
+  {
+    "id": "GAM-01",
+    "title": "Nintendo Switch non-OLED — two carrying cases",
+    "titleDe": "Nintendo Switch (kein OLED) – mit 2 Tragetaschen",
+    "category": "Electronics / Gaming",
+    "price": "Preis auf Anfrage",
+    "priceEur": null,
+    "priceKind": "on-request",
+    "status": "enquire",
+    "description": "Non-OLED Nintendo Switch with two carrying cases, including a larger case. Confirmed for sale. Exact model variant, Joy-Cons, dock, charger, games and operation remain to be checked. Price on request; photos to follow.",
+    "descriptionDe": "Nintendo Switch ohne OLED-Display, mit zwei Tragetaschen, darunter eine größere Tasche. Verkauf bestätigt. Genaue Modellvariante, Joy-Cons, Dock, Ladegerät, Spiele und Funktion noch zu prüfen. Preis auf Anfrage; Bilder folgen.",
+    "condition": "Variant, functionality and additional accessories remain unverified.",
+    "conditionDe": "Modellvariante, Funktion und weiteres Zubehör noch ungeprüft.",
+    "dimensions": "",
+    "lotType": "item",
+    "inventoryIds": [
+      "GAM-01"
+    ],
+    "photo": ""
+  },
+  {
+    "id": "GAM-03",
+    "title": "Nintendo Switch OLED — white Joy-Cons and Zelda case",
+    "titleDe": "Nintendo Switch OLED – weiße Joy-Cons und Zelda-Tasche",
+    "category": "Electronics / Gaming",
+    "price": "Preis auf Anfrage",
+    "priceEur": null,
+    "priceKind": "on-request",
+    "status": "enquire",
+    "description": "Nintendo Switch OLED with white Joy-Cons, photographed with a Zelda: Breath of the Wild carrying case. The game cartridge is not confirmed included. Dock, charger and operation require confirmation. Price on request; pricing to be finalized.",
+    "descriptionDe": "Nintendo Switch OLED mit weißen Joy-Cons, fotografiert mit Zelda: Breath of the Wild-Tragetasche. Das Spiel selbst ist nicht als Bestandteil bestätigt. Dock, Netzteil und Funktion noch zu prüfen. Preis auf Anfrage; Preisvorschlag wird noch finalisiert.",
+    "condition": "Console photographed; operation and full accessory set unverified.",
+    "conditionDe": "Konsole ist fotografiert, Funktion und genauer Lieferumfang ungeprüft.",
+    "dimensions": "",
+    "lotType": "item",
+    "inventoryIds": [
+      "GAM-03"
+    ],
+    "photo": ""
   }
 ];
 window.BERLIN_LISTING.optionalBundles = [
@@ -970,6 +1090,6 @@ window.BERLIN_LISTING.optionalBundles = [
 ];
 window.BERLIN_LISTING.sale = {
   "defaultLanguage": "de",
-  "inventoryRecordCount": 28,
+  "inventoryRecordCount": 34,
   "catalogueDate": "17 November 2026"
 };
