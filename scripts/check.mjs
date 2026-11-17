@@ -3,6 +3,7 @@ import { readFile, stat, readdir } from 'node:fs/promises';
 import { resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
+import './verify-inventory.mjs';
 
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
 const read = path => readFile(resolve(root, path), 'utf8');

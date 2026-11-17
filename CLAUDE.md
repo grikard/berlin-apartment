@@ -1,0 +1,11 @@
+# Marketplace website operating rules
+
+The canonical inventory is in the PRIVATE repository https://github.com/grikard/berlin-marketplace-master. Read its CLAUDE.md before changing inventory. This repository contains the public website only.
+
+Do not edit generated `dist/content/inventory.js` or its approval manifest by hand. Inventory changes start as private master proposals, receive explicit owner approval and are exported onto a clean website review branch. Run `npm run check`, review the diff and open a PR. Do not merge existing draft PR #1 or copy its proposed price into the master as an approval; coordinate its overlapping files with the master approval first. Never paste internal notes from that draft into public content.
+
+Preserve the website's typography, layout, `dist/assets/app.js`, gallery behavior and ID-numbered photograph naming. Use `dist/photos/items/` for selected public photos. The approved export manifest checks catalogue and photo hashes and rejects orphan item JPEGs. Review new or changed photos for unique serial numbers, private documents, addresses and unapproved items before export.
+
+Do not add raw Excel/Word files, original phone folders, internal valuations, negotiation floors, retained relocation stock or buyer information. Gitignored `docs/`, `photos/` and `.local/` remain local working material, not an alternative editable master. Public commit messages, PR descriptions and comments must contain public information only. Private credentials and cross-repository tokens must never be committed.
+
+After a public PR merges and deploys, reconcile the published state into the private master. An emergency website content fix must be reconciled into that master before the next export.

@@ -1,0 +1,1 @@
+Read CLAUDE.md before modifying inventory or photos. The private marketplace master is authoritative. Preserve website design and galleries, and never merge a draft PR without reviewing its contents and owner approval.

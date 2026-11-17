@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "catalogueSha256": "c5c3ea6f043ed060c5240a8fad65521f2804e8f150b9461946c9891329c3dd65",
+  "photos": [
+    {
+      "path": "photos/items/BED-01-01.jpg",
+      "sha256": "1ca00fccd90355a28f99d8889915cb44f92dcde1144322003b6c70b5b3121e09"
+    },
+    {
+      "path": "photos/items/BED-01-02.jpg",
+      "sha256": "1e20d221f981df2c7d7c2bdc768c13a4262431440365c856710154c57a025b82"
+    },
+    {
+      "path": "photos/items/BED-01-03.jpg",
+      "sha256": "cc7b28e4933fe5151c705074fef0a04297a3dd76a3da6fa7e101686725af8a17"
+    },
+    {
+      "path": "photos/items/BED-01-04.jpg",
+      "sha256": "865365217ecf1af5505227e936952d5b403cd95bfeb9e74a06202864edaabb38"
+    },
+    {
+      "path": "photos/items/BIK-01-01.jpg",
+      "sha256": "c95cbc5bfb8ef10ddbb79967cdd8192d6fad94763dfbc1f5d4e995172a2f5de9"
+    },
+    {
+      "path": "photos/items/BIK-01-02.jpg",
+      "sha256": "ee8ff7e0ce931a667fa634b1f67569426a5d1c867d5b3ba6a03d95c219ed693f"
+    },
+    {
+      "path": "photos/items/BIK-01-03.jpg",
+      "sha256": "e26cdc679dd8c3a0ac4ed990077c5774a627f736ef8b926de3e1109b3ff940eb"
+    },
+    {
+      "path": "photos/items/BIK-01-04.jpg",
+      "sha256": "8d0b696b6dc6b4165eac79763c090c6c2c18733cee89da9d51aad1408fc2a5f2"
+    },
+    {
+      "path": "photos/items/BIK-01-05.jpg",
+      "sha256": "a62dfbba90119526877282199a0404173736d083ac15156bbf4cd205a3c6261b"
+    },
+    {
+      "path": "photos/items/BIK-01-06.jpg",
+      "sha256": "83f959fca87ca7c0f7343e58b35842cafc9b7651bb198f33ba0bcc1a44cc6807"
+    },
+    {
+      "path": "photos/items/BND-02-01.jpg",
+      "sha256": "b9a86f908d4fb7d3dfb5193907231206eb1acf947f48d29759fbc1cb7e9e0b7e"
+    },
+    {
+      "path": "photos/items/BND-03-01.jpg",
+      "sha256": "37c651aa8a7d285326ce89ce86a1d037360feb77c4b379279701a1f0abfa3b47"
+    },
+    {
+      "path": "photos/items/BND-03-02.jpg",
+      "sha256": "eea761159fbfe4d954b5dad6fe1c2a5d4a950d8790ac7928b23fe3d0ede84b58"
+    },
+    {
+      "path": "photos/items/BND-03-03.jpg",
+      "sha256": "1bc2e9571a64e9a1abed09e83bc728cef592002d2e2a74de3630e3a31bc3ad18"
+    },
+    {
+      "path": "photos/items/BND-03-04.jpg",
+      "sha256": "d4a38491be0a906f64d1345695f9f22a37d742a00c8bf95ae4571bdca400fb1e"
+    },
+    {
+      "path": "photos/items/BND-03-05.jpg",
+      "sha256": "8531f0c3f4a1f2679953d5c1b80348c38de24dbca6b4cde106387b0a15dc9a09"
+    },
+    {
+      "path": "photos/items/BND-03-06.jpg",
+      "sha256": "362829cc17195c2de9c41a26e645d47eaa4bf46454670c0289b38b26d38057b1"
+    },
+    {
+      "path": "photos/items/BND-04-01.jpg",
+      "sha256": "0c81429c82dfc608cf2fa04d911bd36981fcdbdc53dc221dbf237f373385b30d"
+    },
+    {
+      "path": "photos/items/BND-04-02.jpg",
+      "sha256": "c09b29da31d474a3c8943ea014e3ae6b60de8c40543d9abc70c0830c53b99965"
+    },
+    {
+      "path": "photos/items/BST-01-01.jpg",
+      "sha256": "764e274ccccab247d49b4df1e719660c5d07ae3368ac9e4a9d7a1dcfcb1e054d"
+    },
+    {
+      "path": "photos/items/BST-01-02.jpg",
+      "sha256": "be8a70d03e0a4d0e66001a5ce7b82b04f2ec1d1cb9ec0521dca323021f811bce"
+    },
+    {
+      "path": "photos/items/DES-01-01.jpg",
+      "sha256": "7f7c7298723bf2cd27b8a9ad158adb36f19a2fa202e9d72d6661ef2d3bfba298"
+    },
+    {
+      "path": "photos/items/DRW-01-01.jpg",
+      "sha256": "b7ce5eb64c85383d3272672dd50eab39aaaa5ed6dd9840071050d984968637f4"
+    },
+    {
+      "path": "photos/items/DRW-02-01.jpg",
+      "sha256": "93e005e38c1c4e9360b343fc8889b0543e765a495517e43e0e6408b7bd047b07"
+    },
+    {
+      "path": "photos/items/KIT-01-01.jpg",
+      "sha256": "31c4951f57ed3468ea8f6c2fa3a429f2153a7bdf1b92ba0e77259530079dce0d"
+    },
+    {
+      "path": "photos/items/KIT-01-02.jpg",
+      "sha256": "b0390cc74975053f983559d63b6bfbda2df68398ce0879a1de9fad3d58c9f7cd"
+    },
+    {
+      "path": "photos/items/KIT-04-01.jpg",
+      "sha256": "0fa7b3b28bfd46e7ec19a29c5d6b5401f4494d69ee09a1a94651f0cfd997f6e9"
+    },
+    {
+      "path": "photos/items/KIT-05-01.jpg",
+      "sha256": "b2c573136581abe6b72646479e141a5d1776eaa81c9f22d396db7ab266be1b06"
+    },
+    {
+      "path": "photos/items/KIT-05-02.jpg",
+      "sha256": "3ec903b5ac3be73706099b13dd4806946d2a9fec620ba879a0cd7453fa5629f3"
+    },
+    {
+      "path": "photos/items/KIT-05-03.jpg",
+      "sha256": "0cc2ebc1e651334ae40a2fc6623246f5406a8481dd7040309b0d45a9a3c1d9c6"
+    },
+    {
+      "path": "photos/items/KIT-06-01.jpg",
+      "sha256": "6fee9ab97a38e16b85dd34a3eda4cd41419f16233e24c93cf88736c75b0d6fba"
+    },
+    {
+      "path": "photos/items/KIT-06-02.jpg",
+      "sha256": "625c67686411d49bdca1cfb9a0c2702d4da550d485a5a307fcfba601f5092ee4"
+    },
+    {
+      "path": "photos/items/KIT-07-01.jpg",
+      "sha256": "62ff5e297c02e122148ee84542605efe1ac78a0b84f5648b3c5f7f41b2e1af1a"
+    },
+    {
+      "path": "photos/items/KIT-07-02.jpg",
+      "sha256": "9791374881388888aa7a3319b598ac15f17fefd7059c88a1fdbf9f1eee8954b3"
+    },
+    {
+      "path": "photos/items/KIT-07-03.jpg",
+      "sha256": "2a5d1c887518b1a15f0e393523eaa5aeea3b38cb36478957993aa9da21567dba"
+    },
+    {
+      "path": "photos/items/KIT-07-04.jpg",
+      "sha256": "c6b7273e94f2637aedf65ba4534b9335b90898bb154482ceec8938d42bbc47db"
+    },
+    {
+      "path": "photos/items/KIT-08-01.jpg",
+      "sha256": "eb0afb0fa4d703b342d3d0521c1d115a6c4e9900df4bdfa623293c8b59549518"
+    },
+    {
+      "path": "photos/items/KIT-08-02.jpg",
+      "sha256": "f4078c18815d8f1553da13a5a0944f86e9b72ed80da0811d7f841e15eef5c7dd"
+    },
+    {
+      "path": "photos/items/KIT-09-01.jpg",
+      "sha256": "0da2ad0b3d4bb1ae25e2b05f8185d1ef3ce56d09c928581a589e93db34f2c639"
+    },
+    {
+      "path": "photos/items/KIT-09-02.jpg",
+      "sha256": "a630c8f6a2b2e3604ea4ce90d3d280a7096c8623ba7678c237793789606dc633"
+    },
+    {
+      "path": "photos/items/KIT-09-03.jpg",
+      "sha256": "7b0a91e9fd7a88e36e315e0386e89cb99b4b69d93cd282988cb7b02e1bbdbe33"
+    },
+    {
+      "path": "photos/items/LGT-01-01.jpg",
+      "sha256": "c4089b3f10a104ab49c2130bf7f7296702acd3de674058916f26c2cc8dfceaea"
+    },
+    {
+      "path": "photos/items/LGT-01-02.jpg",
+      "sha256": "66fded57eb361a3b7ad86e7078b0f120ba08c177a4d1f805841688b094b646ff"
+    },
+    {
+      "path": "photos/items/LGT-01-03.jpg",
+      "sha256": "c38751f9b1496233fd86d1ecde825812664a55e2eee8c7d84ada8c21335bb377"
+    },
+    {
+      "path": "photos/items/MIR-01-01.jpg",
+      "sha256": "bdaffef7a868bbb06363708f09f09b82e4d72160879a26327a4c692eaa1edeff"
+    },
+    {
+      "path": "photos/items/MIR-01-02.jpg",
+      "sha256": "b0acdb69ce7988811561251a16cd5f1ab496df4349d6d57640d4a906a7162b34"
+    },
+    {
+      "path": "photos/items/MIR-01-03.jpg",
+      "sha256": "2653f099cde641e0f56fe27432fe665630e596f541e2250d18795f13155c3b17"
+    },
+    {
+      "path": "photos/items/SHO-01-01.jpg",
+      "sha256": "f111901c0cc30095929df13eb096f4fa978af7fb24abbbec25e748380f7d273c"
+    },
+    {
+      "path": "photos/items/WRD-01-01.jpg",
+      "sha256": "5df9c7f14169cb3a999867696ca364206b86b76b1efee3dcc1743a5d9d3d7675"
+    },
+    {
+      "path": "photos/items/WRD-01-02.jpg",
+      "sha256": "f6d862db5b7e2dc082d09d52d2b5eb98c5d67d56dbad1b73cea0d37c66a994b3"
+    },
+    {
+      "path": "photos/items/WRD-01-03.jpg",
+      "sha256": "3558d4d4b017ce042c9e3a84961bdfe0b72fa7321d056eb670084954448a07c1"
+    },
+    {
+      "path": "photos/items/WRD-02-01.jpg",
+      "sha256": "6307a1fe5ad3a659f64aea499e9389cf51e8562c7e211c36ad0398c2f27b46a5"
+    },
+    {
+      "path": "photos/items/WRD-02-02.jpg",
+      "sha256": "5cb10c0849228eb4c7e43e7c156ade22ebca72f35a7498e7b719f582ef36af39"
+    },
+    {
+      "path": "photos/items/WRD-02-03.jpg",
+      "sha256": "25c1413a508a2c0ea759496dd16230f228d408cc45c22163222a0faa99c39225"
+    },
+    {
+      "path": "photos/items/thumbs/BED-01-01.jpg",
+      "sha256": "882913cff4550d1f3125f2921abec7951a07ea3d337dc1ab0791753f2aa41a1b"
+    },
+    {
+      "path": "photos/items/thumbs/BED-01-02.jpg",
+      "sha256": "4d24e695b375090b69758c96d2b7fc204acd65796c7216d2108c26e02762a2e3"
+    },
+    {
+      "path": "photos/items/thumbs/BED-01-03.jpg",
+      "sha256": "adca40df8801f2bad10db38d473f192751fd171b60d7d7c72a7158e088f08c9d"
+    },
+    {
+      "path": "photos/items/thumbs/BED-01-04.jpg",
+      "sha256": "92a10e90f90e35b4c416faaa1b153a85ccb40b124b795026bc1bf8c1a09070be"
+    },
+    {
+      "path": "photos/items/thumbs/BIK-01-01.jpg",
+      "sha256": "e4b1202ce1528c99971ea65523c77924224c46972280d1ccd12016187d1c5548"
+    },
+    {
+      "path": "photos/items/thumbs/BIK-01-02.jpg",
+      "sha256": "ffc0a54ed4ec4277e80c611179738a19181eac969e3d9a9e8ed7772a61e04b21"
+    },
+    {
+      "path": "photos/items/thumbs/BIK-01-03.jpg",
+      "sha256": "2af989a961ddcfbd913d8475840fceeced96404ab04db9573c6e650a31b77595"
+    },
+    {
+      "path": "photos/items/thumbs/BIK-01-04.jpg",
+      "sha256": "7ede2e85ea6cc69541eb7dba0bef001472d206a9e06b119223c36b0618974c08"
+    },
+    {
+      "path": "photos/items/thumbs/BIK-01-05.jpg",
+      "sha256": "2dae67049f582a016f218fda6d7472713210d9266ce32ba10b9e9175952c5bcd"
+    },
+    {
+      "path": "photos/items/thumbs/BIK-01-06.jpg",
+      "sha256": "c3678d7f877b82bea4daec905532450c5d7eab1f009b20087fe4721c3c4bb14d"
+    },
+    {
+      "path": "photos/items/thumbs/BND-02-01.jpg",
+      "sha256": "d8b1b8d6e0bcc1217d02b43b3013cdefa62dda0990a9337565c248047acaa7e5"
+    },
+    {
+      "path": "photos/items/thumbs/BND-03-01.jpg",
+      "sha256": "849f6c78567663bdcdc42969d464532de5b688b622a111834876db5ab47c9b59"
+    },
+    {
+      "path": "photos/items/thumbs/BND-03-02.jpg",
+      "sha256": "fa2fee5ee3621e128615cdced6eefd268d20fd8782919ff6ae2f4e227cf87b86"
+    },
+    {
+      "path": "photos/items/thumbs/BND-03-03.jpg",
+      "sha256": "dd755d6e209bdf508754513d8d8c673a782f4d4c43a249aef602546b59292046"
+    },
+    {
+      "path": "photos/items/thumbs/BND-03-04.jpg",
+      "sha256": "bf240b813185895346e7397007ee783a34b677cbb3640625c7828783c888ef3b"
+    },
+    {
+      "path": "photos/items/thumbs/BND-03-05.jpg",
+      "sha256": "16ca0086e83dedeed52e67a5f557cdbf38272c74b3e577b70cbe95d9aed9fecf"
+    },
+    {
+      "path": "photos/items/thumbs/BND-03-06.jpg",
+      "sha256": "275b3a51b396d7a1b78230a0ebd06a2730465c9505d6422cd51121cb2f346aa6"
+    },
+    {
+      "path": "photos/items/thumbs/BND-04-01.jpg",
+      "sha256": "cf1e0f6d2bc3ef1346896fdc25fe609c1b87fe54dcf0a28c2a4546a4dbbe0b6c"
+    },
+    {
+      "path": "photos/items/thumbs/BND-04-02.jpg",
+      "sha256": "c37ac6c9d9143cf14093d54bea3cbd6ac0dee48b80d19db7f8a3a800e4a33556"
+    },
+    {
+      "path": "photos/items/thumbs/BST-01-01.jpg",
+      "sha256": "4365cc234e2ffbeb512b5d3d9aacfa3e1308024d3ea8fac72564fd236be1698c"
+    },
+    {
+      "path": "photos/items/thumbs/BST-01-02.jpg",
+      "sha256": "c63d8e4135accbbb4b10f16a5412c2d47f674bb4366661e44f9d05ed9873adb1"
+    },
+    {
+      "path": "photos/items/thumbs/DES-01-01.jpg",
+      "sha256": "462a52d0738e415fb3a25a1c66b03e6f42e7d0b1995f4d739a8faee9041a969e"
+    },
+    {
+      "path": "photos/items/thumbs/DRW-01-01.jpg",
+      "sha256": "d81d3ecc2230aa4a68ea867067cd1fd814fcb55aab0969be50b13357336673a2"
+    },
+    {
+      "path": "photos/items/thumbs/DRW-02-01.jpg",
+      "sha256": "0d0b0405e4825c120748dfdf267e2766c1dfd9aebad74fb219bb37a88741b389"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-01-01.jpg",
+      "sha256": "c6752e68de76becfcd2e509c2dd2414747c84e2588dc0e7d4aa6d9c8a1a8daef"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-01-02.jpg",
+      "sha256": "93967ab05ea62c7ac0e82c36ecf1897ec7af1d11cbcf91fcfcc562deaf41bccf"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-04-01.jpg",
+      "sha256": "d2aecf968bdd09c5aac6378019780cd14baf8808135babd84f1bd312a30a94ef"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-05-01.jpg",
+      "sha256": "0a34820afd55c77e0da765c44631f5f88db32209c3aa4b0b65a30d0d667ad263"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-05-02.jpg",
+      "sha256": "302379256700e77985c28eab6eaf17f10cc64661b9b8279a9484a6cd6f8f1755"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-05-03.jpg",
+      "sha256": "b9a4885221e79471aa01c764c148586b280b368a31a044f246e1712b07e9dd83"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-06-01.jpg",
+      "sha256": "5262b9f2ea11af38121d7844f835f5efc15db4d4d41b5b2b96be59d4c234298f"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-06-02.jpg",
+      "sha256": "2e647be53026c2ba5f473112204d46c2e62054d1f0d7352ac80dfd719713ad64"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-07-01.jpg",
+      "sha256": "01b98fb11f69fb5d4776ba983c67cc2c55e3bd31d1995ccfc5bf6cd134820c15"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-07-02.jpg",
+      "sha256": "6802f39d932351958a01e4b4dcbef92cf2aece930208cd57d042c56e3343af69"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-07-03.jpg",
+      "sha256": "533350a461f3f5bdd657a559b896e9e48541134663f5a5113c806649924883b8"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-07-04.jpg",
+      "sha256": "e4e360d6d5eb0cbddff0a4c184a6c14c6c21290691ee246aa17abf5bec5de1d2"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-08-01.jpg",
+      "sha256": "5a7d2536f442f070fcfdff92ffa2ef9450b0fb9a35e318eae1255277b68c3a5d"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-08-02.jpg",
+      "sha256": "b242a567d915966c400d5f82326f036aa2bf1eb7f0f5609a4cb1c3582ecb3a26"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-09-01.jpg",
+      "sha256": "fd24d189dd4b8914f5109724b05c7c4592b672091b48efc8d9559789cc295caa"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-09-02.jpg",
+      "sha256": "0ab953a7aaa00edebcd33756771af3ade2fe630099cb2f60dd6d6d6aeb93c404"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-09-03.jpg",
+      "sha256": "c080740a776c729edafd005ab18832c44bbf242e841ec762e85bc4ef8d557412"
+    },
+    {
+      "path": "photos/items/thumbs/MIR-01-01.jpg",
+      "sha256": "ff89bb33fdbfd43abc15a361d81e7dab6d1fd8a70fc282820d8a447d1908b171"
+    },
+    {
+      "path": "photos/items/thumbs/MIR-01-02.jpg",
+      "sha256": "f2dc4bcc4d8afd7046bca21a5fb4266f4db4b0e7815982c9491941d262fecffc"
+    },
+    {
+      "path": "photos/items/thumbs/MIR-01-03.jpg",
+      "sha256": "1b67373d91aff694c60a3d8d47426bdb5e0859f694b63d84dc9528033a8f41e7"
+    },
+    {
+      "path": "photos/items/thumbs/SHO-01-01.jpg",
+      "sha256": "b456a5d828223213e703803a32a802b1704a5080d23eb2e29d8b45bf5618ec39"
+    },
+    {
+      "path": "photos/items/thumbs/WRD-01-01.jpg",
+      "sha256": "0bb86b97be39744e5fecc1d4176a7cab08d849c5ee7387d8e19f11b0a4ab409b"
+    },
+    {
+      "path": "photos/items/thumbs/WRD-01-02.jpg",
+      "sha256": "fef03dc435d5546d6c175810e5c4dfdaf60500a905b962b5538c2e668a1fbca6"
+    },
+    {
+      "path": "photos/items/thumbs/WRD-01-03.jpg",
+      "sha256": "8cdebe28778ce4731c2f45b6f05cd04c10e859807c97788767b017c71b81a49a"
+    },
+    {
+      "path": "photos/items/thumbs/WRD-02-01.jpg",
+      "sha256": "b593df5ed278ebe841102148c9e2ac2bf9252d538338c40dce69822e5d09de6c"
+    },
+    {
+      "path": "photos/items/thumbs/WRD-02-02.jpg",
+      "sha256": "6a7dae976beb5d813b69f0127cd9e36fabff945316816f2ad12c46cd8a93e0ee"
+    },
+    {
+      "path": "photos/items/thumbs/WRD-02-03.jpg",
+      "sha256": "a88c0bb2524e3cf50b17de50d52faab336477f4063a666464f34cef17e2edd8f"
+    }
+  ]
+}

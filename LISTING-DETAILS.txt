@@ -1,62 +1,12 @@
-BERLIN APARTMENT — DETAILS TO ADD
+BERLIN APARTMENT — CONTENT SOURCES
 
-Known: Potsdamer Platz, Berlin; eighth / top floor; available to rent.
-Private door from the lift landing into a long private hallway serving two apartments.
-Supplied plan dated 13 November 1998 states 83.67 m2 Wohnflaeche.
-Listed indoor rooms total 70.22 m2; terrace is 53.80 m2.
-The stated Wohnflaeche is consistent with counting 25% of the terrace.
-One bedroom, living room, separate kitchen, bathroom, guest WC and utility room.
-All plan areas are approximate and need verification.
+Marketplace inventory is maintained in the PRIVATE repository:
+https://github.com/grikard/berlin-marketplace-master
 
-APARTMENT
-Current monthly rent: EUR 1,723.03 cold + EUR 87.85 heating/hot water
-  + EUR 301.21 other operating costs = EUR 2,112.09 warm.
-Current charges including heating: EUR 389.06, already included in warm rent.
-Updated tenant-reported MVMG warm-rent estimate: current EUR 2,112.09 up to
-  approximately EUR 2,400 per month. Future component amounts are unconfirmed.
-This replaces the earlier market estimate and its illustrative future split.
-Electricity, internet and parking are excluded from that rent guide.
-Source: current figures and earlier analysis pasted by user in this conversation.
-Final asking rent and any actual increase in fees: to be confirmed.
-Almost four years of tenancy. Immediate takeover enquiries and offers welcome.
-Alternative: January 2027 viewing queue; final arrangements confirmed with MVMG.
-Deposit: to be confirmed; the analysis's EUR 5,400 was an assumption, not an agreed term.
-Size in square metres:
-Number of rooms / bedrooms: 2 rooms / 1 bedroom, as shown on supplied plan.
-Available from: Now (confirmed by user on 17 November 2026).
-Rental term (minimum/maximum, if any):
-Furnishing: Potential furnished takeover, including washer, dryer, TV and other
-  household essentials. Availability, exact contents and any furniture/appliance
-  takeover price are to be agreed separately from rent.
-Lift access: Private door from lift landing; long private hallway serving two apartments.
-Any viewing or rental requirements:
+Read CLAUDE.md in both repositories before changing listings or product photos.
+Approved inventory is exported into dist/content/inventory.js and its manifest.
+Use a reviewed synchronization PR. Do not maintain a second inventory here.
 
-PHOTOS
-OneDrive sharing link:
-Which photos may be public: Both supplied outside balcony-view photos.
-Preferred lead photo: 20261117_064746404_iOS.heic, published as balcony-view-01.jpg.
-Second gallery photo: 20261117_064839143_iOS.heic, published as balcony-view-02.jpg.
-The supplied floor-plan screenshots are visible in the conversation. The website
-currently uses a clearly labelled, simplified SVG layout guide redrawn from them.
-
-CONTACT TO PUBLISH
-Public enquiry email: ports_dashers.4n@icloud.com
-WhatsApp with international country code (optional):
-Preferred contact / viewing times:
-
-EACH ITEM FOR SALE
-Imported from the supplied Word copy and Excel inventory on 17 November 2026:
-23 primary listings covering 28 inventory records, plus one alternative white
-furniture bundle using the same five individually listed records.
-All prices are proposed and negotiable; condition and inclusions need confirmation.
-Neither source contains embedded product photos. Public email is configured.
-
-For future additions:
-Name:
-Price:
-Category:
-Condition and description:
-Dimensions:
-Photo filename:
-Availability (available / reserved / sold):
-Collection arrangements:
+Public apartment details and the enquiry contact remain in dist/content/site-data.js.
+Keep private valuations, retained items, source workbooks and internal notes out
+of this public repository and its PR descriptions.
