@@ -47,7 +47,7 @@ photos: [
 ]
 ```
 
-The first photo becomes the hero image. All apartment photos appear in a gallery and can be enlarged. Copy only photographs intended for the public website; do not put the whole personal OneDrive folder into this repository. Before adding phone photos, remove location metadata and check for personal documents or identifying details in the frame.
+The first photo becomes the hero image. All apartment photos appear in a gallery and can be enlarged. The two supplied balcony-view HEIC originals have been converted to JPEG copies in `dist/photos/apartment/`, with EXIF metadata omitted. The first is used as the main image; both appear in the apartment gallery at their original portrait ratio. The original phone files remain in ignored `photos/`. Copy only photographs intended for the public website; do not put the whole personal OneDrive folder into this repository. Before adding phone photos, remove location metadata and check for personal documents or identifying details in the frame.
 
 ## Add an item for sale
 

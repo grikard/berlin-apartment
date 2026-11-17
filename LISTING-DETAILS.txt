@@ -29,8 +29,9 @@ Any viewing or rental requirements:
 
 PHOTOS
 OneDrive sharing link:
-Which photos may be public:
-Preferred lead photo:
+Which photos may be public: Both supplied outside balcony-view photos.
+Preferred lead photo: 20261117_064746404_iOS.heic, published as balcony-view-01.jpg.
+Second gallery photo: 20261117_064839143_iOS.heic, published as balcony-view-02.jpg.
 The supplied floor-plan screenshots are visible in the conversation. The website
 currently uses a clearly labelled, simplified SVG layout guide redrawn from them.
 

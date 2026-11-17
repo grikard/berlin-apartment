@@ -74,17 +74,20 @@
       const first = photos[0];
       $('hero-image').src = first.src;
       $('hero-image').alt = first.alt;
+      $('hero-image').width = first.width || 800;
+      $('hero-image').height = first.height || 900;
       $('hero-caption').textContent = first.caption || 'A home above the city.';
       $('hero-art').classList.add('has-photo');
       $('illustration-note').hidden = true;
       $('photo-pending').hidden = true;
       $('photo-gallery').hidden = false;
+      $('photo-gallery').dataset.count = String(photos.length);
       for (const photo of photos) {
         const button = el('button', 'gallery-photo');
         button.type = 'button';
         button.setAttribute('aria-label', `Enlarge: ${photo.caption || photo.alt}`);
         const img = el('img');
-        img.src = photo.src; img.alt = photo.alt; img.loading = 'lazy'; img.width = 800; img.height = 600;
+        img.src = photo.src; img.alt = photo.alt; img.loading = 'lazy'; img.width = photo.width || 800; img.height = photo.height || 600;
         button.append(img, el('span', '', photo.caption || photo.alt));
         button.addEventListener('click', () => {
           $('dialog-image').src = photo.src;

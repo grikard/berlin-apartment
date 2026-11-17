@@ -25,8 +25,22 @@ window.BERLIN_LISTING = {
     furnished: "",
     rentalTerm: "",
     note: "The estimated range is an indicative November 2026 guide. Operating / maintenance and heating charges may be higher. Warm rent includes the listed operating costs and heating; electricity, internet and parking are excluded from the guide. Final rent, charges and rental terms will be confirmed.",
-    // Example: { src: "photos/apartment/balcony.jpg", alt: "The wrap-around balcony", caption: "The balcony" }
-    photos: []
+    photos: [
+      {
+        src: "photos/apartment/balcony-view-01.jpg",
+        alt: "View from the apartment balcony over Potsdamer Platz rooftops, with orange clouds and the balcony railing in the foreground",
+        caption: "The view from the balcony",
+        width: 4284,
+        height: 5712
+      },
+      {
+        src: "photos/apartment/balcony-view-02.jpg",
+        alt: "A second view from the apartment balcony across nearby rooftops and the street below at Potsdamer Platz",
+        caption: "Potsdamer Platz from above",
+        width: 4284,
+        height: 5712
+      }
+    ]
   },
   contact: {
     // Public enquiry address supplied by the seller.
