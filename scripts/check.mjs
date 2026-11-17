@@ -11,6 +11,15 @@ const content = await read('content/site-data.js');
 new vm.Script(content).runInNewContext(context);
 const data = context.window.BERLIN_LISTING;
 assert(data && data.apartment && data.contact && Array.isArray(data.items), 'Listing must contain apartment, contact and items');
+if (data.apartment.rentGuide) {
+  const { current, estimate } = data.apartment.rentGuide;
+  for (const [label, costs] of Object.entries({ current, estimate })) {
+    for (const key of ['baseCents', 'heatingCents', 'operatingCents', 'totalCents']) assert(Number.isSafeInteger(costs[key]) && costs[key] >= 0, `Invalid ${label} amount: ${key}`);
+    assert.equal(costs.baseCents + costs.heatingCents + costs.operatingCents, costs.totalCents, `${label} components must equal warm rent`);
+  }
+  assert(Number.isSafeInteger(estimate.lowCents) && Number.isSafeInteger(estimate.highCents), 'Rent range must use integer cents');
+  assert(estimate.lowCents <= estimate.totalCents && estimate.totalCents <= estimate.highCents, 'Central estimate must fall inside the range');
+}
 new vm.Script(await read('assets/app.js'));
 const html = await read('index.html');
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);

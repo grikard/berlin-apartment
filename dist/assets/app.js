@@ -27,8 +27,9 @@
     ['Living area', apartment.size], ['Rooms', apartment.rooms],
     ['Terrace', apartment.terrace || 'Large wrap-around balcony'],
     ['Lift access', apartment.liftAccess], ['Hallway', apartment.hallway],
-    ['Monthly rent (approx.)', apartment.monthlyRent, 'Details to follow'],
-    ['Fees (approx.)', apartment.serviceCharges, 'To be confirmed'],
+    ['Estimated warm rent', apartment.monthlyRent, 'Details to follow'],
+    ['Estimated charges', apartment.serviceCharges, 'To be confirmed'],
+    ['Current warm rent', apartment.currentWarmRent],
     ['Available from', apartment.availableFrom, 'Date to be confirmed'], ['Deposit', apartment.deposit],
     ['Furnishing', apartment.furnished], ['Rental term', apartment.rentalTerm]
   ];
@@ -42,6 +43,29 @@
   $('rental-note').textContent = apartment.note || '';
   $('rental-note').hidden = !apartment.note;
   document.querySelector('.rental-enquiry').href = enquiryUrl('Enquiry about the Potsdamer Platz apartment');
+
+  const guide = apartment.rentGuide;
+  if (guide) {
+    const money = (cents, decimals = 0) => new Intl.NumberFormat('en-IE', {
+      style: 'currency', currency: 'EUR', minimumFractionDigits: decimals, maximumFractionDigits: decimals
+    }).format(cents / 100);
+    $('rent-guide-period').textContent = `INDICATIVE WARM RENT · ${guide.period.toUpperCase()}`;
+    $('rent-guide-range').textContent = `${money(guide.estimate.lowCents)}–${money(guide.estimate.highCents)}`;
+    $('rent-guide-central').textContent = `Central estimate: approximately ${money(guide.estimate.totalCents)} per month.`;
+    const components = [
+      ['Base rent (Kaltmiete)', 'baseCents'],
+      ['Heating & hot water (Heizkosten)', 'heatingCents'],
+      ['Other operating costs (Nebenkosten)', 'operatingCents'],
+      ['Total warm rent (Warmmiete)', 'totalCents']
+    ];
+    $('rent-breakdown').replaceChildren();
+    for (const [label, key] of components) {
+      const row = el('tr', key === 'totalCents' ? 'cost-total' : '');
+      const heading = el('th', '', label); heading.scope = 'row';
+      row.append(heading, el('td', '', money(guide.current[key], 2)), el('td', '', money(guide.estimate[key])));
+      $('rent-breakdown').append(row);
+    }
+  }
 
   const photos = (apartment.photos || []).filter(photo => localPhoto(photo.src) && photo.alt);
   if (photos.length) {

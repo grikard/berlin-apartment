@@ -8,15 +8,23 @@ window.BERLIN_LISTING = {
     terrace: "Approx. 53.80 m² · wrap-around",
     liftAccess: "Private door from lift landing",
     hallway: "Long private hall · 2 apartments",
-    monthlyRent: "",
-    serviceCharges: "",
+    monthlyRent: "€2,200–€2,650 / month (estimated warm rent)",
+    serviceCharges: "Approx. €600 incl. heating, included in warm rent",
+    currentWarmRent: "€2,112.09 / month",
+    // Currency amounts below are integer euro cents. Current costs are supplied
+    // by the occupant; the guide is the supplied November 2026 estimate.
+    rentGuide: {
+      period: "November 2026",
+      current: { baseCents: 172303, heatingCents: 8785, operatingCents: 30121, totalCents: 211209 },
+      estimate: { baseCents: 180000, heatingCents: 21000, operatingCents: 39000, totalCents: 240000, lowCents: 220000, highCents: 265000 }
+    },
     availableFrom: "",
     size: "Approx. 83.67 m² Wohnfläche (per plan)",
     rooms: "2 rooms · 1 bedroom",
     deposit: "",
     furnished: "",
     rentalTerm: "",
-    note: "Any rent and fees shown are approximate indications based on current costs. Maintenance / service charges may be higher. Final rent, charges and rental terms will be confirmed.",
+    note: "The estimated range is an indicative November 2026 guide. Operating / maintenance and heating charges may be higher. Warm rent includes the listed operating costs and heating; electricity, internet and parking are excluded from the guide. Final rent, charges and rental terms will be confirmed.",
     // Example: { src: "photos/apartment/balcony.jpg", alt: "The wrap-around balcony", caption: "The balcony" }
     photos: []
   },
