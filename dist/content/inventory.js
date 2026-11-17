@@ -976,27 +976,6 @@ window.BERLIN_LISTING.items = [
       }
     ]
   }
-,
-  {
-  "id": "GAM-02",
-  "title": "Xbox Series X 1 TB SSD – original box + two controllers",
-  "titleDe": "Xbox Series X 1 TB SSD – OVP + zwei Controller",
-  "category": "Electronics",
-  "price": "€599 VB",
-  "priceEur": 599,
-  "priceKind": "proposed",
-  "status": "enquire",
-  "description": "Black Microsoft Xbox Series X with 1 TB SSD, integrated disc drive and original retail packaging/protective inserts. Two controllers were reported by the seller; functionality of both controllers, the console and optical drive, and exact cable inclusions still need to be confirmed. Offered as a proposed negotiable price, subject to confirming the complete set. Pickup by appointment in Berlin-Mitte.",
-  "descriptionDe": "Schwarze Microsoft Xbox Series X mit 1 TB SSD, integriertem Disc-Laufwerk, Originalkarton und Schutzpolstern. Laut Verkäufer gehören zwei Controller dazu; die Funktion beider Controller, der Konsole und des Laufwerks sowie alle Anschlusskabel sind noch zu prüfen. Der angegebene Preis ist ein verhandelbarer Vorschlag, vorbehaltlich der abschließenden Prüfung des Gesamtpakets. Abholung nach Vereinbarung in Berlin-Mitte.",
-  "condition": "Actual console and packaging photographed; operation and included cables/controllers not yet independently verified. Any personal account will be removed prior to handover.",
-  "conditionDe": "Konsole und Originalverpackung fotografiert; Funktion sowie genaue Kabel-/Controller-Ausstattung noch nicht abschließend geprüft. Persönliche Konten werden vor Übergabe entfernt.",
-  "dimensions": "1 TB SSD",
-  "lotType": "item",
-  "inventoryIds": [
-    "GAM-02"
-  ],
-  "photo": ""
-}
 ];
 window.BERLIN_LISTING.optionalBundles = [
   {
@@ -1026,6 +1005,6 @@ window.BERLIN_LISTING.optionalBundles = [
 ];
 window.BERLIN_LISTING.sale = {
   "defaultLanguage": "de",
-  "inventoryRecordCount": 29,
+  "inventoryRecordCount": 28,
   "catalogueDate": "17 November 2026"
 };
