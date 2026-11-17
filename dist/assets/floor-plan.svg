@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="850" viewBox="0 0 900 850" role="img" aria-labelledby="title description">
+  <title id="title">Berlin apartment: simplified layout guide</title>
+  <desc id="description">Guide redrawn from the supplied 1998 plan, not to scale. Living room 32.90 square metres, bedroom 18.32, kitchen 8.04, bathroom 3.91, guest WC 2.36, entrance hall 2.71 and utility room 1.98. An L-shaped terrace of 53.80 square metres wraps around two sides.</desc>
+  <style>text{font-family:Arial,sans-serif;fill:#26332b;text-anchor:middle}.label{font-size:18px;font-weight:600}.area{font-size:16px;fill:#61695e}.small{font-size:12px}.wall{fill:none;stroke:#465240;stroke-width:5;stroke-linejoin:round}.partition{fill:none;stroke:#68725f;stroke-width:3}.window{stroke:#a4b3a0;stroke-width:7}.door{fill:none;stroke:#a1967e;stroke-width:2}.note{font-size:12px;letter-spacing:1px;fill:#61695e}</style>
+  <rect width="900" height="850" fill="#eeeee3"/>
+  <text x="450" y="36" class="note">LAYOUT GUIDE · REDRAWN FROM THE SUPPLIED PLAN · NOT TO SCALE</text>
+  <path d="M665 85H805V748H95V625H665Z" fill="#d2ddc7" stroke="#a4b397" stroke-width="2"/>
+  <path d="M95 405H355V185H385V85H665V625H95Z" fill="#faf8f1"/>
+  <path d="M385 85H665V207H430V185H385Z" fill="#e5e8dc"/>
+  <path d="M355 185H430V310H355Z" fill="#efe4d3"/>
+  <path d="M95 405H430V625H95Z" fill="#ece2d3"/>
+  <path d="M305 515H430V625H305Z" fill="#dbe3dc"/>
+  <path d="M355 310H430V405H355Z" fill="#f2e9da"/>
+  <path d="M385 85H430V185H385Z" fill="#ede8db"/>
+  <path class="wall" d="M355 355V185H385V85H665V625H95V405H355V395"/>
+  <path class="partition" d="M430 85V207H505m52 0h108M355 185h75m-75 125h75m0-103v103m-75 95h40m35-95v65m0 30v110m-125 110V515h125m-75-160h75"/>
+  <path class="window" d="M665 110v64m0 65v107m0 95v91m-74 93H460m-203 0H117"/>
+  <path class="door" d="M355 355h-40a40 40 0 0 0 40 40m75-20h-30a30 30 0 0 0 30 30m-35 0v35a35 35 0 0 0 35-35m-35 110v30a30 30 0 0 0 30-30"/>
+  <text x="550" y="375" class="label">Living room</text><text x="550" y="400" class="area">32.90 m²</text>
+  <text x="220" y="485" class="label">Bedroom</text><text x="220" y="510" class="area">18.32 m²</text>
+  <text x="550" y="137" class="label">Kitchen</text><text x="550" y="162" class="area">8.04 m²</text>
+  <text x="367" y="562" class="small">Bathroom</text><text x="367" y="585" class="small">3.91 m²</text>
+  <text x="392" y="245" class="small">Guest WC</text><text x="392" y="266" class="small">2.36 m²</text>
+  <path d="M407 128H337" fill="none" stroke="#a1967e"/>
+  <text x="290" y="117" class="small">Utility room</text><text x="290" y="138" class="small">1.98 m²</text>
+  <path d="M392 337H270" fill="none" stroke="#a1967e"/>
+  <text x="210" y="327" class="small">Entrance hall</text><text x="210" y="348" class="small">2.71 m²</text>
+  <path d="M265 375h60m-9-7 9 7-9 7" fill="none" stroke="#d45e3c" stroke-width="2"/>
+  <text x="182" y="379" class="small">Apartment entrance</text>
+  <text x="435" y="683" class="label">Wrap-around terrace</text><text x="435" y="709" class="area">53.80 m²</text>
+  <text x="450" y="791" class="note">ROOM AREAS AND TERRACE AS LABELLED ON THE ORIGINAL PLAN</text>
+  <text x="450" y="814" class="small">Stated Wohnfläche: 83.67 m² · Original plan dated 13 November 1998</text>
+</svg>

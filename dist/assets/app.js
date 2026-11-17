@@ -23,9 +23,13 @@
   if (apartment.status) $('availability-label').textContent = apartment.status;
   if (apartment.description) $('apartment-description').textContent = apartment.description;
   const facts = [
-    ['Location', 'Potsdamer Platz'], ['Floor', 'Top floor'], ['Outdoor space', 'Large wrap-around balcony'],
-    ['Monthly rent', apartment.monthlyRent, 'Details to follow'], ['Available from', apartment.availableFrom, 'Date to be confirmed'],
-    ['Size', apartment.size], ['Rooms', apartment.rooms], ['Deposit', apartment.deposit],
+    ['Location', 'Potsdamer Platz'], ['Floor', apartment.floor || 'Top floor'],
+    ['Living area', apartment.size], ['Rooms', apartment.rooms],
+    ['Terrace', apartment.terrace || 'Large wrap-around balcony'],
+    ['Lift access', apartment.liftAccess], ['Hallway', apartment.hallway],
+    ['Monthly rent (approx.)', apartment.monthlyRent, 'Details to follow'],
+    ['Fees (approx.)', apartment.serviceCharges, 'To be confirmed'],
+    ['Available from', apartment.availableFrom, 'Date to be confirmed'], ['Deposit', apartment.deposit],
     ['Furnishing', apartment.furnished], ['Rental term', apartment.rentalTerm]
   ];
   $('rental-facts').replaceChildren();

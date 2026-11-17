@@ -20,6 +20,7 @@ Open http://127.0.0.1:4173. Stop the server with Ctrl+C.
 - `dist/photos/items/`: sale item photographs.
 - `dist/index.html`: page structure and introductory copy.
 - `dist/assets/`: styles, behaviour and the labelled decorative illustration used until real apartment photographs are added.
+- `dist/assets/floor-plan.svg`: a simplified, unscaled layout guide redrawn from the supplied floor-plan screenshots. It is not the original floor-plan scan.
 - `.github/workflows/pages.yml`: checks and publishes only `dist/` on pushes to `main`.
 - `LISTING-DETAILS.txt`: a checklist of information still needed.
 
@@ -70,7 +71,9 @@ Use `available`, `reserved`, or `sold`. Search, category filtering and an availa
 
 ## Rental and contact details
 
-Fill in the apartment fields in `site-data.js` using human-readable values, including currency and whether rent includes utilities. Blank size, room count, deposit, furnishing and rental term fields are hidden. Blank rent and availability date show pending messages. Change `apartment.status` when availability changes.
+Fill in the apartment fields in `site-data.js` using human-readable values, including currency and whether rent includes utilities. `monthlyRent` and `serviceCharges` are shown as approximate amounts. The listing explains that maintenance / service charges may be higher and final terms must be confirmed. Do not substitute a market estimate for the user's earlier analysis; the actual prior figures are still needed. Blank size, room count, deposit, furnishing and rental term fields are hidden. Blank rent, fees and availability date show pending messages. Change `apartment.status` when availability changes.
+
+The supplied plan, dated 13 November 1998, states 83.67 m² Wohnfläche and a 53.80 m² terrace. Its labelled indoor rooms total 70.22 m²; 70.22 + 25% × 53.80 = 83.67. The website describes the terrace allocation as an interpretation consistent with the plan, not as a verified measurement rule. All dimensions are approximate and need verification. The shared private hallway described by the user is separate from the small entrance hall inside the apartment.
 
 Set `contact.email` and/or `contact.whatsapp` only to details you want to publish. WhatsApp uses the international number including the country code. Email links open the visitor's mail app; WhatsApp links open WhatsApp. There is no form or booking system, and enquiries are not stored by the website. Until contact information is supplied, the site shows a clear pending message. No contact information is inferred from your GitHub account.
 

@@ -3,15 +3,20 @@
 window.BERLIN_LISTING = {
   apartment: {
     status: "Available to rent",
-    description: "Set on the top floor at Potsdamer Platz, this apartment pairs a great Berlin location with a large balcony that wraps around the home.",
+    description: "An eighth-floor, top-floor home at Potsdamer Platz with a large wrap-around terrace. The supplied floor plan shows one bedroom, a living room, a separate kitchen, a bathroom, a guest WC and a utility room. A private door off the lift landing opens into a long private hallway serving just two apartments.",
+    floor: "8th / top floor",
+    terrace: "Approx. 53.80 m² · wrap-around",
+    liftAccess: "Private door from lift landing",
+    hallway: "Long private hall · 2 apartments",
     monthlyRent: "",
+    serviceCharges: "",
     availableFrom: "",
-    size: "",
-    rooms: "",
+    size: "Approx. 83.67 m² Wohnfläche (per plan)",
+    rooms: "2 rooms · 1 bedroom",
     deposit: "",
     furnished: "",
     rentalTerm: "",
-    note: "Rental terms and further details will be added here.",
+    note: "Any rent and fees shown are approximate indications based on current costs. Maintenance / service charges may be higher. Final rent, charges and rental terms will be confirmed.",
     // Example: { src: "photos/apartment/balcony.jpg", alt: "The wrap-around balcony", caption: "The balcony" }
     photos: []
   },

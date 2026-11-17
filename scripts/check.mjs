@@ -42,7 +42,7 @@ for (const item of data.items) {
   if (item.photo) await checkPhoto(item.photo);
 }
 console.log(`Site checks passed: links, assets, JavaScript, ${data.apartment.photos.length} apartment photos, ${data.items.length} items.`);
-const missing = ['monthlyRent', 'availableFrom', 'size', 'rooms'].filter(key => !data.apartment[key]);
+const missing = ['monthlyRent', 'serviceCharges', 'availableFrom', 'size', 'rooms'].filter(key => !data.apartment[key]);
 if (!data.contact.email && !data.contact.whatsapp) missing.push('contact details');
 if (!data.apartment.photos.length) missing.push('apartment photos');
 if (!data.items.length) missing.push('sale items');
