@@ -1217,6 +1217,66 @@ window.BERLIN_LISTING.items = [
         "captionDe": "Zelda-Tragetasche; ein Spielmodul ist nicht als enthalten bestätigt"
       }
     ]
+  },
+  {
+    "id": "KIT-12",
+    "title": "WMF Gourmet mortar and pestle – original box",
+    "titleDe": "WMF Gourmet Mörser mit Stößel – Originalkarton",
+    "category": "Kitchen",
+    "price": "Preis auf Anfrage",
+    "priceEur": null,
+    "priceKind": "on-request",
+    "status": "enquire",
+    "description": "WMF Gourmet mortar and pestle for herbs and spices. Original retail box photographed; actual contents and condition not yet shown. Asking price €5 VB. Pickup by appointment in Berlin-Mitte near Potsdamer Platz; The Playce shopping garage level -4F, buyer pays parking and handles transport.",
+    "descriptionDe": "WMF Gourmet Mörser mit Stößel für Kräuter und Gewürze. Originalkarton fotografiert; Inhalt und Zustand noch nicht abgebildet. Preis: 5 € VB. Abholung nach Vereinbarung in Berlin-Mitte nahe Potsdamer Platz. Tiefgarage The Playce, Shopping-Ebene -4F; Parkgebühren und Transport trägt der Käufer.",
+    "condition": "Original packaging shown; mortar and pestle contents not independently verified.",
+    "conditionDe": "Originalkarton fotografiert; Inhalt noch nicht bestätigt.",
+    "dimensions": "",
+    "lotType": "item",
+    "inventoryIds": [
+      "KIT-12"
+    ],
+    "photo": ""
+  },
+  {
+    "id": "LGT-02",
+    "title": "Decorative table lamps — two available",
+    "titleDe": "Dekorative Tischlampen – zwei Stück",
+    "category": "Lighting",
+    "price": "Preis auf Anfrage",
+    "priceEur": null,
+    "priceKind": "on-request",
+    "status": "enquire",
+    "description": "Two decorative table lamps available. One pictured with cream-colored textured base and beige fabric shade, switched on. Whether the second matches, condition, and individual/pair pricing need confirmation. Pickup in Berlin-Mitte by appointment; The Playce shopping garage -4F, buyer pays parking and transport.",
+    "descriptionDe": "Zwei dekorative Tischlampen vorhanden. Eine mit cremefarbenem strukturiertem Fuß und beigem Stoffschirm im eingeschalteten Zustand fotografiert. Ob die zweite identisch ist, Zustand und Einzel-/Paarpreis noch offen. Abholung in Berlin-Mitte nach Vereinbarung; The Playce Shopping-Ebene -4F, Parkgebühren und Transport trägt der Käufer.",
+    "condition": "One lamp pictured illuminated; second not photographed.",
+    "conditionDe": "Eine Lampe eingeschaltet fotografiert; zweite nicht dokumentiert.",
+    "dimensions": "",
+    "lotType": "item",
+    "inventoryIds": [
+      "LGT-02"
+    ],
+    "photo": ""
+  },
+  {
+    "id": "LGT-03",
+    "title": "Philips Hue White & Color Ambiance E27 starter kit — box",
+    "titleDe": "Philips Hue White & Color Ambiance E27 Starter-Set – Karton",
+    "category": "Lighting",
+    "price": "Preis auf Anfrage",
+    "priceEur": null,
+    "priceKind": "on-request",
+    "status": "enquire",
+    "description": "Philips Hue White and Color Ambiance E27 starter kit. Box states two E27 bulbs and one Hue Bridge, with 1100 branding. The box alone is photographed; actual contents, operation, completeness and sale price need confirmation. Pickup in Berlin-Mitte by appointment; The Playce shopping garage -4F, buyer pays parking and transport.",
+    "descriptionDe": "Philips Hue White & Color Ambiance E27 Starter-Set. Laut Verpackung mit zwei E27-Leuchtmitteln und einer Hue Bridge, Kennzeichnung 1100. Nur Karton fotografiert; tatsächlicher Inhalt, Funktion, Vollständigkeit und Verkaufspreis noch zu prüfen. Abholung in Berlin-Mitte nach Vereinbarung; The Playce Shopping-Ebene -4F, Parkgebühren und Transport trägt der Käufer.",
+    "condition": "Retail box photographed; bulbs and bridge not verified inside.",
+    "conditionDe": "Nur Verpackung fotografiert; Inhalt nicht bestätigt.",
+    "dimensions": "",
+    "lotType": "item",
+    "inventoryIds": [
+      "LGT-03"
+    ],
+    "photo": ""
   }
 ];
 window.BERLIN_LISTING.optionalBundles = [
@@ -1247,6 +1307,6 @@ window.BERLIN_LISTING.optionalBundles = [
 ];
 window.BERLIN_LISTING.sale = {
   "defaultLanguage": "de",
-  "inventoryRecordCount": 34,
-  "catalogueDate": "17 November 2026"
+  "inventoryRecordCount": 37,
+  "catalogueDate": "18 November 2026"
 };
