@@ -10,6 +10,8 @@ Owner-approved display order: show numeric asking prices from highest to lowest,
 
 Owner-approved language default: open in English, with Deutsch available in the descriptions language selector. Keep the private catalogue export's default language and both HTML selectors aligned.
 
+Owner-approved bundle photos: alternative bundles with an approved lead image use the same existing gallery controls as individual listings. Include all approved component photos in the bundle gallery, reusing their original numbered paths.
+
 Audience and tone: this personal home sale is being shared with the Max Delbrück community. Welcome visitors warmly, invite questions and offers, and make it easy to discuss several items together. Keep pricing and inclusion promises tied to the approved catalogue. Item contact links open editable offer/question drafts in German or English.
 
 Do not add raw Excel/Word files, original phone folders, internal valuations, negotiation floors, retained relocation stock or buyer information. Gitignored `docs/`, `photos/` and `.local/` remain local working material, not an alternative editable master. Public commit messages, PR descriptions and comments must contain public information only. Private credentials and cross-repository tokens must never be committed.

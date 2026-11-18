@@ -1270,8 +1270,28 @@ window.BERLIN_LISTING.items = [
         "captionDe": "Das angebotene Sofa mit allen drei Rückenkissen.",
         "width": 1500,
         "height": 2000
+      },
+      {
+        "src": "photos/items/SOF-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/SOF-01-02.jpg",
+        "alt": "IKEA reference screenshot of the FRIHETEN sofa in Bomstad black; not the actual sofa for sale",
+        "caption": "IKEA model reference for comparison. Our sofa is €200 VB; retailer pricing and delivery shown in the screenshot do not apply.",
+        "captionDe": "IKEA-Modellbild zum Vergleich. Unser Sofa kostet 200 € VB; Händlerpreis und Lieferung im Screenshot gelten nicht für dieses Angebot.",
+        "width": 921,
+        "height": 2000
+      },
+      {
+        "src": "photos/items/SOF-01-03.jpg",
+        "thumbnail": "photos/items/thumbs/SOF-01-03.jpg",
+        "alt": "IKEA reference screenshot showing the FRIHETEN sofa and unfolded double-bed configuration",
+        "caption": "IKEA reference: sofa and unfolded-bed configuration. Reference furnishings, bedding and accessories are not included.",
+        "captionDe": "IKEA-Referenzbild: Sofa und ausgeklappte Liegefläche. Abgebildete Einrichtungsgegenstände, Bettwäsche und Deko sind nicht enthalten.",
+        "width": 921,
+        "height": 2000
       }
-    ]
+    ],
+    "photoNote": "The first photo shows our actual sofa. The following IKEA reference images illustrate the model and unfolded-bed configuration. Our asking price is €200 VB, collection only; retailer offers and extra furnishings shown in the reference images are not included.",
+    "photoNoteDe": "Das erste Foto zeigt unser angebotenes Sofa. Die folgenden IKEA-Referenzbilder zeigen das Modell und die ausgeklappte Liegefläche. Unser Preis beträgt 200 € VB, nur Abholung; Händlerangebote und zusätzliche Einrichtung auf den Referenzbildern sind nicht enthalten."
   },
   {
     "id": "KIT-12",
@@ -1411,7 +1431,67 @@ window.BERLIN_LISTING.optionalBundles = [
       "SHO-01",
       "BST-01"
     ],
-    "photo": ""
+    "photo": "photos/items/WRD-02-01.jpg",
+    "photoAlt": "White three-door wardrobe with mirrored centre door",
+    "photoEvidence": "actual",
+    "photos": [
+      {
+        "src": "photos/items/WRD-02-01.jpg",
+        "thumbnail": "photos/items/thumbs/WRD-02-01.jpg",
+        "alt": "White three-door wardrobe with mirrored centre door",
+        "caption": "BRIMNES wardrobe: White three-door wardrobe with mirrored centre door",
+        "captionDe": "BRIMNES Kleiderschrank: Weißer dreitüriger Kleiderschrank mit mittlerer Spiegeltür"
+      },
+      {
+        "src": "photos/items/WRD-02-02.jpg",
+        "thumbnail": "photos/items/thumbs/WRD-02-02.jpg",
+        "alt": "Open hanging compartment",
+        "caption": "BRIMNES wardrobe: Open hanging compartment",
+        "captionDe": "BRIMNES Kleiderschrank: Geöffnetes Fach mit Kleiderstange"
+      },
+      {
+        "src": "photos/items/WRD-02-03.jpg",
+        "thumbnail": "photos/items/thumbs/WRD-02-03.jpg",
+        "alt": "Open shelving compartment",
+        "caption": "BRIMNES wardrobe: Open shelving compartment",
+        "captionDe": "BRIMNES Kleiderschrank: Geöffnetes Regalfach"
+      },
+      {
+        "src": "photos/items/DRW-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/DRW-01-01.jpg",
+        "alt": "Tall white chest of drawers",
+        "caption": "Tall STORKLINTA chest: Tall white chest of drawers",
+        "captionDe": "Hohe STORKLINTA Kommode: Hohe weiße Kommode"
+      },
+      {
+        "src": "photos/items/DRW-02-01.jpg",
+        "thumbnail": "photos/items/thumbs/DRW-02-01.jpg",
+        "alt": "Wide white chest of drawers beside the window",
+        "caption": "Wide STORKLINTA chest: Wide white chest of drawers beside the window",
+        "captionDe": "Breite STORKLINTA Kommode: Breite weiße Kommode am Fenster"
+      },
+      {
+        "src": "photos/items/SHO-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/SHO-01-01.jpg",
+        "alt": "White three-compartment shoe cabinet",
+        "caption": "BISSA shoe cabinet: White three-compartment shoe cabinet",
+        "captionDe": "BISSA Schuhschrank: Weißer Schuhschrank mit drei Fächern"
+      },
+      {
+        "src": "photos/items/BST-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/BST-01-01.jpg",
+        "alt": "Bedside table with shelf and drawer",
+        "caption": "BRIMNES bedside tables: Bedside table with shelf and drawer",
+        "captionDe": "BRIMNES Nachttische: Nachttisch mit Ablage und Schublade"
+      },
+      {
+        "src": "photos/items/BST-01-02.jpg",
+        "thumbnail": "photos/items/thumbs/BST-01-02.jpg",
+        "alt": "Bedside table top with visible marks",
+        "caption": "BRIMNES bedside tables: Bedside table top with visible marks",
+        "captionDe": "BRIMNES Nachttische: Nachttischplatte mit sichtbaren Spuren"
+      }
+    ]
   }
 ];
 window.BERLIN_LISTING.sale = {
