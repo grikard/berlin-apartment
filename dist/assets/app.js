@@ -133,6 +133,12 @@
     de: { available: 'Verfügbar', enquire: 'Anfragen', reserved: 'Reserviert', sold: 'Verkauft' }
   };
   const isOpen = item => ['available', 'enquire'].includes(item.status || 'enquire');
+  const priceDescending = (a, b) => {
+    const aPriced = a.priceKind !== 'on-request' && Number.isFinite(a.priceEur) && a.priceEur >= 0;
+    const bPriced = b.priceKind !== 'on-request' && Number.isFinite(b.priceEur) && b.priceEur >= 0;
+    if (aPriced !== bPriced) return aPriced ? -1 : 1;
+    return aPriced ? b.priceEur - a.priceEur : 0;
+  };
   const textFor = (item, key, language) => language === 'de' ? (item[key + 'De'] || item[key] || '') : (item[key] || '');
   const searchText = item => [item.id, item.title, item.titleDe, item.description, item.descriptionDe, item.condition, item.conditionDe, item.category, ...(item.inventoryIds || [])].filter(Boolean).join(' ').normalize('NFKD').replace(/\p{Diacritic}/gu, '').toLocaleLowerCase();
   const makeCard = (item, language, optional = false) => {
@@ -243,14 +249,14 @@
     const matchesFilters = item => searchText(item).includes(query)
         && (category === 'all' || (item.category || 'Other') === category)
         && (!$('available-only').checked || isOpen(item));
-    const matches = items.filter(matchesFilters);
+    const matches = items.filter(matchesFilters).sort(priceDescending);
     const optional = (data.optionalBundles || []).map(bundle => {
       const open = (bundle.inventoryIds || []).every(id => {
         const owner = items.find(item => (item.inventoryIds || [item.id]).includes(id));
         return owner && isOpen(owner);
       });
       return { ...bundle, status: open ? (bundle.status || 'enquire') : 'reserved' };
-    }).filter(matchesFilters);
+    }).filter(matchesFilters).sort(priceDescending);
     $('items-grid').replaceChildren();
     $('item-count').textContent = `${matches.length} ${matches.length === 1 ? 'listing' : 'listings'} shown${optional.length ? ' · 1 alternative bundle option' : ''}`;
     $('no-results').hidden = matches.length !== 0 || optional.length !== 0;

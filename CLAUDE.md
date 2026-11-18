@@ -6,6 +6,8 @@ Do not edit generated `dist/content/inventory.js` or its approval manifest by ha
 
 Preserve the website's typography, layout, `dist/assets/app.js`, gallery behavior and ID-numbered photograph naming. Use `dist/photos/items/` for selected public photos. The approved export manifest checks catalogue and photo hashes and rejects orphan item JPEGs. Review new or changed photos for unique serial numbers, private documents, addresses and unapproved items before export.
 
+Owner-approved display order: show numeric asking prices from highest to lowest, followed by price-on-request listings. Search, category and language changes preserve that order. Equal-price listings retain their source order. This presentation rule does not reorder the canonical inventory or change bundle accounting.
+
 Do not add raw Excel/Word files, original phone folders, internal valuations, negotiation floors, retained relocation stock or buyer information. Gitignored `docs/`, `photos/` and `.local/` remain local working material, not an alternative editable master. Public commit messages, PR descriptions and comments must contain public information only. Private credentials and cross-repository tokens must never be committed.
 
 After a public PR merges and deploys, reconcile the published state into the private master. An emergency website content fix must be reconciled into that master before the next export.
