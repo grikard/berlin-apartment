@@ -1,0 +1,106 @@
+/* Keep each listing's identity, asking price and actions within one clear card. */
+.site-header .nav-sale,
+.button-sale {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 48px;
+  padding: 12px 20px;
+  background: var(--ink);
+  color: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.site-header .nav-sale:hover,
+.button-sale:hover { background: #405442; color: #fff; }
+.button-secondary { border: 1px solid var(--ink); min-height: 48px; font-size: 14px; border-radius: 4px; }
+.sale-section .section-heading { flex-wrap: wrap; gap: 18px; }
+.items-grid,
+.belongings-page .items-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+.item-card,
+.optional-bundle-card {
+  padding: 20px;
+  background: #fffdf7;
+  border: 1px solid #9caa90;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgb(38 51 43 / 5%);
+}
+.item-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.item-summary .item-meta { margin: 0; font-size: 11px; letter-spacing: .5px; line-height: 1.5; }
+.item-summary h3 { margin: 0; font-size: 24px; line-height: 1.3; overflow-wrap: anywhere; }
+.item-summary .item-price-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px 12px;
+  padding: 11px 13px;
+  background: #e7ebdf;
+  border-radius: 4px;
+}
+.item-summary .item-price { color: var(--ink); font-family: var(--sans); font-size: 28px; font-weight: 700; line-height: 1.2; }
+.item-summary .item-price-label { color: #3d4d35; font-size: 13px; letter-spacing: 0; line-height: 1.5; }
+.item-card .item-disclosure { font-size: 13px; line-height: 1.65; }
+.item-card .item-dimensions,
+.item-card .item-photo-note,
+.item-card .item-photo-caption { font-size: 12px; line-height: 1.6; }
+.item-card .item-description { font-size: 14px; line-height: 1.7; }
+.item-description summary { min-height: 44px; padding-block: 10px; cursor: pointer; }
+.item-photo-controls { grid-template-columns: 44px 1fr 44px; }
+.item-photo-step { min-height: 44px; }
+.item-photo-thumbs { grid-template-columns: repeat(auto-fit, minmax(44px, 1fr)); }
+.item-photo-full { font-size: 12px; min-height: 44px; display: inline-flex; align-items: center; }
+.item-bottom { padding-top: 16px; margin-top: auto; }
+.item-card .item-ask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 700;
+  white-space: normal;
+  text-align: center;
+}
+.item-card .item-ask:hover { background: var(--ink); color: var(--paper); }
+.nav-sale:focus-visible,
+.button-sale:focus-visible,
+.button-secondary:focus-visible,
+.item-ask:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+.optional-bundle-card { margin-top: 20px; }
+@media (max-width: 1100px) {
+  .items-grid,
+  .belongings-page .items-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .site-header { flex-wrap: wrap; align-items: flex-start; gap: 18px; }
+  .site-header nav { width: 100%; flex-wrap: wrap; gap: 10px 16px; font-size: 14px; }
+  .site-header nav > a { min-height: 44px; display: inline-flex; align-items: center; }
+  .site-header .nav-contact { padding: 8px 12px; }
+  .item-card,
+  .optional-bundle-card { padding: 18px; }
+  .item-summary h3 { font-size: 23px; }
+}
+@media (max-width: 640px) {
+  .items-grid,
+  .belongings-page .items-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .hero-actions > .button { width: 100%; }
+}

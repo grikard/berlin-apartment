@@ -11,9 +11,10 @@
   <title>A home above the city · Berlin</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css?v=20261117-audit-photos-04">
+  <link rel="stylesheet" href="assets/marketplace.css?v=20261118-clear-prices-01">
   <script src="content/site-data.js?v=20261117-audit-photos-04" defer></script>
   <script src="content/inventory.js?v=0a1c3060c49e" defer></script>
-  <script src="assets/app.js?v=20261118-bundle-gallery-01" defer></script>
+  <script src="assets/app.js?v=20261118-clear-prices-01" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,7 +22,7 @@
     <a class="wordmark" href="#" aria-label="Berlin apartment home">BERLIN<span class="wordmark-dot">.</span><span class="wordmark-sub">A HOME & ITS NEXT CHAPTER</span></a>
     <nav aria-label="Main navigation">
       <a href="#apartment">The apartment</a>
-      <a href="for-sale.html">For sale</a>
+      <a class="nav-sale" href="for-sale.html#for-sale">Items for sale <span aria-hidden="true">↗</span></a>
       <a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
@@ -33,8 +34,8 @@
         <h1 id="hero-title">A home<br>above<br><em>the city.</em></h1>
         <p class="hero-description">A top-floor apartment with a wrap-around terrace of approximately 53.80 m². Available now for takeover enquiries. Offers welcome.</p>
         <div class="hero-actions">
-          <a class="button button-dark" href="#apartment">Explore the apartment <span aria-hidden="true">↘</span></a>
-          <a class="text-link" href="for-sale.html">Browse things for sale <span aria-hidden="true">↗</span></a>
+          <a class="button button-sale" href="for-sale.html#for-sale">Items for sale <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#apartment">Explore the apartment <span aria-hidden="true">↘</span></a>
         </div>
       </div>
       <figure class="hero-art has-photo" id="hero-art">
@@ -115,8 +116,8 @@
 
     <section class="sale-section" id="for-sale" aria-labelledby="sale-title">
       <div class="wrap section-pad">
-        <div class="section-heading"><p class="eyebrow">02 / FROM THE HOME</p><a class="text-link" href="for-sale.html">Open the belongings page <span aria-hidden="true">↗</span></a></div>
-        <div class="sale-heading"><h2 id="sale-title">Good things.<br><em>New homes.</em></h2><p>Welcome to visitors from the Max Delbrück community. Browse things from our Berlin home, ask a question or send us an offer—including for several pieces together.</p></div>
+        <div class="section-heading"><p class="eyebrow">02 / ITEMS FOR SALE</p><a class="button button-sale" href="for-sale.html#for-sale">View all items for sale <span aria-hidden="true">↗</span></a></div>
+        <div class="sale-heading"><h2 id="sale-title">Items for sale.<br><em>Offers welcome.</em></h2><p>Welcome to visitors from the Max Delbrück community. Browse things from our Berlin home, ask a question or send us an offer—including for several pieces together.</p></div>
         <p class="inventory-notice" id="inventory-notice" hidden><span lang="en">Have a price in mind? Offers and questions are welcome. We’re happy to share more photos, discuss several items together and confirm what’s included.</span><br><span lang="de">Angebote und Fragen sind willkommen. Schreibt uns gern, auch wenn ihr mehrere Artikel zusammen möchtet.</span> <a href="for-sale.html#collection">Collection &amp; garage directions · 2 m clearance ↗</a></p>
         <div id="sale-controls" class="sale-controls" hidden>
           <label class="search-box"><span>Search items</span><input id="item-search" type="search" placeholder="Search by name or description…" autocomplete="off"></label>

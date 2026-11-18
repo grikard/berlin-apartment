@@ -12,6 +12,8 @@ Owner-approved language default: open in English, with Deutsch available in the 
 
 Owner-approved bundle photos: alternative bundles with an approved lead image use the same existing gallery controls as individual listings. Include all approved component photos in the bundle gallery, reusing their original numbered paths.
 
+Owner-approved price clarity: every individual or alternative bundle card starts with one header containing its title, asking price and negotiability wording. Keep one visible price per card, above the gallery, inside a complete card border. Phone screens use one column up to 640px. Keep “Items for sale” prominent in navigation and home-page actions. Preserve inventory prices, established fonts, gallery behavior and descending-price ordering when refining this layout.
+
 Audience and tone: this personal home sale is being shared with the Max Delbrück community. Welcome visitors warmly, invite questions and offers, and make it easy to discuss several items together. Keep pricing and inclusion promises tied to the approved catalogue. Item contact links open editable offer/question drafts in German or English.
 
 Do not add raw Excel/Word files, original phone folders, internal valuations, negotiation floors, retained relocation stock or buyer information. Gitignored `docs/`, `photos/` and `.local/` remain local working material, not an alternative editable master. Public commit messages, PR descriptions and comments must contain public information only. Private credentials and cross-repository tokens must never be committed.
