@@ -485,7 +485,22 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "DES-02"
     ],
-    "photo": ""
+    "photo": "photos/items/DES-02-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/DES-02-01.jpg",
+        "thumbnail": "photos/items/thumbs/DES-02-01.jpg",
+        "alt": "White IKEA MITTZON electric desk underframe, with a separate tabletop against the wall",
+        "caption": "Actual white desk underframe; tabletop not included.",
+        "captionDe": "Weißes Schreibtisch-Untergestell; Tischplatte nicht enthalten.",
+        "width": 1500,
+        "height": 2000
+      }
+    ],
+    "photoAlt": "White IKEA MITTZON electric desk underframe, with a separate tabletop against the wall",
+    "photoEvidence": "actual",
+    "photoNote": "Underframe only. The separate tabletop leaning against the wall is not included.",
+    "photoNoteDe": "Nur Untergestell. Die separat an der Wand stehende Tischplatte ist nicht enthalten."
   },
   {
     "id": "BIK-01",
@@ -1243,7 +1258,22 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "KIT-12"
     ],
-    "photo": ""
+    "photo": "photos/items/KIT-12-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/KIT-12-01.jpg",
+        "thumbnail": "photos/items/thumbs/KIT-12-01.jpg",
+        "alt": "WMF Gourmet mortar and pestle retail box photographed on a desk",
+        "caption": "Original WMF Gourmet mortar-and-pestle box; contents not verified.",
+        "captionDe": "Originalverpackung WMF Gourmet Mörser mit Stößel; Inhalt nicht geprüft.",
+        "width": 1500,
+        "height": 2000
+      }
+    ],
+    "photoAlt": "WMF Gourmet mortar and pestle retail box photographed on a desk",
+    "photoEvidence": "packaging",
+    "photoNote": "Original mortar-and-pestle box photographed; contents and condition still to be confirmed.",
+    "photoNoteDe": "Originalverpackung des Mörsers mit Stößel fotografiert; Inhalt und Zustand noch zu bestätigen."
   },
   {
     "id": "LGT-02",
@@ -1263,7 +1293,22 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "LGT-02"
     ],
-    "photo": ""
+    "photo": "photos/items/LGT-02-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/LGT-02-01.jpg",
+        "thumbnail": "photos/items/thumbs/LGT-02-01.jpg",
+        "alt": "Illuminated decorative lamp with cream textured base and beige shade on the left of a white desk",
+        "caption": "One lamp pictured illuminated at left; desk excluded, second lamp not pictured.",
+        "captionDe": "Eine Lampe links eingeschaltet abgebildet; ohne Schreibtisch, zweite Lampe nicht abgebildet.",
+        "width": 1500,
+        "height": 2000
+      }
+    ],
+    "photoAlt": "Illuminated decorative lamp with cream textured base and beige shade on the left of a white desk",
+    "photoEvidence": "actual",
+    "photoNote": "One lamp is shown at the left of the desk. The desk is not part of this offer; the second lamp is not pictured.",
+    "photoNoteDe": "Eine Lampe steht links auf dem Schreibtisch. Der Schreibtisch gehört nicht zu diesem Angebot; die zweite Lampe ist nicht abgebildet."
   },
   {
     "id": "LGT-03",
@@ -1283,7 +1328,31 @@ window.BERLIN_LISTING.items = [
     "inventoryIds": [
       "LGT-03"
     ],
-    "photo": ""
+    "photo": "photos/items/LGT-03-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/LGT-03-01.jpg",
+        "thumbnail": "photos/items/thumbs/LGT-03-01.jpg",
+        "alt": "Philips Hue White and Color Ambiance E27 starter-kit box, front view",
+        "caption": "Starter-kit box front; actual contents not verified.",
+        "captionDe": "Vorderseite der Starter-Set-Verpackung; tatsächlicher Inhalt nicht geprüft.",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "photos/items/LGT-03-02.jpg",
+        "thumbnail": "photos/items/thumbs/LGT-03-02.jpg",
+        "alt": "Back of Philips Hue starter-kit box showing the printed two-bulb and bridge contents",
+        "caption": "Box back with printed contents and features; actual contents not verified.",
+        "captionDe": "Kartonrückseite mit angegebenem Inhalt und Funktionen; tatsächlicher Inhalt nicht geprüft.",
+        "width": 1500,
+        "height": 2000
+      }
+    ],
+    "photoAlt": "Philips Hue White and Color Ambiance E27 starter-kit box, front view",
+    "photoEvidence": "packaging",
+    "photoNote": "Starter-kit packaging only; bulbs, bridge and operating condition have not been verified.",
+    "photoNoteDe": "Nur die Verpackung des Starter-Sets; Leuchtmittel, Bridge und Funktion sind nicht geprüft."
   }
 ];
 window.BERLIN_LISTING.optionalBundles = [
