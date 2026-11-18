@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueSha256": "55fae85a2f3b0f2aa74a9650f782290777838f5ea01018175b0b3265575c4c81",
+  "catalogueSha256": "6e3d8b294739f47df37f702f1923a1ae60d005ab873fcafbfdf72251f2cbd3f1",
   "photos": [
     {
       "path": "photos/items/BED-01-01.jpg",
@@ -41,6 +41,10 @@
     {
       "path": "photos/items/BIK-01-06.jpg",
       "sha256": "83f959fca87ca7c0f7343e58b35842cafc9b7651bb198f33ba0bcc1a44cc6807"
+    },
+    {
+      "path": "photos/items/BIK-01-07.jpg",
+      "sha256": "0c33fcc263ef7b757b1240db66871303dac22f65d3f380959aa2d309829bb97d"
     },
     {
       "path": "photos/items/BND-02-01.jpg",
@@ -333,6 +337,10 @@
     {
       "path": "photos/items/thumbs/BIK-01-06.jpg",
       "sha256": "c3678d7f877b82bea4daec905532450c5d7eab1f009b20087fe4721c3c4bb14d"
+    },
+    {
+      "path": "photos/items/thumbs/BIK-01-07.jpg",
+      "sha256": "311c6a68e46eb1a2f36b6d5d503b1337d2e05bb713fb37567d3f5bb6bd9d5a08"
     },
     {
       "path": "photos/items/thumbs/BND-02-01.jpg",
