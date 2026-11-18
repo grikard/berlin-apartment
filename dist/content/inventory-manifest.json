@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueSha256": "4365a0dc6b4cd6609cc494be10261cdecd1c6b55e40f91522acbe5a588d5d8a6",
+  "catalogueSha256": "881b873e1cefcba61140593a01f80c25ae01b6f1e0e03de724ee4cd51676c65b",
   "photos": [
     {
       "path": "photos/items/BED-01-01.jpg",
@@ -269,6 +269,10 @@
     {
       "path": "photos/items/SHO-01-01.jpg",
       "sha256": "f111901c0cc30095929df13eb096f4fa978af7fb24abbbec25e748380f7d273c"
+    },
+    {
+      "path": "photos/items/SOF-01-01.jpg",
+      "sha256": "b7dfbf7f9f4f4a9df57e5d01447ce65aa8f65d0c2596b4ca6b3b5829e1d0d460"
     },
     {
       "path": "photos/items/TV-01-01.jpg",
@@ -573,6 +577,10 @@
     {
       "path": "photos/items/thumbs/SHO-01-01.jpg",
       "sha256": "b456a5d828223213e703803a32a802b1704a5080d23eb2e29d8b45bf5618ec39"
+    },
+    {
+      "path": "photos/items/thumbs/SOF-01-01.jpg",
+      "sha256": "eb782f7fafd52d766e6da1d81e84c6dc653c338611747465ddba49469a1a931b"
     },
     {
       "path": "photos/items/thumbs/TV-01-01.jpg",

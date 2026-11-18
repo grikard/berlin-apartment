@@ -1241,6 +1241,39 @@ window.BERLIN_LISTING.items = [
     ]
   },
   {
+    "id": "SOF-01",
+    "title": "IKEA FRIHETEN 3-seat sofa bed – Bomstad black",
+    "titleDe": "IKEA FRIHETEN 3er-Bettsofa – Bomstad Schwarz",
+    "category": "Home",
+    "price": "€279 VB",
+    "priceEur": 279,
+    "priceKind": "proposed",
+    "status": "available",
+    "description": "IKEA FRIHETEN three-seat sofa bed in Bomstad black, with a well-maintained leather-look coated-fabric cover. Very good condition with normal signs of use, as described by the seller. Three matching back cushions are included.\n\nConverts into a double bed and has built-in storage beneath the seat. Sofa dimensions: 225 × 105 × 83 cm (W × D × H); bed size: 144 × 199 cm. IKEA article number: 203.411.35.\n\nSelling due to relocation. Asking price €279, negotiable. Questions and offers are welcome—we’re happy to arrange a look before you decide.\n\nCollection by appointment in Berlin-Mitte near Potsdamer Platz; collection only, no shipping. The buyer handles carrying, any necessary disassembly and transport. Parking is available at The Playce, Shopping level −4F; parking fees are paid by the buyer. See the collection directions for the entrance photo and 2 m vehicle-height limit.",
+    "descriptionDe": "IKEA FRIHETEN 3er-Bettsofa in Bomstad Schwarz mit gepflegtem Bezug aus beschichtetem Stoff in Lederoptik. Laut Verkäufer in sehr gutem Zustand mit normalen Gebrauchsspuren. Drei passende Rückenkissen sind enthalten.\n\nZum Doppelbett ausziehbar, mit Stauraum unter der Sitzfläche. Sofamaße: 225 × 105 × 83 cm (B × T × H); Liegefläche: 144 × 199 cm. IKEA Artikelnummer: 203.411.35.\n\nVerkauf wegen Umzugs. Preis: 279 € VB. Fragen und Angebote sind willkommen – gern vereinbaren wir eine Besichtigung, damit ihr euch das Sofa in Ruhe ansehen könnt.\n\nAbholung nach Vereinbarung in Berlin-Mitte nahe Potsdamer Platz; nur Abholung, kein Versand. Tragen, gegebenenfalls Abbau und Transport übernimmt der Käufer. Parken ist im Parkhaus The Playce auf der Shopping-Ebene −4F möglich; die Parkgebühren trägt der Käufer. Die Abholhinweise zeigen die Einfahrt und die Höhenbegrenzung von 2 m.",
+    "condition": "Very good condition with normal signs of use, as described by the seller. Three matching back cushions included.",
+    "conditionDe": "Laut Verkäufer in sehr gutem Zustand mit normalen Gebrauchsspuren. Drei passende Rückenkissen inklusive.",
+    "dimensions": "225 × 105 × 83 cm (W/B × D/T × H); bed / Liegefläche 144 × 199 cm",
+    "lotType": "item",
+    "inventoryIds": [
+      "SOF-01"
+    ],
+    "photo": "photos/items/SOF-01-01.jpg",
+    "photoAlt": "Actual black IKEA FRIHETEN sofa with three matching back cushions",
+    "photoEvidence": "actual",
+    "photos": [
+      {
+        "src": "photos/items/SOF-01-01.jpg",
+        "thumbnail": "photos/items/thumbs/SOF-01-01.jpg",
+        "alt": "Actual black IKEA FRIHETEN sofa with three matching back cushions",
+        "caption": "Actual sofa for sale, with all three back cushions.",
+        "captionDe": "Das angebotene Sofa mit allen drei Rückenkissen.",
+        "width": 1500,
+        "height": 2000
+      }
+    ]
+  },
+  {
     "id": "KIT-12",
     "title": "WMF Gourmet mortar and pestle – original box",
     "titleDe": "WMF Gourmet Mörser mit Stößel – Originalkarton",
@@ -1383,6 +1416,6 @@ window.BERLIN_LISTING.optionalBundles = [
 ];
 window.BERLIN_LISTING.sale = {
   "defaultLanguage": "en",
-  "inventoryRecordCount": 37,
+  "inventoryRecordCount": 38,
   "catalogueDate": "18 November 2026"
 };
