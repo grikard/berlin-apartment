@@ -100,6 +100,7 @@
   .item-summary h3 { font-size: 23px; }
 }
 @media (max-width: 640px) {
+  .site-header .nav-sale { flex-basis: 100%; order: -1; justify-content: space-between; }
   .items-grid,
   .belongings-page .items-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .hero-actions > .button { width: 100%; }
