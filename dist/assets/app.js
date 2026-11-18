@@ -150,7 +150,7 @@
     card.dataset.category = item.category || 'Other';
     card.lang = language;
     card.id = `item-${item.id}`;
-    if (!optional) {
+    if (!optional || localPhoto(item.photo)) {
       const photoGroup = new Map();
       if (localPhoto(item.photo)) photoGroup.set(item.photo, { src: item.photo, alt: item.photoAlt || title });
       for (const photo of item.photos || []) if (localPhoto(photo.src)) photoGroup.set(photo.src, photo);
