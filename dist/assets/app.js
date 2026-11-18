@@ -150,6 +150,20 @@
     card.dataset.category = item.category || 'Other';
     card.lang = language;
     card.id = `item-${item.id}`;
+    const summary = el('header', 'item-summary');
+    const meta = el('div', 'item-meta');
+    meta.append(el('span', '', item.category || 'Other'), el('span', 'item-status', labels[status]));
+    const heading = el('h3', '', title);
+    heading.id = `item-title-${item.id}`;
+    card.setAttribute('aria-labelledby', heading.id);
+    const price = el('div', 'item-price-group');
+    const pricePending = item.priceKind === 'on-request';
+    const amount = pricePending
+      ? (language === 'de' ? 'Preis auf Anfrage' : 'Price on request')
+      : new Intl.NumberFormat(language === 'de' ? 'de-DE' : 'en-IE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 0, maximumFractionDigits: 2 }).format(item.priceEur);
+    price.append(el('span', 'item-price', amount), el('span', 'item-price-label', pricePending ? (language === 'de' ? 'Fragt uns gern' : 'Ask us about it') : (language === 'de' ? 'VB · Angebote willkommen' : 'or best offer')));
+    summary.append(meta, heading, price);
+    card.append(summary);
     if (!optional || localPhoto(item.photo)) {
       const photoGroup = new Map();
       if (localPhoto(item.photo)) photoGroup.set(item.photo, { src: item.photo, alt: item.photoAlt || title });
@@ -208,9 +222,6 @@
       const photoNote = textFor(item, 'photoNote', language);
       if (photoNote) card.append(el('p', 'item-photo-note', photoNote));
     }
-    const meta = el('div', 'item-meta');
-    meta.append(el('span', '', item.category || 'Other'), el('span', 'item-status', labels[status]));
-    card.append(meta, el('h3', '', title));
     if (item.dimensions) card.append(el('p', 'item-dimensions', `${language === 'de' ? 'Maße / Inhalt' : 'Dimensions / capacity'}: ${item.dimensions}`));
     const condition = textFor(item, 'condition', language);
     if (condition) card.append(el('p', 'item-disclosure', condition));
@@ -229,10 +240,6 @@
       card.append(components);
     }
     const bottom = el('div', 'item-bottom');
-    const price = el('div', 'item-price-group');
-    const pricePending = item.priceKind === 'on-request';
-    price.append(el('span', 'item-price-label', pricePending ? (language === 'de' ? 'Fragt uns gern' : 'Ask us about it') : (language === 'de' ? 'Preisvorstellung · Angebote willkommen' : 'Asking price · offers welcome')), el('span', 'item-price', pricePending ? (language === 'de' ? 'Preis auf Anfrage' : 'Price on request') : (item.price || (language === 'de' ? 'Preis auf Anfrage' : 'Price on request'))));
-    bottom.append(price);
     if (isOpen(item)) {
       const link = el('a', 'item-ask', language === 'de' ? 'Angebot senden ↗' : 'Make an offer ↗');
       const message = language === 'de'
