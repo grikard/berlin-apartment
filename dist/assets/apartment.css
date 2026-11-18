@@ -1,0 +1,64 @@
+.hero-art.has-photo > img { object-position: center 52%; }
+.hero-art .round-arrow { text-decoration: none; }
+.apartment-photo-story { display: grid; grid-template-columns: 1.08fr 1fr; gap: 80px; align-items: center; padding-block: 72px; border-bottom: 1px solid var(--line); }
+.apartment-story-image,
+.neighbourhood-photos figure,
+.interior-photo { margin: 0; min-width: 0; }
+.apartment-story-image a,
+.neighbourhood-photos a,
+.interior-photo a { display: block; }
+.apartment-story-image img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.apartment-story-image figcaption,
+.neighbourhood-photos figcaption { margin-top: 12px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.apartment-story-copy h2 { font-family: var(--serif); font-size: clamp(34px, 3.5vw, 56px); font-weight: 500; line-height: 1.15; margin: 14px 0 24px; }
+.apartment-story-copy p:not(.eyebrow) { font-size: 15px; line-height: 1.9; color: var(--muted); max-width: 470px; }
+.apartment-story-copy .text-link { display: inline-block; margin-top: 16px; }
+.apartment-interiors,
+.apartment-neighbourhood { padding-top: 52px; margin-top: 64px; border-top: 1px solid var(--line); scroll-margin-top: 24px; }
+.interior-heading,
+.neighbourhood-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 28px; }
+.interior-heading h3,
+.neighbourhood-heading h3 { font-family: var(--serif); font-size: clamp(30px, 3vw, 44px); font-weight: 500; line-height: 1.2; margin: 12px 0 0; }
+.interior-context { max-width: 760px; color: var(--muted); font-size: 14px; line-height: 1.8; margin: 24px 0 8px; }
+.interior-scroll-hint { color: var(--muted); font-size: 12px; line-height: 1.7; margin: 0 0 20px; }
+.interior-controls { display: flex; gap: 10px; flex: 0 0 auto; }
+.interior-controls[hidden] { display: none; }
+.interior-controls button { width: 48px; height: 48px; border: 1px solid var(--ink); background: var(--paper); color: var(--ink); font-size: 22px; cursor: pointer; }
+.interior-controls button:disabled { opacity: .35; cursor: default; }
+.apartment-interior-rail { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 48%); gap: 24px; overflow-x: auto; padding-bottom: 16px; scroll-snap-type: x proximity; overscroll-behavior-inline: contain; scrollbar-width: thin; }
+.interior-photo { scroll-snap-align: start; }
+.interior-photo img { width: 100%; aspect-ratio: 4/3; object-fit: contain; background: #e7ebdf; }
+.interior-photo figcaption { display: flex; align-items: baseline; gap: 14px; padding-block: 14px; color: var(--ink); font-size: 13px; line-height: 1.6; }
+.interior-photo-number { color: var(--muted); font-size: 11px; letter-spacing: 1px; white-space: nowrap; }
+.neighbourhood-heading p { max-width: 390px; font-size: 14px; line-height: 1.8; color: var(--muted); }
+.neighbourhood-photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 30px; }
+.neighbourhood-photos img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+.neighbourhood-actions { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 26px; }
+.apartment-interior-rail:focus-visible,
+.interior-controls button:focus-visible,
+.interior-photo a:focus-visible,
+.apartment-story-image a:focus-visible,
+.neighbourhood-photos a:focus-visible,
+.hero-art .round-arrow:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
+@media (max-width: 1100px) {
+  .apartment-photo-story { gap: 40px; }
+}
+@media (max-width: 760px) {
+  .hero-art.has-photo { height: auto; min-height: 0; aspect-ratio: 3/4; }
+  .apartment-photo-story { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 44px; }
+  .apartment-story-copy { grid-row: 1; }
+  .apartment-story-image img { aspect-ratio: 4/5; }
+  .apartment-interiors,
+  .apartment-neighbourhood { margin-top: 38px; padding-top: 32px; }
+  .apartment-interior-rail { grid-auto-columns: minmax(0, 88%); gap: 16px; }
+  .interior-heading { gap: 16px; }
+  .interior-heading h3 { font-size: 30px; }
+  .interior-controls { gap: 6px; }
+  .neighbourhood-heading { display: block; }
+  .neighbourhood-photos { gap: 24px; grid-template-columns: minmax(0, 1fr); }
+  .neighbourhood-photos img { aspect-ratio: 4/5; }
+  .neighbourhood-actions { align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .apartment-interior-rail { scroll-behavior: auto; }
+}

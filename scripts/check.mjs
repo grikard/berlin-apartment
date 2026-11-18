@@ -22,6 +22,7 @@ if (data.apartment.rentGuide) {
   assert(estimate.lowCents <= estimate.highCents, 'Rent range endpoints must be in order');
 }
 new vm.Script(await read('assets/app.js'));
+new vm.Script(await read('assets/apartment.js'));
 for (const page of (await readdir(root)).filter(name => name.endsWith('.html'))) {
   const html = await read(page);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
@@ -43,6 +44,7 @@ const checkPhoto = async path => {
 for (const photo of data.apartment.photos || []) {
   assert(photo.alt, 'Apartment photos need alternative text');
   await checkPhoto(photo.src);
+  if (photo.preview) await checkPhoto(photo.preview);
 }
 if (data.contact.email) assert(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.contact.email), 'Invalid contact email');
 if (data.contact.whatsapp) assert(/^\d{7,15}$/.test(data.contact.whatsapp.replace(/[\s()+.-]/g, '')), 'WhatsApp needs an international phone number');

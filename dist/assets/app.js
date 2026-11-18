@@ -73,34 +73,15 @@
     const photos = (apartment.photos || []).filter(photo => localPhoto(photo.src) && photo.alt);
     if (photos.length) {
       const first = photos[0];
-      $('hero-image').src = first.src;
+      $('hero-image').src = first.preview || first.src;
+      if (first.srcset) $('hero-image').srcset = first.srcset;
       $('hero-image').alt = first.alt;
       $('hero-image').width = first.width || 800;
       $('hero-image').height = first.height || 900;
       $('hero-caption').textContent = first.caption || 'A home above the city.';
       $('hero-art').classList.add('has-photo');
       $('illustration-note').hidden = true;
-      $('photo-pending').hidden = true;
-      $('photo-gallery').hidden = false;
-      $('photo-gallery').dataset.count = String(photos.length);
-      for (const photo of photos) {
-        const button = el('button', 'gallery-photo');
-        button.type = 'button';
-        button.setAttribute('aria-label', `Enlarge: ${photo.caption || photo.alt}`);
-        const img = el('img');
-        img.src = photo.src; img.alt = photo.alt; img.loading = 'lazy'; img.width = photo.width || 800; img.height = photo.height || 600;
-        button.append(img, el('span', '', photo.caption || photo.alt));
-        button.addEventListener('click', () => {
-          $('dialog-image').src = photo.src;
-          $('dialog-image').alt = photo.alt;
-          $('dialog-caption').textContent = photo.caption || photo.alt;
-          $('photo-dialog').showModal();
-        });
-        $('photo-gallery').append(button);
-      }
     }
-    $('close-photo').addEventListener('click', () => $('photo-dialog').close());
-    $('photo-dialog').addEventListener('click', event => { if (event.target === $('photo-dialog')) $('photo-dialog').close(); });
   }
 
   if (email) {
