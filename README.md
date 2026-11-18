@@ -32,26 +32,28 @@ The private repository https://github.com/grikard/berlin-marketplace-master owns
 
 ## Add apartment photographs
 
-Get a sharing link to the OneDrive folder from your phone, or copy selected photographs into `dist/photos/apartment/` when the folder is available. JPG, PNG, WebP and AVIF are supported; convert HEIC images before adding them. Use simple filenames such as `family-room.jpg`.
+Keep original phone files in ignored `photos/`. Review the images and record the owner-approved selection, source references and derivative hashes in the private master's `apartmentPresentation` registry. Its selected copies live under `assets/website/apartment/`. Copy approved website JPEGs into `dist/photos/apartment/`, with smaller responsive versions in `dist/photos/apartment/previews/`. Use descriptive filenames and remove all optional embedded metadata before publication.
 
 Add entries to the `apartment.photos` array in `dist/content/site-data.js`:
 
 ```javascript
 photos: [
   {
-    src: "photos/apartment/family-room.jpg",
-    alt: "The family room in the Berlin apartment",
-    caption: "The family room"
-  },
-  {
-    src: "photos/apartment/balcony.jpg",
-    alt: "The apartment's wrap-around balcony",
-    caption: "The wrap-around balcony"
+    src: "photos/apartment/terrace-life-01.jpg",
+    preview: "photos/apartment/previews/terrace-life-01.jpg",
+    srcset: "photos/apartment/previews/terrace-life-01.jpg 720w, photos/apartment/terrace-life-01.jpg 1500w",
+    alt: "The apartment's terrace and surrounding rooftops",
+    caption: "Room outside, above the city",
+    role: "hero",
+    width: 1500,
+    height: 2000
   }
 ]
 ```
 
-The first photo becomes the hero image. All apartment photos appear in a gallery and can be enlarged. The two supplied balcony-view HEIC originals have been converted to JPEG copies in `dist/photos/apartment/`, with EXIF metadata omitted. The first is used as the main image; both appear in the apartment gallery at their original portrait ratio. The original phone files remain in ignored `photos/`. Copy only photographs intended for the public website; do not put the whole personal OneDrive folder into this repository. Before adding phone photos, remove location metadata and check for personal documents or identifying details in the frame.
+The first photo supplies the hero. Terrace and neighbourhood photographs are placed directly in `dist/index.html` as part of the page story; adding a data entry alone does not insert another story section. Keep their responsive paths, dimensions and captions aligned with the data. Interior views live in the static `#photo-gallery` scroll strip, enhanced by `assets/apartment.js` with arrows, keyboard and reduced-motion support. There is no automatic slideshow or photo modal. Clearly label the June 2023 unfurnished interiors as earlier views, and preserve their context when changing the page. The product exporter does not manage apartment photos or page composition.
+
+Run `npm run check`, inspect metadata on new derivatives and verify the scroll controls before publishing a reviewed branch. Check photos for personal documents and identifying details. Only the selected metadata-free derivatives belong on the public website; original phone files remain private.
 
 ## Add an item for sale
 
