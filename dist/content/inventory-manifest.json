@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueSha256": "10abb94e30e1b220ed174dcdbcfa42226cdbb7226adab8d84d2fdb12a3d6d190",
+  "catalogueSha256": "4365a0dc6b4cd6609cc494be10261cdecd1c6b55e40f91522acbe5a588d5d8a6",
   "photos": [
     {
       "path": "photos/items/BED-01-01.jpg",
@@ -93,6 +93,10 @@
     {
       "path": "photos/items/DES-01-01.jpg",
       "sha256": "7f7c7298723bf2cd27b8a9ad158adb36f19a2fa202e9d72d6661ef2d3bfba298"
+    },
+    {
+      "path": "photos/items/DES-02-01.jpg",
+      "sha256": "e34e54928df49f36b866be819d7f788eb775e0ad86db31cc12f5f675d6433b3b"
     },
     {
       "path": "photos/items/DRW-01-01.jpg",
@@ -195,6 +199,10 @@
       "sha256": "7b0a91e9fd7a88e36e315e0386e89cb99b4b69d93cd282988cb7b02e1bbdbe33"
     },
     {
+      "path": "photos/items/KIT-12-01.jpg",
+      "sha256": "cedc05edfd017e249faf1ea04285c17f1da962ef8d347ef3a4b5b05dddb4a0da"
+    },
+    {
       "path": "photos/items/LGT-01-01.jpg",
       "sha256": "c4089b3f10a104ab49c2130bf7f7296702acd3de674058916f26c2cc8dfceaea"
     },
@@ -205,6 +213,18 @@
     {
       "path": "photos/items/LGT-01-03.jpg",
       "sha256": "c38751f9b1496233fd86d1ecde825812664a55e2eee8c7d84ada8c21335bb377"
+    },
+    {
+      "path": "photos/items/LGT-02-01.jpg",
+      "sha256": "ed88e006f0a67caed1e2f5064f78993d44e4bf28e87b241489130d433152265d"
+    },
+    {
+      "path": "photos/items/LGT-03-01.jpg",
+      "sha256": "c71135702df7e669b1537280467304a420bfc02981fbed49fd0a79f5b64002d0"
+    },
+    {
+      "path": "photos/items/LGT-03-02.jpg",
+      "sha256": "7282781073dee999e26c22db71e7f6430e12b22705a002217cef012986cfcd41"
     },
     {
       "path": "photos/items/MIR-01-01.jpg",
@@ -391,6 +411,10 @@
       "sha256": "462a52d0738e415fb3a25a1c66b03e6f42e7d0b1995f4d739a8faee9041a969e"
     },
     {
+      "path": "photos/items/thumbs/DES-02-01.jpg",
+      "sha256": "d9f3b07c4dd061825ebaa2ed2869eda57a48ae6127a0ccbf9566334b7ae7f0ce"
+    },
+    {
       "path": "photos/items/thumbs/DRW-01-01.jpg",
       "sha256": "d81d3ecc2230aa4a68ea867067cd1fd814fcb55aab0969be50b13357336673a2"
     },
@@ -489,6 +513,22 @@
     {
       "path": "photos/items/thumbs/KIT-09-03.jpg",
       "sha256": "c080740a776c729edafd005ab18832c44bbf242e841ec762e85bc4ef8d557412"
+    },
+    {
+      "path": "photos/items/thumbs/KIT-12-01.jpg",
+      "sha256": "19ddca056258c05464ae489f6ec1def7589afe7f11d6f378991da1286c9b99ee"
+    },
+    {
+      "path": "photos/items/thumbs/LGT-02-01.jpg",
+      "sha256": "462a52d0738e415fb3a25a1c66b03e6f42e7d0b1995f4d739a8faee9041a969e"
+    },
+    {
+      "path": "photos/items/thumbs/LGT-03-01.jpg",
+      "sha256": "7f76fc737c6c0e6d32150cc8418686cb5c0baebb7914be7e3a400827bd3f5a5f"
+    },
+    {
+      "path": "photos/items/thumbs/LGT-03-02.jpg",
+      "sha256": "f55c1780a692473b52954ceb289ee12bbcf6fd0bfa6f2fa5dc2378b1436d74e7"
     },
     {
       "path": "photos/items/thumbs/MIR-01-01.jpg",
