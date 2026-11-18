@@ -496,23 +496,30 @@ window.BERLIN_LISTING.items = [
     "priceEur": 200,
     "priceKind": "proposed",
     "status": "enquire",
-    "description": "Black KTM Trekking Geo bicycle with a rear rack. Visible cosmetic wear. Accessories seen in earlier photos, such as a bag or locks, are included only if confirmed before sale.\n\nIncluded accessories, as confirmed by the seller: rear luggage rack, front-mounted bag, bicycle pump, new saddle and two bicycle locks. Cosmetic wear visible in photographs; mechanical condition should be checked before purchase.",
-    "descriptionDe": "Schwarzes KTM Trekking Geo Trekkingrad mit Gepäckträger. Optische Gebrauchsspuren sind vorhanden. Weitere auf den Fotos gezeigte Gegenstände (z. B. Tasche oder Schlösser) gehören nur dazu, wenn dies vor dem Kauf bestätigt wurde.\n\nLaut Verkäufer inklusive: Gepäckträger hinten, Fahrradtasche vorne, Fahrradpumpe, neuer Sattel und zwei Fahrradschlösser. Sichtbare optische Gebrauchsspuren; technischen Zustand bitte vor dem Kauf prüfen.",
-    "condition": "Visible cosmetic wear; seller confirms rear rack, front bag, pump, new seat and two locks are included. Gears/brakes/tyres and lock keys should be checked at pickup.",
-    "conditionDe": "Sichtbare optische Gebrauchsspuren; laut Verkäufer sind Gepäckträger hinten, vordere Tasche, Pumpe, neuer Sattel und zwei Schlösser enthalten. Schaltung/Bremsen/Reifen und Schlüssel bei Abholung prüfen.",
+    "description": "Black KTM Trekking Geo bicycle with visible cosmetic wear. Included accessories confirmed by the seller: rear luggage rack, front-mounted bag, bicycle pump, new spare saddle and two bicycle locks.\n\n11 gears, confirmed by the seller. The fitted bicycle lights do not work; the lighting wiring needs to be rerun or repaired. The exact fault and repair cost have not been diagnosed, and bulb replacement may also be needed. An additional light has been fitted, but its operation has not been confirmed.\n\nCheck the mechanical condition, brakes, shifting, tyres and lock keys before purchase.",
+    "descriptionDe": "Schwarzes KTM Trekking Geo Trekkingrad mit sichtbaren optischen Gebrauchsspuren. Vom Verkäufer bestätigtes Zubehör: Gepäckträger hinten, vordere Fahrradtasche, Fahrradpumpe, neuer Ersatzsattel und zwei Fahrradschlösser.\n\n11 Gänge, vom Verkäufer bestätigt. Die am Fahrrad montierte Beleuchtung funktioniert nicht; die Verkabelung muss neu verlegt oder repariert werden. Die genaue Ursache und die Reparaturkosten sind nicht geklärt; möglicherweise müssen auch Leuchtmittel ersetzt werden. Eine zusätzliche Leuchte wurde angebracht; deren Funktion ist nicht bestätigt.\n\nTechnischen Zustand, Bremsen, Schaltung, Reifen und Schlüssel vor dem Kauf prüfen.",
+    "condition": "Visible cosmetic wear. Included accessories confirmed by the seller: rear luggage rack, front-mounted bag, bicycle pump, new spare saddle and two bicycle locks. 11 gears, confirmed by the seller. The fitted bicycle lights do not work; the lighting wiring needs to be rerun or repaired. The exact fault and repair cost have not been diagnosed, and bulb replacement may also be needed. An additional light has been fitted, but its operation has not been confirmed.",
+    "conditionDe": "Sichtbare optische Gebrauchsspuren. Vom Verkäufer bestätigtes Zubehör: Gepäckträger hinten, vordere Fahrradtasche, Fahrradpumpe, neuer Ersatzsattel und zwei Fahrradschlösser. 11 Gänge, vom Verkäufer bestätigt. Die am Fahrrad montierte Beleuchtung funktioniert nicht; die Verkabelung muss neu verlegt oder repariert werden. Die genaue Ursache und die Reparaturkosten sind nicht geklärt; möglicherweise müssen auch Leuchtmittel ersetzt werden. Eine zusätzliche Leuchte wurde angebracht; deren Funktion ist nicht bestätigt.",
     "dimensions": "",
     "lotType": "item",
     "inventoryIds": [
       "BIK-01"
     ],
-    "photo": "photos/items/BIK-01-01.jpg",
+    "photo": "photos/items/BIK-01-07.jpg",
     "photos": [
+      {
+        "src": "photos/items/BIK-01-07.jpg",
+        "thumbnail": "photos/items/thumbs/BIK-01-07.jpg",
+        "alt": "Latest KTM bicycle photo with the bicycle pump and spare saddle shown",
+        "caption": "Latest photo: bicycle, pump and spare saddle",
+        "captionDe": "Neuestes Foto: Fahrrad, Pumpe und Ersatzsattel"
+      },
       {
         "src": "photos/items/BIK-01-01.jpg",
         "thumbnail": "photos/items/thumbs/BIK-01-01.jpg",
-        "alt": "KTM Trekking Geo bicycle with rear rack; accessories by agreement",
-        "caption": "KTM Trekking Geo bicycle with rear rack; accessories by agreement",
-        "captionDe": "KTM Trekking Geo Fahrrad mit Gepäckträger; Zubehör nach Vereinbarung"
+        "alt": "Earlier full view of the KTM bicycle",
+        "caption": "Earlier full view of the bicycle",
+        "captionDe": "Frühere Gesamtansicht des Fahrrads"
       },
       {
         "src": "photos/items/BIK-01-02.jpg",
@@ -550,7 +557,7 @@ window.BERLIN_LISTING.items = [
         "captionDe": "Gepäckträger und Rahmen im Detail"
       }
     ],
-    "photoAlt": "KTM Trekking Geo bicycle with rear rack; accessories by agreement",
+    "photoAlt": "Latest KTM bicycle photo with the bicycle pump and spare saddle shown",
     "photoEvidence": "actual"
   },
   {
