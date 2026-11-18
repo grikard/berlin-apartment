@@ -1272,6 +1272,15 @@ window.BERLIN_LISTING.items = [
         "height": 2000
       },
       {
+        "src": "photos/items/SOF-01-04.jpg",
+        "thumbnail": "photos/items/thumbs/SOF-01-04.jpg",
+        "alt": "Actual FRIHETEN sofa with the seat lifted to show its storage compartment and cushions inside",
+        "caption": "Our actual sofa with the storage compartment open; back cushions are shown inside.",
+        "captionDe": "Unser angebotenes Sofa mit geöffnetem Stauraum; die Rückenkissen liegen darin.",
+        "width": 1500,
+        "height": 2000
+      },
+      {
         "src": "photos/items/SOF-01-02.jpg",
         "thumbnail": "photos/items/thumbs/SOF-01-02.jpg",
         "alt": "IKEA reference screenshot of the FRIHETEN sofa in Bomstad black; not the actual sofa for sale",
@@ -1290,8 +1299,8 @@ window.BERLIN_LISTING.items = [
         "height": 2000
       }
     ],
-    "photoNote": "The first photo shows our actual sofa. The following IKEA reference images illustrate the model and unfolded-bed configuration. Our asking price is €200 VB, collection only; retailer offers and extra furnishings shown in the reference images are not included.",
-    "photoNoteDe": "Das erste Foto zeigt unser angebotenes Sofa. Die folgenden IKEA-Referenzbilder zeigen das Modell und die ausgeklappte Liegefläche. Unser Preis beträgt 200 € VB, nur Abholung; Händlerangebote und zusätzliche Einrichtung auf den Referenzbildern sind nicht enthalten."
+    "photoNote": "The first two photos show our actual sofa, including its open storage compartment. The following IKEA reference images illustrate the model and unfolded-bed configuration. Our asking price is €200 VB, collection only; retailer offers and extra furnishings shown in the reference images are not included.",
+    "photoNoteDe": "Die ersten beiden Fotos zeigen unser angebotenes Sofa, auch mit geöffnetem Stauraum. Die folgenden IKEA-Referenzbilder zeigen das Modell und die ausgeklappte Liegefläche. Unser Preis beträgt 200 € VB, nur Abholung; Händlerangebote und zusätzliche Einrichtung auf den Referenzbildern sind nicht enthalten."
   },
   {
     "id": "KIT-12",
