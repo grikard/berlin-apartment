@@ -1313,7 +1313,7 @@ window.BERLIN_LISTING.optionalBundles = [
   }
 ];
 window.BERLIN_LISTING.sale = {
-  "defaultLanguage": "de",
+  "defaultLanguage": "en",
   "inventoryRecordCount": 37,
   "catalogueDate": "18 November 2026"
 };
