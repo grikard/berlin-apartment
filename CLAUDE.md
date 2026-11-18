@@ -8,6 +8,8 @@ Preserve the website's typography, layout, `dist/assets/app.js`, gallery behavio
 
 Owner-approved display order: show numeric asking prices from highest to lowest, followed by price-on-request listings. Search, category and language changes preserve that order. Equal-price listings retain their source order. This presentation rule does not reorder the canonical inventory or change bundle accounting.
 
+Audience and tone: this personal home sale is being shared with the Max Delbrück community. Welcome visitors warmly, invite questions and offers, and make it easy to discuss several items together. Keep pricing and inclusion promises tied to the approved catalogue. Item contact links open editable offer/question drafts in German or English.
+
 Do not add raw Excel/Word files, original phone folders, internal valuations, negotiation floors, retained relocation stock or buyer information. Gitignored `docs/`, `photos/` and `.local/` remain local working material, not an alternative editable master. Public commit messages, PR descriptions and comments must contain public information only. Private credentials and cross-repository tokens must never be committed.
 
 After a public PR merges and deploys, reconcile the published state into the private master. An emergency website content fix must be reconciled into that master before the next export.

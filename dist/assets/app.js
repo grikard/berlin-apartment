@@ -13,9 +13,9 @@
   const email = typeof contact.email === 'string' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact.email) ? contact.email : '';
   const phone = typeof contact.whatsapp === 'string' ? contact.whatsapp.replace(/[\s()+.-]/g, '') : '';
   const whatsapp = /^\d{7,15}$/.test(phone) ? phone : '';
-  const enquiryUrl = subject => {
-    if (email) return `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-    if (whatsapp) return `https://wa.me/${whatsapp}?text=${encodeURIComponent(subject)}`;
+  const enquiryUrl = (subject, message = '') => {
+    if (email) return `mailto:${email}?subject=${encodeURIComponent(subject)}${message ? `&body=${encodeURIComponent(message)}` : ''}`;
+    if (whatsapp) return `https://wa.me/${whatsapp}?text=${encodeURIComponent([subject, message].filter(Boolean).join('\n\n'))}`;
     return '#contact';
   };
   const localPhoto = value => typeof value === 'string' && /^photos\/[\w./ -]+\.(jpe?g|png|webp|avif)$/i.test(value) && !value.split('/').includes('..');
@@ -231,12 +231,15 @@
     const bottom = el('div', 'item-bottom');
     const price = el('div', 'item-price-group');
     const pricePending = item.priceKind === 'on-request';
-    price.append(el('span', 'item-price-label', pricePending ? (language === 'de' ? 'Preis nach Absprache' : 'Price by enquiry') : (language === 'de' ? 'Preisvorschlag · verhandelbar' : 'Proposed price · negotiable')), el('span', 'item-price', pricePending ? (language === 'de' ? 'Preis auf Anfrage' : 'Price on request') : (item.price || (language === 'de' ? 'Preis auf Anfrage' : 'Price on request'))));
+    price.append(el('span', 'item-price-label', pricePending ? (language === 'de' ? 'Fragt uns gern' : 'Ask us about it') : (language === 'de' ? 'Preisvorstellung · Angebote willkommen' : 'Asking price · offers welcome')), el('span', 'item-price', pricePending ? (language === 'de' ? 'Preis auf Anfrage' : 'Price on request') : (item.price || (language === 'de' ? 'Preis auf Anfrage' : 'Price on request'))));
     bottom.append(price);
     if (isOpen(item)) {
-      const link = el('a', 'item-ask', language === 'de' ? 'Anfragen ↗' : 'Ask about this ↗');
-      link.href = enquiryUrl(`Berlin: ${item.id} — ${title}`);
-      link.setAttribute('aria-label', `${language === 'de' ? 'Anfragen' : 'Enquire'}: ${title} (${item.id})`);
+      const link = el('a', 'item-ask', language === 'de' ? 'Angebot senden ↗' : 'Make an offer ↗');
+      const message = language === 'de'
+        ? `Hallo,\n\nich interessiere mich für ${title} (${item.id}).\n\nMein Angebot / meine Frage:\n\nMögliche Abholzeiten:\n\nViele Grüße`
+        : `Hello,\n\nI'm interested in ${title} (${item.id}).\n\nMy offer / question:\n\nPossible collection times:\n\nThank you!`;
+      link.href = enquiryUrl(`Berlin: ${item.id} — ${title}`, message);
+      link.setAttribute('aria-label', `${language === 'de' ? 'Angebot oder Frage zu' : 'Offer or ask about'}: ${title} (${item.id})`);
       bottom.append(link);
     }
     card.append(bottom);
