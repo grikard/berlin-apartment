@@ -1303,6 +1303,41 @@ window.BERLIN_LISTING.items = [
     "photoNoteDe": "Die ersten beiden Fotos zeigen unser angebotenes Sofa, auch mit geöffnetem Stauraum. Die folgenden IKEA-Referenzbilder zeigen das Modell und die ausgeklappte Liegefläche. Unser Preis beträgt 200 € VB, nur Abholung; Händlerangebote und zusätzliche Einrichtung auf den Referenzbildern sind nicht enthalten."
   },
   {
+    "id": "OUT-05",
+    "title": "2 rattan-style balcony loveseats — both units together",
+    "titleDe": "2 Balkon-Doppelsitzer in Rattanoptik — beide zusammen",
+    "category": "Outdoor",
+    "price": "€20 VB",
+    "priceEur": 20,
+    "priceKind": "proposed",
+    "status": "enquire",
+    "description": "Two matching rattan-style balcony loveseats, sold together for €20 total. Each unit has two seats, an integrated glass-top table and a lower shelf. Includes all four light-green seat cushions: four seats and two tables in total. Dark woven finish; used outdoor furniture with normal signs of wear, as shown in the photo. Questions and offers are welcome. Collection near Potsdamer Platz by appointment; please arrange carrying and transport. The Playce shopping garage, level -4F, is available at the buyer’s expense. Collection only; no shipping. Other objects in the background are not included.",
+    "descriptionDe": "Zwei passende Balkon-Doppelsitzer in Rattanoptik, zusammen für insgesamt 20 €. Jede Einheit bietet zwei Sitzplätze, einen integrierten Glastisch und eine untere Ablage. Alle vier hellgrünen Sitzkissen sind dabei: insgesamt vier Sitzplätze und zwei Tische. Dunkle Flechtoptik; gebrauchte Outdoor-Möbel mit normalen Gebrauchsspuren, siehe Foto. Fragen und Angebote sind willkommen. Abholung nahe Potsdamer Platz nach Terminabsprache; Tragen und Transport bitte selbst organisieren. Parken im Parkhaus The Playce, Shopping-Ebene -4F, auf eigene Kosten. Nur Abholung, kein Versand. Andere Gegenstände im Hintergrund sind nicht enthalten.",
+    "condition": "Used outdoor furniture, as photographed; inspect cushions, table glass and woven finish.",
+    "conditionDe": "Gebrauchte Outdoor-Möbel, siehe Foto; Kissen, Glas und Geflecht vor Ort prüfen.",
+    "dimensions": "Not measured",
+    "lotType": "item",
+    "inventoryIds": [
+      "OUT-05"
+    ],
+    "photo": "photos/items/OUT-05-01.jpg",
+    "photos": [
+      {
+        "src": "photos/items/OUT-05-01.jpg",
+        "thumbnail": "photos/items/thumbs/OUT-05-01.jpg",
+        "alt": "Both dark rattan-style balcony loveseats with integrated glass tables and four light-green cushions",
+        "caption": "Both units pictured are included — four seats, two integrated glass tables and four cushions. €20 total.",
+        "captionDe": "Beide abgebildeten Doppelsitzer sind dabei: vier Sitzplätze, zwei integrierte Glastische und vier Kissen. Insgesamt 20 €.",
+        "width": 2000,
+        "height": 1500
+      }
+    ],
+    "photoAlt": "Both dark rattan-style balcony loveseats with integrated glass tables and four light-green cushions",
+    "photoEvidence": "actual",
+    "photoNote": "Actual photo of both included units. Other background objects are not included.",
+    "photoNoteDe": "Originalfoto der beiden angebotenen Doppelsitzer. Andere Gegenstände im Hintergrund sind nicht enthalten."
+  },
+  {
     "id": "KIT-12",
     "title": "WMF Gourmet mortar and pestle – original box",
     "titleDe": "WMF Gourmet Mörser mit Stößel – Originalkarton",
@@ -1505,6 +1540,6 @@ window.BERLIN_LISTING.optionalBundles = [
 ];
 window.BERLIN_LISTING.sale = {
   "defaultLanguage": "en",
-  "inventoryRecordCount": 38,
+  "inventoryRecordCount": 39,
   "catalogueDate": "18 November 2026"
 };
