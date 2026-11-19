@@ -4,8 +4,11 @@ import { resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
 import './verify-inventory.mjs';
+import {auditImageTree} from './image-privacy.mjs';
 
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
+const cleanImages=await auditImageTree(root);
+console.log(`Image privacy verified: ${cleanImages.length} JPEG/SVG assets; no embedded optional metadata.`);
 const read = path => readFile(resolve(root, path), 'utf8');
 const context = { window: {} };
 const content = await read('content/site-data.js');
