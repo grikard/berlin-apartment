@@ -6,6 +6,8 @@ Do not edit generated `dist/content/inventory.js` or its approval manifest by ha
 
 Preserve the website's typography, layout, `dist/assets/app.js`, gallery behavior and ID-numbered photograph naming. Use `dist/photos/items/` for selected public photos. The approved export manifest checks catalogue and photo hashes and rejects orphan item JPEGs. Review new or changed photos for unique serial numbers, private documents, addresses and unapproved items before export.
 
+Owner privacy requirement: every published image must omit phone/personal metadata. JPEGs may contain only image encoding data and a technical JFIF header: no EXIF/GPS, capture timestamps, phone/camera/software fields, MakerNotes, XMP, IPTC, ICC profiles, comments, embedded thumbnails or trailing data. Keep originals private and ignored. `npm run check` audits the entire `dist/` image tree and blocks metadata or unreviewed formats; never bypass it. SVG artwork must have no hidden editor/metadata payloads. Visible scene content still needs separate privacy review. Historical public copies are not erased by replacing current assets.
+
 Owner-approved display order: show numeric asking prices from highest to lowest, followed by price-on-request listings. Search, category and language changes preserve that order. Equal-price listings retain their source order. This presentation rule does not reorder the canonical inventory or change bundle accounting.
 
 Owner-approved language default: open in English, with Deutsch available in the descriptions language selector. Keep the private catalogue export's default language and both HTML selectors aligned.
