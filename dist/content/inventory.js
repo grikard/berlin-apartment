@@ -1005,6 +1005,33 @@ window.BERLIN_LISTING.items = [
         "alt": "Original LG OLED TV box",
         "caption": "Original LG OLED TV box",
         "captionDe": "Originalkarton des LG OLED Fernsehers"
+      },
+      {
+        "src": "photos/items/TV-01-04.jpg",
+        "thumbnail": "photos/items/thumbs/TV-01-04.jpg",
+        "alt": "LG OLED TV switched on — movie menu",
+        "caption": "LG OLED TV switched on — movie menu",
+        "captionDe": "LG OLED Fernseher eingeschaltet — Filmmenü",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "photos/items/TV-01-05.jpg",
+        "thumbnail": "photos/items/thumbs/TV-01-05.jpg",
+        "alt": "LG OLED TV displaying a forest screensaver",
+        "caption": "LG OLED TV displaying a forest screensaver",
+        "captionDe": "LG OLED Fernseher mit Wald-Bildschirmschoner",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "src": "photos/items/TV-01-06.jpg",
+        "thumbnail": "photos/items/thumbs/TV-01-06.jpg",
+        "alt": "LG OLED TV displaying a coastal scene",
+        "caption": "LG OLED TV displaying a coastal scene",
+        "captionDe": "LG OLED Fernseher mit Küstenmotiv",
+        "width": 1500,
+        "height": 2000
       }
     ]
   },
